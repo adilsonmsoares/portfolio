@@ -8,6 +8,7 @@ import Document, {
   NextScript
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import ThemeSwitcher from '../components/switchers/themeSwitcher'
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -52,6 +53,7 @@ export default class MyDocument extends Document {
         </Head>
         <body>
           <Main />
+          <ThemeSwitcher />
           <NextScript />
         </body>
       </Html>
