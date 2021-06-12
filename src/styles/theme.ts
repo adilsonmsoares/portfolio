@@ -1,4 +1,6 @@
-export const lightTheme = {
+import { Theme } from '../shared/types'
+
+export const lightTheme: Theme = {
   colors: {
     background: '#fff',
     text: '#e1e1e6',
@@ -6,7 +8,7 @@ export const lightTheme = {
   }
 }
 
-export const darkTheme = {
+export const darkTheme: Theme = {
   colors: {
     background: '#000',
     text: '#e1e1e6',

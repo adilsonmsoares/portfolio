@@ -20,10 +20,14 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <button className="btn-rounded" onClick={darkmode.toggle}>
-        <BulbIcon />
-      </button>
-      {isMounted && <Component {...pageProps} />}
+      {isMounted && (
+        <>
+          <button className="btn-rounded" onClick={darkmode.toggle}>
+            <BulbIcon />
+          </button>
+          <Component {...pageProps} />
+        </>
+      )}
     </ThemeProvider>
   )
 }
