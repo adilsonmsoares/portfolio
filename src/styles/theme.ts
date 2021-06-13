@@ -1,17 +1,23 @@
 import { Theme } from '../shared/types'
 
 export const lightTheme: Theme = {
-  colors: {
-    background: '#fff',
-    text: '#e1e1e6',
-    primary: '#8257e6'
+  color: {
+    primary: '#fff',
+    secondary: '#8257e6',
+    tertiary: '#e1e1e6',
+    quaternary: '#8257e6',
+    quinary: '#8257e6',
+    senary: '#8257e6'
   }
 }
 
 export const darkTheme: Theme = {
-  colors: {
-    background: '#000',
-    text: '#e1e1e6',
-    primary: '#8257e6'
+  color: {
+    primary: '#000',
+    secondary: '#e1e1e6',
+    tertiary: '#e1e1e6',
+    quaternary: '#8257e6',
+    quinary: '#8257e6',
+    senary: '#8257e6'
   }
 }

@@ -1,9 +1,12 @@
-// INTERFACES
+// ============================== INTERFACES ==============================
 
 export interface Theme {
-  colors: {
-    background: string
-    text: string
+  color: {
     primary: string
+    secondary: string
+    tertiary: string
+    quaternary: string
+    quinary: string
+    senary: string
   }
 }
