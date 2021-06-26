@@ -2,12 +2,18 @@ import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   :root {
-    --black: #2B2B2B;
-    --white: #1e90ff;
-    --blue: #0D436E;
+    --black: #000000;
+    --black-evil: #111213;
+    --black-light: #2B2B2B;
+    --black-grey: rgba(0,0,0,0.6)
+    --white: #FFFFFF;
+    --white-smoke: #F9F9F9;
+    --white-grey: rgba(255,255,255,0.6)
+    --blue: #3B82F6;
     --orange: #FF5F2E;
-    --grey: #B3B3B3;
-    --grey-light: #F6F6F6;
+    --grey: #EBEBEB;
+    --grey-light: #ECECEC;
+    --grey-dark: rgba(0,0,0,0.3);
     --spacing-small: 25px;
     --spacing-medium: 50px;
     --spacing-big: 100px;
@@ -15,6 +21,9 @@ export default createGlobalStyle`
     --text-normal:24px;
     --text-medium: 48px;
     --text-large:72px;
+    --icon-small:12px;
+    --icon-normal:24px;
+    --icon-medium:32px;
   }
 
   * {
