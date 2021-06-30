@@ -5,10 +5,10 @@ export default createGlobalStyle`
     --black: #000000;
     --black-evil: #111213;
     --black-light: #2B2B2B;
-    --black-grey: rgba(0,0,0,0.6)
+    --black-grey: rgba(0,0,0,0.6);
     --white: #FFFFFF;
     --white-smoke: #F9F9F9;
-    --white-grey: rgba(255,255,255,0.6)
+    --white-grey: rgba(255,255,255,0.6);
     --blue: #3B82F6;
     --orange: #FF5F2E;
     --grey: #EBEBEB;
@@ -17,6 +17,7 @@ export default createGlobalStyle`
     --spacing-small: 25px;
     --spacing-medium: 50px;
     --spacing-big: 100px;
+    --spacing-ultra-big: 200px;
     --text-small:20px
     --text-normal:24px;
     --text-medium: 48px;
@@ -33,8 +34,12 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${({ theme }) => theme.color.primary};
+    background: ${({ theme }) => theme.background.primary};
     color: ${({ theme }) => theme.color.secondary};
     font: 400 16px Roboto, sans-serif;
+  }
+
+  .container{
+    margin: var(--spacing-big) var(--spacing-ultra-big)
   }
 `
