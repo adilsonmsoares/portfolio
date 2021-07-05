@@ -14,12 +14,12 @@ export default createGlobalStyle`
     --grey: #EBEBEB;
     --grey-light: #ECECEC;
     --grey-dark: rgba(0,0,0,0.3);
-    --spacing-small: 25px;
+    --spacing-small: 15px;
     --spacing-medium: 50px;
     --spacing-big: 100px;
-    --spacing-ultra-big: 200px;
-    --text-small:20px
-    --text-normal:24px;
+    --spacing-ultra: 200px;
+    --text-small:14px;
+    --text-normal:16px;
     --text-medium: 48px;
     --text-large:72px;
     --icon-small:12px;
@@ -27,19 +27,75 @@ export default createGlobalStyle`
     --icon-medium:32px;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   body {
+    margin: 0;
     background: ${({ theme }) => theme.background.primary};
     color: ${({ theme }) => theme.color.secondary};
-    font: 400 16px Roboto, sans-serif;
+    font: 400 var(--text-normal) Roboto, sans-serif;
+  }
+
+  svg{
+    fill: ${({ theme }) => theme.color.quaternary} !important;
+  }
+  
+  .shadow{
+    box-shadow: ${({ theme }) => theme.shadow.primary} 0px 0px 15px;
   }
 
   .container{
-    margin: var(--spacing-big) var(--spacing-ultra-big)
+    padding-left: var(--spacing-ultra);
+    padding-right: var(--spacing-ultra);
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .v-spacing-none {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .v-spacing-small {
+    padding-top: var(--spacing-small);
+    padding-bottom: var(--spacing-small);
+  }
+
+  .v-spacing-medium {
+    padding-top: var(--spacing-medium);
+    padding-bottom: var(--spacing-medium);
+  }
+
+  .v-spacing-big {
+    padding-top: var(--spacing-big);
+    padding-bottom: var(--spacing-big);
+  }
+
+  .v-spacing-ultra {
+    padding-top: var(--spacing-ultra);
+    padding-bottom: var(--spacing-ultra);
+  }
+
+  .h-spacing-none {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .h-spacing-small {
+    padding-left: var(--spacing-small);
+    padding-right: var(--spacing-small);
+  }
+
+  .h-spacing-medium {
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+  }
+
+  .h-spacing-big {
+    padding-left: var(--spacing-big);
+    padding-right: var(--spacing-big);
+  }
+
+  .h-spacing-ultra {
+    padding-left: var(--spacing-ultra);
+    padding-right: var(--spacing-ultra);
   }
 `

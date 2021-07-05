@@ -8,7 +8,8 @@ import { darkTheme, lightTheme } from '../styles/theme'
 
 import BulbIcon from '../../public/icons/bulb.svg'
 
-import MainMenu from '@components/Menu/MainMenu'
+import HeaderMenu from '@components/Menu/HeaderMenu'
+import FloatingButton from '@components/Button/FloatingButton'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   const [isMounted, setIsMounted] = useState(false)
@@ -24,10 +25,10 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <GlobalStyle />
       {isMounted && (
         <>
-          <MainMenu />
-          <button className="btn-rounded" onClick={darkmode.toggle}>
+          <HeaderMenu />
+          <FloatingButton onClick={darkmode.toggle}>
             <BulbIcon />
-          </button>
+          </FloatingButton>
           <Component {...pageProps} />
         </>
       )}
