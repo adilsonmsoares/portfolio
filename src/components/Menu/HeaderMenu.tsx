@@ -1,28 +1,41 @@
 import React from 'react'
+import Link from 'next/link'
 
 import Logo from '../../../public/images/logo.svg'
 
-import { Menu } from '@styles/components/Menu/HeaderMenu'
+import { Header } from '@styles/components/Menu/HeaderMenu'
 
 const HeaderMenu: React.FC = () => {
   return (
-    <Menu className="header container shadow">
+    <Header className="header shadow">
       <div className="header__logo">
-        <a href="/">
-          <Logo />
-        </a>
+        <Link href="/">
+          <a>
+            <Logo />
+          </a>
+        </Link>
       </div>
       <div className="header__nav">
-        <a className="active" href="">
-          About
-        </a>
-        <a href="">Education</a>
-        <a href="">Skills</a>
-        <a href="">Experiences</a>
-        <a href="">Projects</a>
-        <a href="">Contacts</a>
+        <Link href="/">
+          <a>About</a>
+        </Link>
+        <Link href="/">
+          <a>Education</a>
+        </Link>
+        <Link href="/">
+          <a>Skills</a>
+        </Link>
+        <Link href="/">
+          <a>Experiences</a>
+        </Link>
+        <Link href="/">
+          <a>Projects</a>
+        </Link>
+        <Link href="/">
+          <a>Contacts</a>
+        </Link>
       </div>
-    </Menu>
+    </Header>
   )
 }
 

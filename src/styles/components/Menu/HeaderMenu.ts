@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Menu = styled.header`
+export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,7 +31,7 @@ export const Menu = styled.header`
     padding-left: var(--spacing-small);
   }
 
-  .header__nav {
+  .header__nav .active {
     color: ${({ theme }) => theme.color.primary};
   }
 `

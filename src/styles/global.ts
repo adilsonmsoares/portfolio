@@ -20,8 +20,8 @@ export default createGlobalStyle`
     --spacing-ultra: 200px;
     --text-small:14px;
     --text-normal:16px;
-    --text-medium: 48px;
-    --text-large:72px;
+    --text-medium: 32px;
+    --text-large:48px;
     --icon-small:12px;
     --icon-normal:24px;
     --icon-medium:32px;
@@ -34,19 +34,28 @@ export default createGlobalStyle`
     font: 400 var(--text-normal) Roboto, sans-serif;
   }
 
-  svg{
-    fill: ${({ theme }) => theme.color.quaternary} !important;
-  }
-  
-  .shadow{
-    box-shadow: ${({ theme }) => theme.shadow.primary} 0px 0px 15px;
-  }
-
-  .container{
+  body > div > *:not(button){
     padding-left: var(--spacing-ultra);
     padding-right: var(--spacing-ultra);
     box-sizing: border-box;
     width: 100%;
+  }
+
+  body > div > section{
+    height:100vh;
+  }
+
+  svg path{
+    fill: ${({ theme }) => theme.color.quaternary};
+  }
+
+  .container--full-screen{
+    width: 100%;
+    height:100vh;
+  }
+  
+  .shadow{
+    box-shadow: ${({ theme }) => theme.shadow.primary} 0px 0px 15px;
   }
 
   .v-spacing-none {

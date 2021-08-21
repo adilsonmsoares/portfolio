@@ -1,13 +1,26 @@
 import React from 'react'
 import Head from 'next/head'
 
+import { Container } from '@styles/pages/404'
+
+import Title from '@components/Typography/Title'
+import Descrition from '@components/Typography/Description'
+
+import Robot from '../../public/icons/robot.svg'
+
 const NotFound: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Not Found Page | Adilson Soares</title>
+        <title>Page Not Found | Adilson Soares</title>
       </Head>
-      <h1>This page could not be found.</h1>
+      <Container>
+        <Robot />
+        <Title>404 | Page Not Found</Title>
+        <Descrition>
+          Sorry, can’t find the page you were looking for.
+        </Descrition>
+      </Container>
     </>
   )
 }
