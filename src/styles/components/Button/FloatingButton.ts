@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Button = styled.button`
+export const Container = styled.button`
   position: fixed;
   border: none;
   background-color: ${({ theme }) => theme.background.quaternary};

@@ -8,8 +8,9 @@ import { darkTheme, lightTheme } from '../styles/theme'
 
 import BulbIcon from '../../public/icons/bulb.svg'
 
-import HeaderMenu from '@components/Menu/HeaderMenu'
-import FloatingButton from '@components/Button/FloatingButton'
+import Button from '@components/Button/Button'
+
+import '../styles/lib/bootstrap-grid.css'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   const [isMounted, setIsMounted] = useState(false)
@@ -25,10 +26,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <GlobalStyle />
       {isMounted && (
         <>
-          <HeaderMenu />
-          <FloatingButton onClick={darkmode.toggle}>
+          <Button onClick={darkmode.toggle}>
             <BulbIcon />
-          </FloatingButton>
+          </Button>
           <Component {...pageProps} />
         </>
       )}
