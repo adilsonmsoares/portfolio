@@ -1,7 +1,9 @@
 /** @type {import('next').NextConfig} */
+const path = require('path')
+
 module.exports = {
   reactStrictMode: true,
-  rewrites: [
-    { source: '/api/:path*', destination: '/another-directory/:path*' }
-]
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  }
 }
