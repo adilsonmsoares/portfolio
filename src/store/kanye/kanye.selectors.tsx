@@ -1,5 +1,5 @@
 import { createSelector } from '@reduxjs/toolkit'
-import { RootState } from '@store/rootStore'
+import { RootState } from '@store/store'
 
 export const selectQuote = (state: RootState) => state.kanyeQuote
 
