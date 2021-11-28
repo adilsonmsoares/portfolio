@@ -2,8 +2,24 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@styles/Home.module.scss'
+import React, { useState } from 'react'
+import { useAppDispatch, useAppSelector } from '../store/hooks'
+import Button from '@components/Button/Button'
+import {
+  decrement,
+  increment,
+  incrementByAmount,
+  countSelector,
+  getKanyeQuote,
+  kanyeQuoteSelector
+} from '@store/index'
 
 const Home: NextPage = () => {
+  const dispatch = useAppDispatch()
+  const count = useAppSelector(countSelector)
+  const [incrementAmount, setIncrementAmount] = useState<number>(0)
+  const { data, pending, error } = useAppSelector(kanyeQuoteSelector)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -50,6 +66,49 @@ const Home: NextPage = () => {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+        </div>
+
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <h2>Counter Redux &rarr;</h2>
+            <p>Value: {count}</p>
+            <input
+              value={incrementAmount}
+              onChange={e => setIncrementAmount(Number(e.target.value))}
+              type="number"
+            />
+            <Button onClick={() => dispatch(decrement())}>Decrement</Button>
+            <Button onClick={() => dispatch(increment())}>Increment</Button>
+            <Button
+              onClick={() =>
+                dispatch(incrementByAmount(Number(incrementAmount)))
+              }
+            >
+              Increment by amount
+            </Button>
+            <Button
+              onClick={() => dispatch(incrementByAmount(Number(count * -1)))}
+              disabled={pending}
+            >
+              Reset
+            </Button>
+          </div>
+          <div className={styles.card}>
+            <h2>Fetch Redux &rarr;</h2>
+            <div>
+              <p>Generate random Kanye West quote</p>
+              {pending && <span>Loading...</span>}
+              {data && <span>{data.quote}</span>}
+              {error && <span>Oops, something went wrong</span>}
+              <br />
+              <Button
+                onClick={() => dispatch(getKanyeQuote())}
+                disabled={pending}
+              >
+                Generate Kanye Quote
+              </Button>
+            </div>
+          </div>
         </div>
       </main>
 

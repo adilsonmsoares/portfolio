@@ -1,0 +1,14 @@
+.default {
+  min-width: 100px;
+  min-height: 25px;
+  background-color: #fafafa;
+  color: black;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
