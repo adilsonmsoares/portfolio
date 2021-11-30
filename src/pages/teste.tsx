@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import styles from '@styles/Home.module.scss'
 import React, { useState } from 'react'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
@@ -14,12 +15,14 @@ import {
   getKanyeQuote,
   kanyeQuoteSelector
 } from '@store/index'
+import { route } from 'next/dist/server/router'
 
-const Home: NextPage = () => {
+const Teste: NextPage = () => {
   const dispatch = useAppDispatch()
   const count = useAppSelector(countSelector)
   const [incrementAmount, setIncrementAmount] = useState<number>(0)
   const { data, pending, error } = useAppSelector(kanyeQuoteSelector)
+  const router = useRouter()
 
   return (
     <div className={styles.container}>
@@ -82,16 +85,10 @@ const Home: NextPage = () => {
           </div>
 
           <div className={styles.card}>
-            <Link href="/teste">
-              <a>
-                <h2>Navigation &rarr;</h2>
-                <p>
-                  After use the counter and fetch redux features added, click
-                  here to navegate to another page with the purpose of test
-                  redux maintenance.
-                </p>
-              </a>
-            </Link>
+            <Button onClick={router.back}>
+              <h2>&larr;Navigation</h2>
+              <p>Click here to navigate back</p>
+            </Button>
           </div>
         </div>
       </main>
@@ -112,4 +109,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Teste
