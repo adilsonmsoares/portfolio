@@ -21,13 +21,7 @@ const Index: NextPage = () => {
   const [incrementAmount, setIncrementAmount] = useState<number>(0)
   const { data, pending, error } = useAppSelector(kanyeQuoteSelector)
 
-  return (
-    <>
-      <Button onClick={() => {}}>
-        <BulbIcon />
-      </Button>
-    </>
-  )
+  return <div>Pagina index</div>
 }
 
 export default Index

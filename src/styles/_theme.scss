@@ -1,0 +1,21 @@
+.light-mode {
+  --background-color-primary: var(--white-smoke);
+  --background-color-secondary: var(--white-smoke);
+  --color-primary: var(--black);
+  --color-secondary: var(--black-grey);
+  --special-color: var(--blue);
+  --special-color-contrast: var(--white);
+  --shadow-color: var(--grey-dark);
+  --border-color: var(--grey);
+}
+
+.dark-mode {
+  --background-color-primary: var(--black-evil);
+  --background-color-secondary: var(--black-light);
+  --color-primary: var(--white);
+  --color-secondary: var(--white-smoke);
+  --special-color: var(--blue);
+  --special-color-contrast: var(--white);
+  --shadow-color: var(--black);
+  --border-color: var(--black);
+}
