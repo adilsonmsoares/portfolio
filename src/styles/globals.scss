@@ -4,8 +4,8 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--color-secondary);
+  font: 400 var(--font-size) Roboto, sans-serif;
   background-color: var(--background-color-primary);
 }
 
@@ -16,4 +16,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.preload {
+  transition: none !important;
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+:global {
+  .shadow {
+    box-shadow: var(--shadow-color) 0px 0px 15px;
+  }
+}
+
+.shadow {
+  box-shadow: var(--shadow-color) 0px 0px 15px;
 }

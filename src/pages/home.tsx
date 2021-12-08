@@ -6,6 +6,7 @@ import styles from '@styles/Home.module.scss'
 import React, { useState } from 'react'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 import Button from '@components/Button/Button'
+import SendIcon from '@assets/icons/send.svg'
 import {
   decrement,
   increment,
@@ -21,7 +22,17 @@ const Home: NextPage = () => {
   const [incrementAmount, setIncrementAmount] = useState<number>(0)
   const { data, pending, error } = useAppSelector(kanyeQuoteSelector)
 
-  return <></>
+  return (
+    <div>
+      Home page <span>Teste</span>
+      <p>Teste 2</p>
+      <h1>Teste 1</h1>
+      <Button onClick={() => {}}>
+        Send
+        <SendIcon />
+      </Button>
+    </div>
+  )
 }
 
 export default Home

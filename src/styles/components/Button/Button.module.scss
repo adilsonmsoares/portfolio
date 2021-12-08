@@ -1,14 +1,83 @@
-.default {
-  min-width: 100px;
-  min-height: 25px;
-  background-color: #fafafa;
-  color: black;
-  text-align: center;
-  display: inline-block;
+@import '@styles/mixins';
+// .test{
+//     color: var(--themed-fg,var(--geist-background));
+//     background: var(--themed-bg,var(--geist-foreground));
+//     border: 1
+// px
+//  solid var(--themed-border,var(--geist-foreground));
+//     font-weight: 500;
+//     padding: 0 var(--geist-gap-half);
+//     max-width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     transition-property: border-color,background,color,transform,box-shadow;
+//     transition-duration: .15s;
+//     transition-timing-function: ease;
+//     font-size: var(--geist-form-font);
+//     line-height: var(--geist-form-line-height);
+//     height: var(--geist-form-height);
+// }
+.button {
   border: none;
-  border-radius: 5px;
+  background-color: var(--background-color-secondary);
+  color: var(--color-secondary);
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: var(--corner-radius);
+  height: 70px;
+  min-width: 200px;
+  padding: 0;
+  margin: 0;
+
+  svg {
+    height: 16px;
+    width: auto;
+    fill: var(--color-secondary);
+  }
 
   &:hover {
-    background-color: #f0f0f0;
+    color: var(--color-primary);
+
+    svg {
+      fill: var(--color-primary);
+    }
+  }
+}
+
+.button-floating {
+  position: fixed;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  bottom: var(--spacing-big);
+  box-shadow: var(--shadow-color) var(--shadow-translate);
+  min-width: initial;
+}
+
+.button-floating-right {
+  right: var(--spacing-medium);
+}
+
+.button-floating-left {
+  left: var(--spacing-medium);
+}
+
+.button-floating-center {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@include mobile() {
+  .button-floating-right {
+    right: var(--spacing-medium);
+  }
+
+  .button-floating-left {
+    left: var(--spacing-medium);
   }
 }
