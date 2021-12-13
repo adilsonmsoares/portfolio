@@ -1,11 +1,8 @@
 import { createReducer } from '@reduxjs/toolkit'
 import { getBaseInfo } from './personal.actions'
-import { ActionState, PersonalData } from '@shared/types'
+import { CreateActionState, PersonalData } from '@shared/types'
 
-const initialState: ActionState<PersonalData> = {
-  pending: false,
-  error: false
-}
+const initialState = CreateActionState<PersonalData>()
 
 export const PersonalReducer = createReducer(initialState, builder => {
   builder

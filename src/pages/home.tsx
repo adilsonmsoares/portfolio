@@ -7,14 +7,7 @@ import React, { useEffect, useState } from 'react'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 import Button from '@components/Button/Button'
 import SendIcon from '@assets/icons/send.svg'
-import {
-  decrement,
-  increment,
-  incrementByAmount,
-  countSelector,
-  getBaseInfo,
-  PersonalDataSelector
-} from '@store/index'
+import { getBaseInfo, PersonalDataSelector } from '@store/index'
 
 const Home: NextPage = () => {
   const dispatch = useAppDispatch()
