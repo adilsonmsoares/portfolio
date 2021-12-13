@@ -1,14 +1,13 @@
-import { useState, useEffect, useLayoutEffect } from 'react'
 import { Provider } from 'react-redux'
-import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import type { AppProps } from 'next/app'
+import useDarkMode from 'use-dark-mode'
 import { store } from '../store/store'
 import Button from '@components/Button/Button'
 import BulbIcon from '@assets/icons/bulb.svg'
-import useDarkMode from 'use-dark-mode'
 import '../styles/globals.scss'
+
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const [isMounted, setIsMounted] = useState(false)
   const darkmode = useDarkMode(true)
 
   return (

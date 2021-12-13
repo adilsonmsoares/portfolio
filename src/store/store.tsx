@@ -1,11 +1,11 @@
 import { Action, configureStore, ThunkAction } from '@reduxjs/toolkit'
 import { counterReducer } from './counter/counter.reducer'
-import { kanyeReducer } from './kanye/kanye.reducer'
+import { PersonalReducer } from './personal/personal.reducer'
 
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
-    kanyeQuote: kanyeReducer
+    PersonalData: PersonalReducer
   }
 })
 

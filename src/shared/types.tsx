@@ -1,22 +1,13 @@
-// ============================== INTERFACES ==============================
+// ============================== TYPES ==============================
 
-export interface Theme {
-  background: {
-    primary: string
-    secondary: string
-    tertiary: string
-    quaternary: string
-  }
-  border: {
-    primary: string
-  }
-  color: {
-    primary: string
-    secondary: string
-    tertiary: string
-    quaternary: string
-  }
-  shadow: {
-    primary: string
-  }
+export type ActionState<T> = {
+  data?: T
+  pending: boolean
+  error: boolean
+}
+
+export type PersonalData = {
+  title: string
+  subtitle: string
+  description: string
 }

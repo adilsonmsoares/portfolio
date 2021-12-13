@@ -18,20 +18,6 @@ a {
   box-sizing: border-box;
 }
 
-.preload {
-  transition: none !important;
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
-:global {
-  .shadow {
-    box-shadow: var(--shadow-color) 0px 0px 15px;
-  }
-}
-
-.shadow {
-  box-shadow: var(--shadow-color) 0px 0px 15px;
+.container {
+  padding: var(--spacing-medium);
 }

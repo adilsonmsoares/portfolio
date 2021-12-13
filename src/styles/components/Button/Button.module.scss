@@ -1,23 +1,5 @@
 @import '@styles/mixins';
-// .test{
-//     color: var(--themed-fg,var(--geist-background));
-//     background: var(--themed-bg,var(--geist-foreground));
-//     border: 1
-// px
-//  solid var(--themed-border,var(--geist-foreground));
-//     font-weight: 500;
-//     padding: 0 var(--geist-gap-half);
-//     max-width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     transition-property: border-color,background,color,transform,box-shadow;
-//     transition-duration: .15s;
-//     transition-timing-function: ease;
-//     font-size: var(--geist-form-font);
-//     line-height: var(--geist-form-line-height);
-//     height: var(--geist-form-height);
-// }
+
 .button {
   border: none;
   background-color: var(--background-color-secondary);
@@ -34,7 +16,7 @@
   margin: 0;
 
   svg {
-    height: 16px;
+    height: var(--icon-size);
     width: auto;
     fill: var(--color-secondary);
   }
