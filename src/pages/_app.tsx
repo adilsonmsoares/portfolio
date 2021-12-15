@@ -5,7 +5,7 @@ import useDarkMode from 'use-dark-mode'
 import { store } from '../store/store'
 import Button from '@components/Button/Button'
 import BulbIcon from '@assets/icons/bulb.svg'
-import '../styles/globals.scss'
+import '@styles/globals.scss'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const darkmode = useDarkMode(true)

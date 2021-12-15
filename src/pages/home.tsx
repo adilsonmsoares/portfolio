@@ -18,7 +18,7 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div>
+    <div className="container">
       Home page <span>Teste</span>
       <p>{data?.description}</p>
       <h1>Teste 1</h1>
