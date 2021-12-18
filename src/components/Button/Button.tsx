@@ -3,6 +3,7 @@ import styles from '@styles/components/Button/Button.module.scss'
 
 type Props = {
   disabled?: boolean
+  special?: boolean
   floating?: 'left' | 'right'
   floatingCenter?: boolean
   onClick: () => void
@@ -10,6 +11,7 @@ type Props = {
 
 const Button: React.FC<Props> = ({
   disabled,
+  special,
   floating,
   floatingCenter,
   onClick,
@@ -17,6 +19,7 @@ const Button: React.FC<Props> = ({
 }) => {
   var classNames = [
     styles.button,
+    special && styles['button-special'],
     floating && styles['button-floating'],
     floating && styles[`button-floating-${floating}`],
     floating && floatingCenter && styles['button-floating-center']

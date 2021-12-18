@@ -22,7 +22,7 @@ const Home: NextPage = () => {
       Home page <span>Teste</span>
       <p>{data?.description}</p>
       <h1>Teste 1</h1>
-      <Button onClick={() => {}}>
+      <Button onClick={() => {}} special>
         Send
         <SendIcon />
       </Button>

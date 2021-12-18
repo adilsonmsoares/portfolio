@@ -14,18 +14,46 @@
   min-width: 200px;
   padding: 0;
   margin: 0;
+  font-size: var(--font-size);
 
   svg {
     height: var(--icon-size);
     width: auto;
-    fill: var(--color-secondary);
+    padding-left: 20px;
+
+    path {
+      fill: var(--color-secondary);
+    }
   }
 
   &:hover {
     color: var(--color-primary);
 
     svg {
-      fill: var(--color-primary);
+      path {
+        fill: var(--color-primary);
+      }
+    }
+  }
+}
+
+.button-special {
+  background-color: var(--special-color);
+  color: var(--special-color-contrast);
+
+  svg {
+    path {
+      fill: var(--special-color-contrast);
+    }
+  }
+
+  &:hover {
+    color: var(--special-color-contrast);
+    background-color: var(--special-color-hover);
+    svg {
+      path {
+        fill: var(--special-color-contrast);
+      }
     }
   }
 }
@@ -39,6 +67,9 @@
   bottom: var(--spacing-big);
   box-shadow: var(--shadow-color) var(--shadow-translate);
   min-width: initial;
+  svg {
+    padding: 0;
+  }
 }
 
 .button-floating-right {
@@ -54,9 +85,9 @@
   transform: translateY(-50%);
 }
 
-@include mobile() {
+@include small-screen() {
   .button-floating-right {
-    right: var(--spacing-medium);
+    right: var(--spacing-small);
   }
 
   .button-floating-left {
