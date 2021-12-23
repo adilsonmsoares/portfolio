@@ -1,0 +1,63 @@
+@import '@styles/mixins';
+
+.btn-floating {
+  border: none;
+  cursor: pointer;
+  background-color: var(--background-color-secondary);
+  color: var(--color-secondary);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  bottom: var(--spacing-big);
+  box-shadow: var(--shadow-color) var(--shadow-translate);
+
+  svg {
+    height: var(--icon-size-small);
+    width: auto;
+
+    path {
+      fill: var(--color-secondary);
+    }
+  }
+
+  &:hover {
+    color: var(--color-primary);
+
+    svg {
+      path {
+        fill: var(--color-primary);
+      }
+    }
+  }
+
+  &--right {
+    right: var(--spacing-medium);
+  }
+
+  &--left {
+    left: var(--spacing-medium);
+  }
+
+  &--center-vertically {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@include small-screen() {
+  .btn-floating {
+    &--right {
+      right: var(--spacing-small);
+    }
+
+    &--left {
+      left: var(--spacing-small);
+    }
+  }
+}

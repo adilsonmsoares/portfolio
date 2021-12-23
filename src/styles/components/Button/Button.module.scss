@@ -1,9 +1,9 @@
 @import '@styles/mixins';
 
-.button {
+.btn {
   border: none;
-  background-color: var(--background-color-secondary);
-  color: var(--color-secondary);
+  background-color: transparent;
+  color: var(--special-color);
   text-align: center;
   align-items: center;
   display: flex;
@@ -15,82 +15,33 @@
   padding: 0;
   margin: 0;
   font-size: var(--font-size);
+  border: var(--border-size) solid var(--special-color);
+
+  span {
+    padding-right: 20px;
+  }
 
   svg {
-    height: var(--icon-size);
+    height: var(--icon-size-small);
     width: auto;
-    padding-left: 20px;
-
     path {
-      fill: var(--color-secondary);
+      fill: var(--special-color);
     }
   }
 
   &:hover {
-    color: var(--color-primary);
-
-    svg {
-      path {
-        fill: var(--color-primary);
-      }
-    }
-  }
-}
-
-.button-special {
-  background-color: var(--special-color);
-  color: var(--special-color-contrast);
-
-  svg {
-    path {
-      fill: var(--special-color-contrast);
-    }
+    opacity: 0.9;
   }
 
-  &:hover {
+  &--primary {
+    border: none;
+    background-color: var(--special-color);
     color: var(--special-color-contrast);
-    background-color: var(--special-color-hover);
+
     svg {
       path {
         fill: var(--special-color-contrast);
       }
     }
-  }
-}
-
-.button-floating {
-  position: fixed;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  z-index: 1000;
-  bottom: var(--spacing-big);
-  box-shadow: var(--shadow-color) var(--shadow-translate);
-  min-width: initial;
-  svg {
-    padding: 0;
-  }
-}
-
-.button-floating-right {
-  right: var(--spacing-medium);
-}
-
-.button-floating-left {
-  left: var(--spacing-medium);
-}
-
-.button-floating-center {
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-@include small-screen() {
-  .button-floating-right {
-    right: var(--spacing-small);
-  }
-
-  .button-floating-left {
-    left: var(--spacing-medium);
   }
 }

@@ -3,27 +3,12 @@ import styles from '@styles/components/Button/Button.module.scss'
 
 type Props = {
   disabled?: boolean
-  special?: boolean
-  floating?: 'left' | 'right'
-  floatingCenter?: boolean
+  type?: 'primary'
   onClick: () => void
 }
 
-const Button: React.FC<Props> = ({
-  disabled,
-  special,
-  floating,
-  floatingCenter,
-  onClick,
-  children
-}) => {
-  var classNames = [
-    styles.button,
-    special && styles['button-special'],
-    floating && styles['button-floating'],
-    floating && styles[`button-floating-${floating}`],
-    floating && floatingCenter && styles['button-floating-center']
-  ].join(' ')
+const Button: React.FC<Props> = ({ disabled, type, onClick, children }) => {
+  var classNames = [styles.btn, type && styles[`btn--${type}`]].join(' ')
 
   return (
     <button className={classNames} {...{ onClick, disabled }}>

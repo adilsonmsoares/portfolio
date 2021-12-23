@@ -6,6 +6,7 @@ import styles from '@styles/Home.module.scss'
 import React, { useEffect, useState } from 'react'
 import { useAppDispatch, useAppSelector } from '../store/hooks'
 import Button from '@components/Button/Button'
+import FloatingButton from '@components/Button/FloatingButton'
 import SendIcon from '@assets/icons/send.svg'
 import { getBaseInfo, PersonalDataSelector } from '@store/index'
 
@@ -22,10 +23,17 @@ const Home: NextPage = () => {
       Home page <span>Teste</span>
       <p>{data?.description}</p>
       <h1>Teste 1</h1>
-      <Button onClick={() => {}} special>
-        Send
+      <Button onClick={() => {}}>
+        <span>Send</span>
         <SendIcon />
       </Button>
+      <Button onClick={() => {}} type="primary">
+        <span>Send</span>
+        <SendIcon />
+      </Button>
+      <FloatingButton onClick={() => {}} centerVertically floating="left">
+        <SendIcon />
+      </FloatingButton>
     </div>
   )
 }
