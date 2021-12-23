@@ -2,19 +2,19 @@
 
 .btn {
   border: none;
-  background-color: transparent;
-  color: var(--special-color);
-  text-align: center;
+  cursor: pointer;
   align-items: center;
   display: flex;
   justify-content: center;
-  cursor: pointer;
+  font-size: var(--font-size);
+  color: var(--special-color);
+  text-align: center;
+  background-color: transparent;
   border-radius: var(--corner-radius);
   height: 70px;
   min-width: 200px;
   padding: 0;
   margin: 0;
-  font-size: var(--font-size);
   border: var(--border-size) solid var(--special-color);
 
   span {
@@ -22,8 +22,6 @@
   }
 
   svg {
-    height: var(--icon-size-small);
-    width: auto;
     path {
       fill: var(--special-color);
     }
