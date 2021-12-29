@@ -36,15 +36,15 @@
     }
   }
 
-  &--right {
+  &-right {
     right: var(--spacing-medium);
   }
 
-  &--left {
+  &-left {
     left: var(--spacing-medium);
   }
 
-  &--center-vertically {
+  &-center-vertically {
     top: 50%;
     transform: translateY(-50%);
   }

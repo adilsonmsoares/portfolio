@@ -3,6 +3,7 @@ import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import useDarkMode from 'use-dark-mode'
 import { store } from '../store/store'
+import Navbar from '@components/Navbar/Navbar'
 import FloatingButton from '@components/Button/FloatingButton'
 import BulbIcon from '@assets/icons/bulb.svg'
 import '@styles/globals.scss'
@@ -20,6 +21,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <FloatingButton onClick={darkmode.toggle} floating="right" disabled>
           <BulbIcon />
         </FloatingButton>
+        <Navbar />
         <Component {...pageProps} />
       </Provider>
     </>

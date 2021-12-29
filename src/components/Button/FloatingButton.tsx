@@ -2,8 +2,8 @@ import React from 'react'
 import styles from '@styles/components/Button/FloatingButton.module.scss'
 
 type Props = {
-  disabled?: boolean
   floating: 'left' | 'right'
+  disabled?: boolean
   centerVertically?: boolean
   onClick: () => void
 }
@@ -18,8 +18,8 @@ const FloatingButton: React.FC<Props> = ({
   var classNames = [
     styles['btn'],
     styles['btn-floating'],
-    styles[`btn-floating--${floating}`],
-    centerVertically && styles['btn-floating--center-vertically']
+    styles[`btn-floating-${floating}`],
+    centerVertically && styles['btn-floating-center-vertically']
   ].join(' ')
 
   return (
@@ -27,6 +27,12 @@ const FloatingButton: React.FC<Props> = ({
       {children}
     </div>
   )
+}
+
+FloatingButton.defaultProps = {
+  disabled: false,
+  centerVertically: false,
+  floating: 'right'
 }
 
 export default FloatingButton
