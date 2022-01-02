@@ -4,19 +4,22 @@
   width: 100%;
   min-height: 100px;
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: wrap;
-  align-items: center;
-  background-color: var(--background-color-primary);
-  padding-top: 25px;
-  padding-bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  background-color: var(--background-color-primary);
 
   &--scrolled {
     box-shadow: var(--shadow-color) var(--shadow-translate);
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
   .navbar-brand {
