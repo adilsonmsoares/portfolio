@@ -18,8 +18,8 @@ const FloatingButton: React.FC<Props> = ({
   var classNames = [
     styles['btn'],
     styles['btn-floating'],
-    styles[`btn-floating-${floating}`],
-    centerVertically && styles['btn-floating-center-vertically']
+    styles[`btn-floating--${floating}`],
+    centerVertically && styles['btn-floating--center-vertically']
   ].join(' ')
 
   return (

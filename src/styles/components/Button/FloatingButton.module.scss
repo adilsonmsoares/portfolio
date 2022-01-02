@@ -9,11 +9,10 @@
   display: flex;
   justify-content: center;
   position: fixed;
-
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  z-index: 1000;
+  z-index: 1;
   bottom: var(--spacing-big);
   box-shadow: var(--shadow-color) var(--shadow-translate);
 
@@ -36,15 +35,15 @@
     }
   }
 
-  &-right {
+  &--right {
     right: var(--spacing-medium);
   }
 
-  &-left {
+  &--left {
     left: var(--spacing-medium);
   }
 
-  &-center-vertically {
+  &--center-vertically {
     top: 50%;
     transform: translateY(-50%);
   }

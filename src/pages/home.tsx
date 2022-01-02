@@ -19,7 +19,7 @@ const Home: NextPage = () => {
   }, [])
 
   return (
-    <div className="container">
+    <div className="container container-full-page">
       Home page <span>Teste</span>
       <p>{data?.description}</p>
       <h1>Teste 1</h1>
@@ -31,9 +31,6 @@ const Home: NextPage = () => {
         <span>Send</span>
         <SendIcon />
       </Button>
-      <FloatingButton onClick={() => {}} centerVertically floating="left">
-        <SendIcon />
-      </FloatingButton>
     </div>
   )
 }

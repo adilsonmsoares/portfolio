@@ -1,0 +1,121 @@
+@import '@styles/mixins';
+
+.navbar {
+  width: 100%;
+  min-height: 100px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  align-items: center;
+  background-color: var(--background-color-primary);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  &--scrolled {
+    box-shadow: var(--shadow-color) var(--shadow-translate);
+  }
+
+  .navbar-brand {
+    height: 50px;
+    svg {
+      height: 50px;
+      width: auto;
+      text {
+        fill: var(--color-primary);
+      }
+    }
+  }
+
+  .navbar-toggle {
+    display: none;
+    height: 50px;
+
+    .toggle-line {
+      width: 40px;
+      height: 2px;
+      background-color: var(--color-primary);
+      display: block;
+      margin: 8px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .navbar-collapse {
+    display: initial;
+  }
+
+  .navbar-nav {
+    margin: 0;
+    font-size: var(--font-size-small);
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+
+    .nav-item {
+      margin-left: var(--spacing-medium);
+      text-align: right;
+
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}
+
+@include small-screen() {
+  .navbar {
+    .navbar-toggle {
+      display: block;
+
+      &--show {
+        .toggle-line {
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(1) {
+            -webkit-transform: translateY(10px) rotate(45deg);
+            -ms-transform: translateY(10px) rotate(45deg);
+            -o-transform: translateY(10px) rotate(45deg);
+            transform: translateY(10px) rotate(45deg);
+          }
+
+          &:nth-child(3) {
+            -webkit-transform: translateY(-10px) rotate(-45deg);
+            -ms-transform: translateY(-10px) rotate(-45deg);
+            -o-transform: translateY(-10px) rotate(-45deg);
+            transform: translateY(-10px) rotate(-45deg);
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      flex-basis: 100%;
+      transition: height 0.5s ease-in-out;
+      opacity: 0;
+      height: 0;
+      overflow: hidden;
+
+      &--show {
+        opacity: 1;
+        height: 100vh;
+      }
+    }
+
+    .navbar-nav {
+      flex-direction: column;
+
+      .nav-item {
+        margin: var(--spacing-small) 0;
+      }
+    }
+  }
+}

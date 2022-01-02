@@ -1,8 +1,6 @@
 @import '@styles/mixins';
 
 .btn {
-  border: none;
-  cursor: pointer;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -13,8 +11,6 @@
   border-radius: var(--corner-radius);
   height: 70px;
   min-width: 200px;
-  padding: 0;
-  margin: 0;
   border: var(--border-size) solid var(--special-color);
 
   span {
@@ -31,7 +27,7 @@
     opacity: 0.9;
   }
 
-  &-primary {
+  &--primary {
     border: none;
     background-color: var(--special-color);
     color: var(--special-color-contrast);

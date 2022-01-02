@@ -8,10 +8,11 @@ type Props = {
 }
 
 const Button: React.FC<Props> = ({ disabled, type, onClick, children }) => {
-  var classNames = [styles.btn, type && styles[`btn-${type}`]].join(' ')
-
   return (
-    <button className={classNames} {...{ onClick, disabled }}>
+    <button
+      className={[styles.btn, type && styles[`btn--${type}`]].join(' ')}
+      {...{ onClick, disabled }}
+    >
       {children}
     </button>
   )
