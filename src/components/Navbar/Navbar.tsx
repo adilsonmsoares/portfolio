@@ -1,7 +1,7 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import styles from '@styles/components/Navbar/Navbar.module.scss'
-// import Logo from '@assets/Logo.svg'
+import Logo from '@assets/Logo.svg'
 import Link from 'next/link'
 
 type Props = {}
@@ -37,7 +37,9 @@ export default function Navbar(props: Props) {
       <div className={['container', styles.wrapper].join(' ')}>
         <div className={styles['navbar-brand']}>
           <Link href="/">
-            <a>{/* <Logo /> */}</a>
+            <a>
+              <Logo />
+            </a>
           </Link>
         </div>
         <button
