@@ -63,7 +63,6 @@
 
     .nav-item {
       margin-left: var(--spacing-medium);
-      text-align: right;
 
       &:hover {
         color: var(--color-primary);
@@ -115,6 +114,8 @@
 
     .navbar-nav {
       flex-direction: column;
+      padding-left: 0;
+      padding-top: var(--spacing-small);
 
       .nav-item {
         margin: var(--spacing-small) 0;
