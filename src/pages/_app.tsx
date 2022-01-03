@@ -5,7 +5,7 @@ import useDarkMode from 'use-dark-mode'
 import { store } from '../store/store'
 import Navbar from '@components/Navbar/Navbar'
 import FloatingButton from '@components/Button/FloatingButton'
-import BulbIcon from '@assets/icons/bulb.svg'
+// import BulbIcon from '@assets/icons/bulb.svg'
 import '@styles/globals.scss'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
 
       <Provider store={store}>
         <FloatingButton onClick={darkmode.toggle} floating="right" disabled>
-          <BulbIcon />
+          {/* <BulbIcon /> */}
         </FloatingButton>
         <Navbar />
         <Component {...pageProps} />
