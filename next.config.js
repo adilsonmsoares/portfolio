@@ -3,7 +3,8 @@ const path = require('path')
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  assetPrefix: isProd ? '/portfolio/' : '',
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'src/styles')],

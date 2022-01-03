@@ -19,7 +19,7 @@
       "@styles/*":["styles/*"],
       "@components/*":["components/*"],
       "@store/*":["store/*"],
-      "@assets/*":["../public/*"],
+      "@assets/*":["../portfolio/public/*"],
       "@shared/*":["shared/*"]
     }
   },
