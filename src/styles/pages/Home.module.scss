@@ -1,0 +1,19 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .contacts {
+    width: 200px;
+    height: 75px;
+    background-image: var(--background-color-gradient);
+    box-shadow: var(--shadow-color) var(--shadow-translate);
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-small);
+  }
+}
