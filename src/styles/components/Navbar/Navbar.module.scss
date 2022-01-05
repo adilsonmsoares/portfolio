@@ -2,10 +2,10 @@
 
 .navbar {
   width: 100%;
-  min-height: 100px;
   position: fixed;
-  left: 50%;
-  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  height: 70px;
   z-index: 2;
   background-color: var(--background-color-primary);
 
@@ -14,18 +14,16 @@
   }
 
   .wrapper {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
     align-items: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
   }
 
   .navbar-brand {
-    height: 50px;
+    width: 200px;
     svg {
-      height: 50px;
       width: auto;
       text {
         fill: var(--color-primary);
@@ -35,10 +33,9 @@
 
   .navbar-toggle {
     display: none;
-    height: 50px;
 
     .toggle-line {
-      width: 40px;
+      width: 30px;
       height: 2px;
       background-color: var(--color-primary);
       display: block;
@@ -49,12 +46,7 @@
     }
   }
 
-  .navbar-collapse {
-    display: initial;
-  }
-
   .navbar-nav {
-    margin: 0;
     font-size: var(--font-size-small);
     font-weight: bold;
     text-transform: uppercase;
@@ -62,7 +54,9 @@
     flex-direction: row;
 
     .nav-item {
-      margin-left: var(--spacing-medium);
+      &:not(:last-child) {
+        margin-right: var(--spacing-medium);
+      }
 
       &:hover {
         color: var(--color-primary);
@@ -100,25 +94,27 @@
     }
 
     .navbar-collapse {
-      flex-basis: 100%;
-      transition: height 0.5s ease-in-out;
-      opacity: 0;
-      height: 0;
-      overflow: hidden;
+      display: none;
 
       &--show {
-        opacity: 1;
-        height: 100vh;
+        width: 100%;
+        display: initial;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        height: calc(100vh - 70px);
+        background-color: var(--background-color-primary);
+        padding: var(--spacing-small);
       }
     }
 
     .navbar-nav {
       flex-direction: column;
-      padding-left: 0;
-      padding-top: var(--spacing-small);
 
       .nav-item {
-        margin: var(--spacing-small) 0;
+        &:not(:last-child) {
+          margin-bottom: var(--spacing-small);
+        }
       }
     }
   }

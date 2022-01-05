@@ -10,6 +10,7 @@ import FloatingButton from '@components/Button/FloatingButton'
 import TwitterIcon from '@assets/icons/twitter.svg'
 import LinkedinIcon from '@assets/icons/linkedin.svg'
 import GitHub from '@assets/icons/github.svg'
+import ArrowDownIcon from '@assets/icons/arrowDown.svg'
 import { getBaseInfo, PersonalDataSelector } from '@store/index'
 import { ContactData } from '@shared/types'
 
@@ -39,25 +40,33 @@ const Home: NextPage = () => {
         'loading'
       ) : (
         <>
-          <div className="typhography typhography-title">{data.title}</div>
-          <div className="typhography typhography-subtitle">
-            {data.subtitle}
+          <div className={styles.main}>
+            <div className={styles.header}>
+              <div className="typhography typhography-title">{data.title}</div>
+              <div className="typhography typhography-subtitle">
+                {data.subtitle}
+              </div>
+            </div>
+            <div className={styles.description}>{data.description}</div>
+            <div className={styles.contacts}>
+              {Object.keys(data.contacts).map((key, index) => (
+                <a href={data.contacts[key]} target="_blank">
+                  {key === 'linkedin' ? (
+                    <LinkedinIcon />
+                  ) : key === 'twitter' ? (
+                    <TwitterIcon />
+                  ) : (
+                    <GitHub />
+                  )}
+                </a>
+              ))}
+            </div>
           </div>
-          <br />
-          <div>{data.description}</div>
-          <br />
-          <div className={styles.contacts}>
-            {Object.keys(data.contacts).map((key, index) => (
-              <a href={data.contacts[key]} target="_blank">
-                {key === 'linkedin' ? (
-                  <LinkedinIcon />
-                ) : key === 'twitter' ? (
-                  <TwitterIcon />
-                ) : (
-                  <GitHub />
-                )}
-              </a>
-            ))}
+          <div className={styles.footer}>
+            <div className={styles['know-more']}>
+              <label>Know more about me</label>
+              <ArrowDownIcon />
+            </div>
           </div>
         </>
       )}

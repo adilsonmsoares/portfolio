@@ -11,6 +11,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -61,6 +68,7 @@ svg {
 
   &-full-page {
     height: 100vh;
+    min-height: 1080px;
     padding-top: var(--spacing-big);
   }
 }

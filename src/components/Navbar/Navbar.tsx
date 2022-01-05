@@ -35,13 +35,11 @@ export default function Navbar(props: Props) {
       )}
     >
       <div className={['container', styles.wrapper].join(' ')}>
-        <div className={styles['navbar-brand']}>
-          <Link href="/">
-            <a>
-              <Logo />
-            </a>
-          </Link>
-        </div>
+        <Link href="/">
+          <a className={styles['navbar-brand']}>
+            <Logo />
+          </a>
+        </Link>
         <button
           className={[
             styles['navbar-toggle'],

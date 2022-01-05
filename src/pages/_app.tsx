@@ -14,7 +14,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <meta name="viewport" content="width=600, user-scalable=no" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
 
       <Provider store={store}>

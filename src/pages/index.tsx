@@ -5,6 +5,7 @@ const Index: NextPage = () => {
   return (
     <>
       <Home />
+      TESTES
       <Home />
     </>
   )
