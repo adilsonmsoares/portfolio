@@ -31,11 +31,11 @@
   }
 
   &--right {
-    right: var(--spacing-medium);
+    right: var(--spacing-base);
   }
 
   &--left {
-    left: var(--spacing-medium);
+    left: var(--spacing-base);
   }
 
   &--center-vertically {
@@ -47,11 +47,11 @@
 @include small-screen() {
   .btn-floating {
     &--right {
-      right: var(--spacing-base);
+      right: var(--spacing-small);
     }
 
     &--left {
-      left: var(--spacing-base);
+      left: var(--spacing-small);
     }
   }
 }

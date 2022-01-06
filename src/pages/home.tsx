@@ -42,7 +42,7 @@ const Home: NextPage = () => {
             <div className={styles.description}>{data.description}</div>
             <div className={styles.contacts}>
               {Object.keys(data.contacts).map((key, index) => (
-                <a href={data.contacts[key]} target="_blank">
+                <a href={data.contacts[key]} target="_blank" key={key}>
                   {key === 'linkedin' ? (
                     <LinkedinIcon />
                   ) : key === 'twitter' ? (

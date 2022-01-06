@@ -26,8 +26,12 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      svg {
-        margin: var(--spacing-small);
+      padding: var(--spacing-small);
+
+      a {
+        &:not(:last-child) {
+          margin-right: var(--spacing-small);
+        }
       }
     }
   }
