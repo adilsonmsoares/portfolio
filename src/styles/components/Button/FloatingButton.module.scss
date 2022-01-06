@@ -10,8 +10,8 @@
   justify-content: center;
   position: fixed;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   z-index: 1;
   bottom: var(--spacing-big);
   box-shadow: var(--shadow-color) var(--shadow-translate);
@@ -47,11 +47,11 @@
 @include small-screen() {
   .btn-floating {
     &--right {
-      right: var(--spacing-small);
+      right: var(--spacing-base);
     }
 
     &--left {
-      left: var(--spacing-small);
+      left: var(--spacing-base);
     }
   }
 }

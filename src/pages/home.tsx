@@ -22,14 +22,6 @@ const Home: NextPage = () => {
     dispatch(getBaseInfo())
   }, [])
 
-  let getContactsIcons = (contacts: ContactData) => {
-    {
-      Object.keys(data.contacts).map((key, index) => (
-        <a href={data.contacts[key]}></a>
-      ))
-    }
-  }
-
   return (
     <div
       className={['container container-full-page', styles['home-page']].join(
@@ -60,12 +52,6 @@ const Home: NextPage = () => {
                   )}
                 </a>
               ))}
-            </div>
-          </div>
-          <div className={styles.footer}>
-            <div className={styles['know-more']}>
-              <label>Know more about me</label>
-              <ArrowDownIcon />
             </div>
           </div>
         </>

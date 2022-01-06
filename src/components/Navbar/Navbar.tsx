@@ -1,7 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
 import styles from '@styles/components/Navbar/Navbar.module.scss'
-import Logo from '@assets/Logo.svg'
 import Link from 'next/link'
 
 type Props = {}
@@ -10,22 +9,17 @@ export default function Navbar(props: Props) {
   const [scrollY, setScrollY] = useState(0)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY)
-    }
+  const handleScroll = () => {
+    setScrollY(window.scrollY)
+  }
 
-    // just trigger this so that the initial state
-    // is updated as soon as the component is mounted
-    // related: https://stackoverflow.com/a/63408216
+  useEffect(() => {
     handleScroll()
 
     window.addEventListener('scroll', handleScroll)
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (
@@ -37,7 +31,8 @@ export default function Navbar(props: Props) {
       <div className={['container', styles.wrapper].join(' ')}>
         <Link href="/">
           <a className={styles['navbar-brand']}>
-            <Logo />
+            <span>adilson</span>
+            <span>soares</span>
           </a>
         </Link>
         <button

@@ -22,12 +22,11 @@
   }
 
   .navbar-brand {
-    width: 200px;
-    svg {
-      width: auto;
-      text {
-        fill: var(--color-primary);
-      }
+    font-weight: 700;
+    color: var(--color-primary);
+    font-size: 25px;
+    span:last-child {
+      font-weight: 300;
     }
   }
 
@@ -104,7 +103,7 @@
         left: 0;
         height: calc(100vh - 70px);
         background-color: var(--background-color-primary);
-        padding: var(--spacing-small);
+        padding: var(--spacing-base);
       }
     }
 
@@ -113,7 +112,7 @@
 
       .nav-item {
         &:not(:last-child) {
-          margin-bottom: var(--spacing-small);
+          margin-bottom: var(--spacing-base);
         }
       }
     }

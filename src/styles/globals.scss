@@ -58,13 +58,11 @@ svg {
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;
-  padding-left: var(--spacing-small);
-  padding-right: var(--spacing-small);
+  padding-left: var(--spacing-base);
+  padding-right: var(--spacing-base);
 
   &-full-page {
     height: 100vh;
-    min-height: 1080px;
-    padding-top: var(--spacing-big);
   }
 }
 
