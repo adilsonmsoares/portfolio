@@ -14,7 +14,8 @@ const About: NextPage = () => {
 
   return (
     <section
-      className={['container container-page', styles['about-page']].join(' ')}
+      className={['container', styles['about-page']].join(' ')}
+      id="aboutme"
     >
       <div className="typhography typhography-title typhography-header">
         About Me

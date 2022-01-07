@@ -15,6 +15,11 @@
 
   .wrapper {
     width: 100%;
+    max-width: 1500px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: var(--spacing-base);
+    padding-right: var(--spacing-base);
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
@@ -52,6 +57,10 @@
     display: flex;
     flex-direction: row;
 
+    & > * {
+      width: fit-content;
+    }
+
     .nav-item {
       &:not(:last-child) {
         margin-right: var(--spacing-medium);
@@ -66,6 +75,11 @@
 
 @include small-screen() {
   .navbar {
+    .wrapper {
+      padding-left: var(--spacing-small);
+      padding-right: var(--spacing-small);
+    }
+
     .navbar-toggle {
       display: block;
 

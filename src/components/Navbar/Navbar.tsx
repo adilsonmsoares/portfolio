@@ -7,10 +7,14 @@ type Props = {}
 
 export default function Navbar(props: Props) {
   const [scrollY, setScrollY] = useState(0)
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [IsNavOpen, setIsNavOpen] = useState(false)
 
   const handleScroll = () => {
     setScrollY(window.scrollY)
+  }
+
+  const closeNav = () => {
+    if (IsNavOpen) setIsNavOpen(!IsNavOpen)
   }
 
   useEffect(() => {
@@ -28,7 +32,7 @@ export default function Navbar(props: Props) {
         ' '
       )}
     >
-      <div className={['container', styles.wrapper].join(' ')}>
+      <div className={styles.wrapper}>
         <Link href="/">
           <a className={styles['navbar-brand']}>
             <span>adilson</span>
@@ -38,9 +42,9 @@ export default function Navbar(props: Props) {
         <button
           className={[
             styles['navbar-toggle'],
-            isMenuOpen && styles['navbar-toggle--show']
+            IsNavOpen && styles['navbar-toggle--show']
           ].join(' ')}
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          onClick={() => setIsNavOpen(!IsNavOpen)}
         >
           <span className={styles['toggle-line']}></span>
           <span className={styles['toggle-line']}></span>
@@ -49,36 +53,36 @@ export default function Navbar(props: Props) {
         <div
           className={[
             styles['navbar-collapse'],
-            isMenuOpen && styles['navbar-collapse--show']
+            IsNavOpen && styles['navbar-collapse--show']
           ].join(' ')}
         >
           <ul className={styles['navbar-nav']}>
-            <li className={styles['nav-item']}>
-              <a className="nav-link" href="#">
+            <li className={styles['nav-item']} onClick={closeNav}>
+              <a className="nav-link" href="#aboutme">
                 About
               </a>
             </li>
-            <li className={styles['nav-item']}>
-              <a className="nav-link" href="#">
+            <li className={styles['nav-item']} onClick={closeNav}>
+              <a className="nav-link" href="#education">
                 Education
               </a>
             </li>
-            <li className={styles['nav-item']}>
+            <li className={styles['nav-item']} onClick={closeNav}>
               <a className="nav-link disabled" href="#">
                 Skills
               </a>
             </li>
-            <li className={styles['nav-item']}>
+            <li className={styles['nav-item']} onClick={closeNav}>
               <a className="nav-link disabled" href="#">
                 Experience
               </a>
             </li>
-            <li className={styles['nav-item']}>
+            <li className={styles['nav-item']} onClick={closeNav}>
               <a className="nav-link disabled" href="#">
                 Projects
               </a>
             </li>
-            <li className={styles['nav-item']}>
+            <li className={styles['nav-item']} onClick={closeNav}>
               <a className="nav-link disabled" href="#">
                 Contact
               </a>

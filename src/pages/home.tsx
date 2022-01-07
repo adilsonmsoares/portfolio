@@ -24,7 +24,7 @@ const Home: NextPage = () => {
 
   return (
     <div
-      className={['container container-full-page', styles['home-page']].join(
+      className={['container container-full-screen', styles['home-page']].join(
         ' '
       )}
     >

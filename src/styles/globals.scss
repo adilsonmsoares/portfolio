@@ -11,9 +11,9 @@
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
-ul {
-  padding: 0;
-  margin: 0;
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,6 +22,11 @@ body {
   color: var(--color-secondary);
   font: 400 var(--font-size-base) Roboto, sans-serif;
   background-color: var(--background-color-primary);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -62,11 +67,12 @@ svg {
   padding-left: var(--spacing-base);
   padding-right: var(--spacing-base);
 
-  &-full-page {
+  &-full-screen {
     height: 100vh;
   }
 
   &-page {
+    padding-top: var(--spacing-big);
     padding-bottom: var(--spacing-big);
   }
 }
