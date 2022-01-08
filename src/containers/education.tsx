@@ -1,24 +1,15 @@
-import type { NextPage } from 'next'
-import styles from '@styles/pages/About.module.scss'
 import React, { useEffect, useState } from 'react'
-import { useAppDispatch, useAppSelector } from '@store/hooks'
-import { getBaseInfo, PersonalDataSelector } from '@store/index'
+import type { NextPage } from 'next'
+import styles from '@styles/containers/About.module.scss'
 
 const About: NextPage = () => {
-  const dispatch = useAppDispatch()
-  const { data, pending, error } = useAppSelector(PersonalDataSelector)
-
-  useEffect(() => {
-    dispatch(getBaseInfo())
-  }, [])
-
   return (
     <section
-      className={['container', styles['about-page']].join(' ')}
-      id="aboutme"
+      className={['container', styles['about-container']].join(' ')}
+      id="education"
     >
       <div className="typhography typhography-title typhography-header">
-        About Me
+        Education
       </div>
       <div className={styles.description}>
         <p>

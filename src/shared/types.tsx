@@ -1,11 +1,3 @@
-// ============================== TYPES ==============================
-
-export type ActionState<T> = {
-  data: T
-  pending: boolean
-  error: boolean
-}
-
 export type ContactData = { [key: string]: string }
 
 export type PersonalData = {
@@ -15,14 +7,6 @@ export type PersonalData = {
   contacts: ContactData
 }
 
-// ============================== FUNCTIONS ==============================
-
-export function CreateActionState<T>(arg?: T): ActionState<T> {
-  const type: ActionState<T> = {
-    data: arg || ({} as T),
-    pending: true,
-    error: false
-  }
-
-  return type
+export type AboutData = {
+  description: string[]
 }

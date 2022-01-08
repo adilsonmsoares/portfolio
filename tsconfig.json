@@ -18,9 +18,11 @@
     "paths": {
       "@styles/*":["styles/*"],
       "@components/*":["components/*"],
-      "@store/*":["store/*"],
+      "@containers/*":["containers/*"],
       "@assets/*":["../public/*"],
-      "@shared/*":["shared/*"]
+      "@repositories/*":["repositories/*"],
+      "@shared/*":["shared/*"],
+      "@hooks/*":["hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
