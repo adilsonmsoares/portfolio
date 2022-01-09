@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import styles from '@styles/components/Navbar/Navbar.module.scss'
+import styles from '@styles/components/navbar/Navbar.module.scss'
 import Link from 'next/link'
 
 type Props = {}

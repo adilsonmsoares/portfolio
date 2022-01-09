@@ -1,9 +1,8 @@
-import { Provider } from 'react-redux'
 import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import useDarkMode from 'use-dark-mode'
-import Navbar from '@components/Navbar/Navbar'
-import FloatingButton from '@components/Button/FloatingButton'
+import Navbar from '@components/navbar/Navbar'
+import FloatingButton from '@components/button/FloatingButton'
 import BulbIcon from '@assets/icons/bulb.svg'
 import '@styles/globals.scss'
 

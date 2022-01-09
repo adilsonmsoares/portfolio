@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react'
 import TwitterIcon from '@assets/icons/twitter.svg'
 import LinkedinIcon from '@assets/icons/linkedin.svg'
 import GitHub from '@assets/icons/github.svg'
@@ -25,7 +24,7 @@ export default function Home() {
             {data.subtitle}
           </div>
         </div>
-        <div className={styles.description}>{data.description}</div>
+        <div className={styles.description}>{data.shortDescription}</div>
         <div className={styles.contacts}>
           {Object.keys(data.contacts).map((key, index) => (
             <a href={data.contacts[key]} target="_blank" key={key}>

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@styles/components/Button/Button.module.scss'
+import styles from '@styles/components/button/Button.module.scss'
 
 type Props = {
   type?: 'primary'

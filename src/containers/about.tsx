@@ -1,21 +1,15 @@
-import type { NextPage } from 'next'
-import React, { useEffect, useState } from 'react'
-import styles from '@styles/containers/About.module.scss'
 import useData from '@hooks/useData'
-import { AboutData } from '@shared/types'
+import { PersonalData } from '@shared/types'
 
-const About: NextPage = () => {
-  const data = useData<AboutData>('about.json')
+export default function Education() {
+  const data = useData<PersonalData>('personal.json')
 
   return (
-    <section
-      className={['container', styles['about-container']].join(' ')}
-      id="aboutme"
-    >
+    <section className="container" id="aboutme">
       <div className="typhography typhography-title typhography-header typhography--primary typhography--uppercase">
         About Me
       </div>
-      <div className={styles.description}>
+      <div>
         {data.description.map((item, index) => {
           return <p key={index}>{item}</p>
         })}
@@ -23,5 +17,3 @@ const About: NextPage = () => {
     </section>
   )
 }
-
-export default About

@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@styles/components/Button/FloatingButton.module.scss'
+import styles from '@styles/components/button/FloatingButton.module.scss'
 
 type Props = {
   floating: 'left' | 'right'
