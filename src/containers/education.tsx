@@ -8,7 +8,7 @@ const About: NextPage = () => {
       className={['container', styles['about-container']].join(' ')}
       id="education"
     >
-      <div className="typhography typhography-title typhography-header">
+      <div className="typhography typhography-title typhography-header typhography--primary typhography--uppercase">
         Education
       </div>
       <div className={styles.description}>

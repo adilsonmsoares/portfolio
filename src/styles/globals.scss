@@ -80,30 +80,25 @@ svg {
 .typhography {
   text-decoration: none;
 
-  &-title {
-    font-size: var(--font-size-extra-large);
-    font-weight: bold;
+  &--primary {
     color: var(--color-primary);
+  }
+
+  &--uppercase {
     text-transform: uppercase;
   }
 
-  &-subtitle {
+  &-title {
+    font-size: var(--font-size-extra-large);
+    font-weight: bold;
+  }
+
+  &-sub-title {
     font-size: var(--font-size-base);
-    color: var(--color-primary);
   }
 
-  &-subtitle {
+  &-sub-sub-title {
     font-size: var(--font-size-small);
-  }
-
-  &-description {
-    font-size: var(--font-size-base);
-    color: var(--color-secondary);
-  }
-
-  &-subdescription {
-    font-size: var(--font-size-small);
-    color: var(--color-secondary);
   }
 
   &-header {

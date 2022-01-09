@@ -12,7 +12,7 @@ const About: NextPage = () => {
       className={['container', styles['about-container']].join(' ')}
       id="aboutme"
     >
-      <div className="typhography typhography-title typhography-header">
+      <div className="typhography typhography-title typhography-header typhography--primary typhography--uppercase">
         About Me
       </div>
       <div className={styles.description}>
