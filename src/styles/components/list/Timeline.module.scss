@@ -1,0 +1,91 @@
+.timeline {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: var(--spacing-medium);
+  overflow-x: scroll;
+  overflow-y: hidden;
+  position: relative;
+
+  .bubble {
+    display: flex;
+    justify-content: center;
+    padding-bottom: var(--spacing-base);
+    border-bottom: var(--border-size) solid var(--border-color);
+    position: relative;
+
+    .box {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      background-image: var(--background-color-gradient);
+      box-shadow: var(--shadow-color) var(--shadow-translate);
+      border-radius: var(--border-radius);
+      width: 230px;
+      height: 150px;
+      padding: var(--spacing-small);
+      position: relative;
+      margin: var(--spacing-base);
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        width: 0;
+        height: 0;
+        border-top: solid 15px var(--background-color-primary);
+        border-left: solid 10px transparent;
+        border-right: solid 10px transparent;
+        background-image: var(--background-color-gradient);
+      }
+
+      .main {
+        :first-child {
+          padding-bottom: 5px;
+        }
+      }
+
+      .triangle {
+        position: absolute;
+        box-sizing: border-box;
+        box-shadow: 0px 3px 3px 0 var(--shadow-color);
+        top: 100%;
+        left: 50%;
+        z-index: -1;
+        margin-left: -10px;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 0;
+          box-sizing: border-box;
+
+          border: 7px solid transparent;
+          border-color: transparent transparent var(--background-color-primary)
+            var(--background-color-primary);
+          background-color: var(--background-color-primary);
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+
+          box-shadow: -3px 3px 10px 0 var(--shadow-color);
+        }
+      }
+
+      .footer {
+      }
+    }
+
+    .dot {
+      height: 15px;
+      width: 15px;
+      background-color: var(--background-color-primary);
+      border-radius: 50%;
+      display: inline-block;
+      box-shadow: var(--shadow-color) var(--shadow-translate);
+      position: absolute;
+      bottom: -8px;
+    }
+  }
+}

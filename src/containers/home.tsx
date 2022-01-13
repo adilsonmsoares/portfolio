@@ -17,10 +17,10 @@ export default function Home() {
     >
       <div className={styles.main}>
         <div className={styles.header}>
-          <div className="typhography typhography-title typhography--primary typhography--uppercase">
+          <div className="typhography typhography-title typhography--strong typhography--primary typhography--uppercase">
             {data.title}
           </div>
-          <div className="typhography typhography-sub-sub-title typhography--primary">
+          <div className="typhography typhography-sub-title typhography--primary">
             {data.subtitle}
           </div>
         </div>

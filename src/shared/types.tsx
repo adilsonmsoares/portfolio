@@ -9,6 +9,7 @@ export type PersonalData = {
 }
 
 export type ViewerData = {
+  id: string
   title: string
   entity: string
   startDate: string

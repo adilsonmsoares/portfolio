@@ -88,9 +88,12 @@ svg {
     text-transform: uppercase;
   }
 
+  &--strong {
+    font-weight: bold;
+  }
+
   &-title {
     font-size: var(--font-size-extra-large);
-    font-weight: bold;
   }
 
   &-sub-title {
