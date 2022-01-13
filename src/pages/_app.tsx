@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
 
-      <FloatingButton onClick={darkmode.toggle} floating="right" disabled>
+      <FloatingButton onClick={darkmode.toggle} floating="right">
         <BulbIcon />
       </FloatingButton>
       <Navbar />

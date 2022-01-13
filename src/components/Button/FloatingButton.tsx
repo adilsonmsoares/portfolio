@@ -23,9 +23,9 @@ const FloatingButton: React.FC<Props> = ({
   ].join(' ')
 
   return (
-    <div className={classNames} {...{ onClick, disabled }}>
+    <button className={classNames} {...{ onClick, disabled }}>
       {children}
-    </div>
+    </button>
   )
 }
 
