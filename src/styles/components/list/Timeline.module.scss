@@ -1,17 +1,31 @@
 .timeline {
   display: flex;
-  flex-direction: row;
-  padding-bottom: var(--spacing-medium);
-  overflow-y: hidden;
-  position: relative;
-  align-items: center;
   justify-content: center;
+  position: relative;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: var(--spacing-medium);
+    overflow-y: hidden;
+    position: relative;
+    align-items: center;
+  }
+
+  .line {
+    border-bottom: var(--border-size) solid var(--border-color);
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: calc(150px + var(--spacing-base) * 3);
+    z-index: -1;
+  }
 
   .bubble {
     display: flex;
     justify-content: center;
     padding-bottom: var(--spacing-base);
-    border-bottom: var(--border-size) solid var(--border-color);
     position: relative;
 
     .box {
@@ -72,9 +86,6 @@
 
           box-shadow: -3px 3px 10px 0 var(--shadow-color);
         }
-      }
-
-      .footer {
       }
     }
 
