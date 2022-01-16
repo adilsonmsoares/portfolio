@@ -35,16 +35,6 @@ a {
   display: flex;
 }
 
-button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-}
-
 svg {
   height: var(--icon-size-medium);
   width: auto;
@@ -109,9 +99,20 @@ svg {
   }
 }
 
+.helper-buttons {
+  position: fixed;
+  bottom: var(--spacing-big);
+  right: var(--spacing-base);
+  z-index: 1;
+}
+
 @include small-screen() {
   .container {
     padding-left: var(--spacing-small);
     padding-right: var(--spacing-small);
+  }
+
+  .helper-buttons {
+    right: var(--spacing-small);
   }
 }

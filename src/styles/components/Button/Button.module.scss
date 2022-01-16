@@ -1,41 +1,60 @@
 @import '@styles/mixins';
 
 .btn {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
   align-items: center;
   display: flex;
   justify-content: center;
   font-size: var(--font-size-base);
-  color: var(--special-color);
   text-align: center;
-  background-color: transparent;
-  border-radius: var(--border-radius);
-  height: 70px;
-  min-width: 200px;
-  border: var(--border-size) solid var(--special-color);
 
-  span {
-    padding-right: 20px;
-  }
+  &-default {
+    border-radius: var(--border-radius);
+    height: 70px;
+    min-width: 200px;
+    border-style: solid;
+    border-width: var(--border-size);
 
-  svg {
-    path {
-      fill: var(--special-color);
+    span {
+      padding-right: 20px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &--primary {
+      border: none;
+      background-color: var(--special-color);
+      color: var(--special-color-contrast);
+
+      svg {
+        path {
+          fill: var(--special-color-contrast);
+        }
+      }
     }
   }
 
-  &:hover {
-    opacity: 0.9;
-  }
-
-  &--primary {
-    border: none;
-    background-color: var(--special-color);
-    color: var(--special-color-contrast);
+  &-rounded {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    box-shadow: var(--shadow-color) var(--shadow-translate);
 
     svg {
-      path {
-        fill: var(--special-color-contrast);
-      }
+      height: var(--icon-size-small);
+    }
+
+    &--primary {
+      color: var(--color-secondary);
+      background-color: var(--background-color-secondary);
     }
   }
 }
