@@ -3,28 +3,16 @@ import { useEffect, useState } from 'react'
 import styles from '@styles/components/navbar/Navbar.module.scss'
 import Link from 'next/link'
 
-type Props = {}
+type Props = {
+  scrollY: number
+}
 
-export default function Navbar(props: Props) {
-  const [scrollY, setScrollY] = useState(0)
+export default function Navbar({ scrollY }: Props) {
   const [IsNavOpen, setIsNavOpen] = useState(false)
-
-  const handleScroll = () => {
-    setScrollY(window.scrollY)
-  }
 
   const closeNav = () => {
     if (IsNavOpen) setIsNavOpen(!IsNavOpen)
   }
-
-  useEffect(() => {
-    handleScroll()
-
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
 
   return (
     <nav

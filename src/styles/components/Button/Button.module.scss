@@ -14,6 +14,15 @@
   font-size: var(--font-size-base);
   text-align: center;
 
+  &--hidden {
+    display: none;
+  }
+
+  svg {
+    height: var(--icon-size-small);
+    max-width: var(--icon-size-small);
+  }
+
   &-default {
     border-radius: var(--border-radius);
     height: 70px;
@@ -48,13 +57,17 @@
     height: 50px;
     box-shadow: var(--shadow-color) var(--shadow-translate);
 
-    svg {
-      height: var(--icon-size-small);
-    }
-
     &--primary {
       color: var(--color-secondary);
       background-color: var(--background-color-secondary);
+
+      &:hover {
+        svg {
+          path {
+            fill: var(--color-primary);
+          }
+        }
+      }
     }
   }
 }

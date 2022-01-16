@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import styles from '@styles/components/list/Timeline.module.scss'
 import { ViewerData } from '@shared/types'
 import Link from 'next/link'
+import Button from '@components/button/Button'
+import ArrowForwardIcon from '@assets/icons/arrowForward.svg'
 
 type Props = {
   data: ViewerData[]

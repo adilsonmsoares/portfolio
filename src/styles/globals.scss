@@ -36,12 +36,14 @@ a {
 }
 
 svg {
-  height: var(--icon-size-medium);
   width: auto;
+  height: var(--icon-size-medium);
+  max-width: var(--icon-size-medium);
 
   path {
     fill: var(--color-secondary);
   }
+
   &:hover {
     path {
       fill: var(--color-primary);
@@ -104,6 +106,10 @@ svg {
   bottom: var(--spacing-big);
   right: var(--spacing-base);
   z-index: 1;
+
+  > *:not(:last-child) {
+    margin-bottom: var(--spacing-small);
+  }
 }
 
 @include small-screen() {

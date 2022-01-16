@@ -3,20 +3,23 @@ import styles from '@styles/components/button/Button.module.scss'
 
 type Props = {
   type: 'default' | 'rounded'
-  color: 'primary'
+  color?: 'primary'
   disabled?: boolean
+  hidden?: boolean
   onClick: () => void
 }
 
 const Button: React.FC<Props> = ({
-  disabled,
-  color,
   type,
+  color,
+  disabled,
+  hidden,
   onClick,
   children
 }) => {
   var classNames = [
     styles.btn,
+    hidden && styles[`btn--hidden`],
     type && styles[`btn-${type}`],
     color && styles[`btn-${type}--${color}`]
   ].join(' ')
@@ -31,7 +34,8 @@ const Button: React.FC<Props> = ({
 Button.defaultProps = {
   type: 'default',
   color: 'primary',
-  disabled: false
+  disabled: false,
+  hidden: false
 }
 
 export default Button
