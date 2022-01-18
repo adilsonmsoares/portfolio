@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from '@styles/components/list/Timeline.module.scss'
 import { ViewerData } from '@shared/types'
 import Link from 'next/link'
+import Typhography from '@components/typhography/Typhography'
 
 type Props = {
   data: ViewerData[]
@@ -17,19 +18,17 @@ export default function Timeline({ data, page }: Props) {
             <div key={index} className={styles.bubble}>
               <div className={styles.box}>
                 <div className={styles.main}>
-                  <div className="typhography typhography-sub-title typhography--primary typhography--strong">
+                  <Typhography type="sub-title" color="primary" strong>
                     <Link href={`/${page}/${item.id}`}>
                       <a>{item.title}</a>
                     </Link>
-                  </div>
-                  <div className="typhography typhography-sub-sub-title">
-                    {item.entity}
-                  </div>
+                  </Typhography>
+                  <Typhography type="sub-sub-title">{item.entity}</Typhography>
                 </div>
-                <span className="typhography typhography-sub-sub-title">
+                <Typhography type="sub-sub-title">
                   {item.startDate}
                   {item.endDate && ` - ${item.endDate}`}
-                </span>
+                </Typhography>
                 <div className={styles.triangle}></div>
               </div>
               <div className={styles.dot}></div>

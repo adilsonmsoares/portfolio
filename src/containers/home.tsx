@@ -4,6 +4,7 @@ import GitHub from '@assets/icons/github.svg'
 import styles from '@styles/containers/Home.module.scss'
 import { PersonalData } from '@shared/types'
 import useData from '@hooks/useData'
+import Typhography from '@components/typhography/Typhography'
 
 export default function Home() {
   const data = useData<PersonalData>('personal.json')
@@ -17,12 +18,12 @@ export default function Home() {
     >
       <div className={styles.main}>
         <div className={styles.header}>
-          <div className="typhography typhography-title typhography--strong typhography--primary typhography--uppercase">
+          <Typhography type="title" color="primary" strong upperCase>
             {data.title}
-          </div>
-          <div className="typhography typhography-sub-title typhography--primary">
+          </Typhography>
+          <Typhography type="sub-title" color="primary">
             {data.subtitle}
-          </div>
+          </Typhography>
         </div>
         <div className={styles.description}>{data.shortDescription}</div>
         <div className={styles.contacts}>

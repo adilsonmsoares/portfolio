@@ -95,38 +95,6 @@ svg {
   }
 }
 
-.typhography {
-  text-decoration: none;
-
-  &--primary {
-    color: var(--color-primary);
-  }
-
-  &--uppercase {
-    text-transform: uppercase;
-  }
-
-  &--strong {
-    font-weight: bold;
-  }
-
-  &-title {
-    font-size: var(--font-size-extra-large);
-  }
-
-  &-sub-title {
-    font-size: var(--font-size-base);
-  }
-
-  &-sub-sub-title {
-    font-size: var(--font-size-small);
-  }
-
-  &-header {
-    padding-bottom: var(--spacing-medium);
-  }
-}
-
 .helper-buttons {
   position: fixed;
   bottom: var(--spacing-big);

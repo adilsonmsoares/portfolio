@@ -2,6 +2,7 @@ import useData from '@hooks/useData'
 import { ViewerData } from '@shared/types'
 import styles from '@styles/containers/Education.module.scss'
 import Timeline from '@components/list/Timeline'
+import Typhography from '@components/typhography/Typhography'
 
 export default function Education() {
   const data = useData<ViewerData[]>('education.json')
@@ -14,9 +15,9 @@ export default function Education() {
       ].join(' ')}
       id="education"
     >
-      <div className="typhography typhography-title typhography--strong typhography-header typhography--primary typhography--uppercase">
+      <Typhography type="title" color="primary" strong upperCase header>
         Education
-      </div>
+      </Typhography>
       <Timeline data={data} page="education" />
     </section>
   )

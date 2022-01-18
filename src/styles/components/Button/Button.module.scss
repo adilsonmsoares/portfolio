@@ -40,10 +40,10 @@
   }
 
   &-default {
-    height: 70px;
-    min-width: 200px;
+    height: 60px;
     border-style: solid;
     border-width: var(--border-size);
+    padding: 0 var(--spacing-base);
 
     &:hover {
       opacity: 0.9;
