@@ -17,7 +17,7 @@ export default function Education() {
       <div className="typhography typhography-title typhography--strong typhography-header typhography--primary typhography--uppercase">
         Education
       </div>
-      <Timeline data={data} />
+      <Timeline data={data} page="education" />
     </section>
   )
 }

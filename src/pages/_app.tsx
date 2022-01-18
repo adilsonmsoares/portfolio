@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
       <div className="helper-buttons">
-        <Button onClick={darkmode.toggle} type="rounded">
+        <Button onClick={darkmode.toggle} type="circular">
           <BulbIcon />
         </Button>
       </div>

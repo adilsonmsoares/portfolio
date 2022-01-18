@@ -18,21 +18,32 @@
     display: none;
   }
 
+  &--strong {
+    font-weight: bold;
+  }
+
+  &--rounded {
+    border-radius: var(--border-radius);
+  }
+
+  &--upper {
+    text-transform: uppercase;
+  }
+
+  :first-child:not(:only-child) {
+    margin-right: 10px;
+  }
+
   svg {
     height: var(--icon-size-small);
     max-width: var(--icon-size-small);
   }
 
   &-default {
-    border-radius: var(--border-radius);
     height: 70px;
     min-width: 200px;
     border-style: solid;
     border-width: var(--border-size);
-
-    span {
-      padding-right: 20px;
-    }
 
     &:hover {
       opacity: 0.9;
@@ -51,7 +62,7 @@
     }
   }
 
-  &-rounded {
+  &-circular {
     border-radius: 50%;
     width: 50px;
     height: 50px;

@@ -14,11 +14,13 @@ export type ViewerData = {
   entity: string
   startDate: string
   endDate: string
-  description: string[]
-  sectionDescription: {
-    title: string
-    description: string[]
-  }
+  shortDescription: string
+  sectionDescription: [
+    {
+      title: string
+      description: string[]
+    }
+  ]
   images: string[]
   visitButton: {
     text: string

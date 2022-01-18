@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react'
 import styles from '@styles/components/list/Timeline.module.scss'
 import { ViewerData } from '@shared/types'
 import Link from 'next/link'
-import Button from '@components/button/Button'
-import ArrowForwardIcon from '@assets/icons/arrowForward.svg'
 
 type Props = {
   data: ViewerData[]
+  page: string
 }
 
-export default function Timeline({ data }: Props) {
+export default function Timeline({ data, page }: Props) {
   return (
     <div className={styles.timeline}>
       <div className={styles.container}>
@@ -19,7 +18,7 @@ export default function Timeline({ data }: Props) {
               <div className={styles.box}>
                 <div className={styles.main}>
                   <div className="typhography typhography-sub-title typhography--primary typhography--strong">
-                    <Link href={`education/${item.id}`}>
+                    <Link href={`/${page}/${item.id}`}>
                       <a>{item.title}</a>
                     </Link>
                   </div>

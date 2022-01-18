@@ -1,41 +1,69 @@
 import React from 'react'
 import styles from '@styles/components/button/Button.module.scss'
+import Link from 'next/link'
 
 type Props = {
-  type: 'default' | 'rounded'
+  htmlElement: 'button' | 'a' | 'div'
+  type: 'default' | 'circular'
   color?: 'primary'
+  textStrong?: boolean
+  textUpper?: boolean
+  roundedCorner?: boolean
   disabled?: boolean
   hidden?: boolean
-  onClick: () => void
+  href?: string
+  onClick?: () => void
 }
 
 const Button: React.FC<Props> = ({
+  htmlElement,
   type,
   color,
+  textStrong,
+  textUpper,
   disabled,
   hidden,
+  roundedCorner,
+  href,
   onClick,
   children
 }) => {
+  const isExternal = (url: string) => {
+    return url.startsWith('http') || url.startsWith('https')
+  }
+
   var classNames = [
     styles.btn,
-    hidden && styles[`btn--hidden`],
     type && styles[`btn-${type}`],
+    hidden && styles[`btn--hidden`],
+    disabled && styles[`btn--disabled`],
+    roundedCorner && styles[`btn--rounded`],
+    textStrong && styles[`btn--strong`],
+    textUpper && styles[`btn--upper`],
     color && styles[`btn-${type}--${color}`]
   ].join(' ')
 
-  return (
+  return htmlElement === 'button' ? (
     <button className={classNames} {...{ onClick, disabled }}>
       {children}
     </button>
+  ) : htmlElement === 'a' ? (
+    <Link href={href || ''}>
+      <a className={classNames} target={isExternal(href || '') ? '_blank' : ''}>
+        {children}
+      </a>
+    </Link>
+  ) : (
+    <div className={classNames} {...{ onClick, disabled }}>
+      {children}
+    </div>
   )
 }
 
 Button.defaultProps = {
+  htmlElement: 'button',
   type: 'default',
-  color: 'primary',
-  disabled: false,
-  hidden: false
+  color: 'primary'
 }
 
 export default Button
