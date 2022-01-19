@@ -7,9 +7,10 @@ import Loading from '@components/loading/Loading'
 
 type Props = {
   isLoading?: boolean
+  hideNavbar?: boolean
 }
 
-const Layout: React.FC<Props> = ({ children, isLoading }) => {
+const Layout: React.FC<Props> = ({ children, isLoading, hideNavbar }) => {
   const darkmode = useDarkMode(true)
 
   return (
@@ -19,7 +20,7 @@ const Layout: React.FC<Props> = ({ children, isLoading }) => {
           <BulbIcon />
         </Button>
       </div>
-      <Navbar />
+      {!hideNavbar && <Navbar />}
       {isLoading && <Loading />}
       {!isLoading && children}
     </>
@@ -27,7 +28,8 @@ const Layout: React.FC<Props> = ({ children, isLoading }) => {
 }
 
 Layout.defaultProps = {
-  isLoading: false
+  isLoading: false,
+  hideNavbar: false
 }
 
 export default Layout

@@ -56,32 +56,32 @@ export default function Navbar() {
         >
           <ul className={styles['navbar-nav']}>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link" href="#aboutme">
+              <a className="nav-link" href="/#aboutme">
                 About
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link" href="#education">
+              <a className="nav-link" href="/#education">
                 Education
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link disabled" href="#">
+              <a className="nav-link disabled" href="/#skills">
                 Skills
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link disabled" href="#">
+              <a className="nav-link disabled" href="/#experience">
                 Experience
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link disabled" href="#">
+              <a className="nav-link disabled" href="/#projects">
                 Projects
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link disabled" href="#">
+              <a className="nav-link disabled" href="/#contact">
                 Contact
               </a>
             </li>

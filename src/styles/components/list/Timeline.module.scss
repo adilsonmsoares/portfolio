@@ -56,9 +56,10 @@
       }
 
       .main {
-        :first-child {
-          padding-bottom: 5px;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
       }
 
       .triangle {

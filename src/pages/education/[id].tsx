@@ -30,7 +30,7 @@ function EducationDetails({
       >
         <div className={styles.header}>
           <Typhography type="title" color="primary" strong upperCase>
-            {data?.id}
+            {data?.title}
           </Typhography>
           <div className={styles.info}>
             <Typhography type="sub-sub-title" color="primary" upperCase>
@@ -47,7 +47,7 @@ function EducationDetails({
               <div key={index} className={styles.description}>
                 {section.title && (
                   <Typhography
-                    type="sub-sub-title"
+                    type="sub-title"
                     color="primary"
                     strong
                     upperCase
