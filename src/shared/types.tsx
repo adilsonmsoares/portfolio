@@ -21,7 +21,12 @@ export type ViewerData = {
       description: string[]
     }
   ]
-  images: string[]
+  images: [
+    {
+      url: string
+      alt: string
+    }
+  ]
   visitButton: {
     text: string
     url: string

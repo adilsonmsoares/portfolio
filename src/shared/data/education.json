@@ -22,6 +22,28 @@
                 ]
             }
         ],
+        "images": [
+            {
+                "url": "/images/gascan.png",
+                "alt": "gascan"
+            },
+            {
+                "url": "/images/gllg.png",
+                "alt": "gllg"
+            },
+            {
+                "url": "/images/img_home.jpg",
+                "alt": "Home"
+            },
+            {
+                "url": "/images/inspire_it_internal_portal.png",
+                "alt": "InspireIT Portal"
+            },
+            {
+                "url": "/images/portfolio.png",
+                "alt": "Portfolio"
+            }
+        ],
         "visitButton": {
             "text": "Visit Website",
             "url": "/education/csmpt2"

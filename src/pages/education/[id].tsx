@@ -7,6 +7,8 @@ import Button from '@components/button/Button'
 import ExternalLinkIcon from '@assets/icons/ExternalLink.svg'
 import Layout from '@components/layout/Layout'
 import Typhography from '@components/typhography/Typhography'
+import Image from 'next/image'
+import Carousel from '@components/carousel/Carousel'
 
 function EducationDetails({
   data
@@ -16,7 +18,7 @@ function EducationDetails({
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 1000) // wait to setup load
+    }, 0) // wait to setup load
   }, [])
 
   return (
@@ -42,6 +44,7 @@ function EducationDetails({
           </div>
         </div>
         <div className={styles.main}>
+          {data?.images && <Carousel images={data?.images} />}
           {data?.sectionDescription.map((section, index) => {
             return (
               <div key={index} className={styles.description}>
