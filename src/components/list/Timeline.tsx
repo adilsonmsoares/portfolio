@@ -21,9 +21,7 @@ export default function Timeline({ data, page }: Props) {
                   <a className={styles.main}>
                     <div>
                       <Typhography type="sub-title" color="primary" strong>
-                        <Link href={`/${page}/${item.id}`}>
-                          <a>{item.title}</a>
-                        </Link>
+                        {item.title}
                       </Typhography>
                       <Typhography type="sub-sub-title">
                         {item.entity}

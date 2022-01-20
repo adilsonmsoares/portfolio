@@ -75,7 +75,7 @@ function EducationDetails({
               textUpper={true}
             >
               <ExternalLinkIcon />
-              {data?.visitButton.text}
+              <span>{data?.visitButton.text}</span>
             </Button>
           </div>
         )}

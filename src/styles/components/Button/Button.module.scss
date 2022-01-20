@@ -40,13 +40,17 @@
   }
 
   &-default {
-    height: 60px;
+    height: 50px;
     border-style: solid;
     border-width: var(--border-size);
     padding: 0 var(--spacing-base);
 
     &:hover {
       opacity: 0.9;
+    }
+
+    :first-child:not(:only-child) {
+      margin-right: 5px;
     }
 
     &--primary {
