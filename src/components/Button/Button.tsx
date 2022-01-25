@@ -12,6 +12,7 @@ type Props = {
   disabled?: boolean
   hidden?: boolean
   href?: string
+  className?: string
   onClick?: () => void
 }
 
@@ -25,6 +26,7 @@ const Button: React.FC<Props> = ({
   hidden,
   roundedCorner,
   href,
+  className,
   onClick,
   children
 }) => {
@@ -40,7 +42,8 @@ const Button: React.FC<Props> = ({
     roundedCorner && styles[`btn--rounded`],
     textStrong && styles[`btn--strong`],
     textUpper && styles[`btn--upper`],
-    color && styles[`btn-${type}--${color}`]
+    color && styles[`btn-${type}--${color}`],
+    className
   ].join(' ')
 
   return htmlElement === 'button' ? (

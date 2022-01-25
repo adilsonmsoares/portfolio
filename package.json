@@ -12,10 +12,11 @@
     "@reduxjs/toolkit": "^1.6.2",
     "@svgr/webpack": "^6.0.0",
     "eslint-config-prettier": "^8.3.0",
-    "next": "12.0.4",
+    "next": "^12.0.8",
     "prettier": "^2.4.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-swipeable": "^6.2.0",
     "sass": "^1.43.4",
     "use-dark-mode": "^2.3.1"
   },
