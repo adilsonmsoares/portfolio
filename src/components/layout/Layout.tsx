@@ -27,7 +27,7 @@ const Layout: React.FC<Props> = ({ children, isLoading, hideNavbar }) => {
         <div>
           Adilson Soares © Copyright 2020
           <br />
-          All Rights Reserved.
+          All Rights Reserved
         </div>
       </footer>
     </>

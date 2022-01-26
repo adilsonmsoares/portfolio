@@ -60,4 +60,11 @@
 }
 
 @include small-screen() {
+  .carousel {
+    .wrapper {
+      .btn-indicator {
+        display: none;
+      }
+    }
+  }
 }
