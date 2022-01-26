@@ -76,7 +76,7 @@
   }
 }
 
-@include small-screen() {
+@include medium-screen() {
   .navbar {
     .wrapper {
       padding-left: var(--spacing-small);

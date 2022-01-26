@@ -23,6 +23,13 @@ const Layout: React.FC<Props> = ({ children, isLoading, hideNavbar }) => {
       {!hideNavbar && <Navbar />}
       {isLoading && <Loading />}
       {!isLoading && children}
+      <footer>
+        <div>
+          Adilson Soares © Copyright 2020
+          <br />
+          All Rights Reserved.
+        </div>
+      </footer>
     </>
   )
 }

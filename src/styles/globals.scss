@@ -106,7 +106,19 @@ svg {
   }
 }
 
-@include small-screen() {
+footer {
+  text-align: center;
+  color: var(--color-primary);
+  div {
+    min-width: fit-content;
+    width: 60%;
+    margin: 0 auto;
+    padding: var(--spacing-small) 0;
+    border-top: var(--border-size) solid var(--border-color);
+  }
+}
+
+@include medium-screen() {
   .container {
     padding-left: var(--spacing-small);
     padding-right: var(--spacing-small);
@@ -114,5 +126,11 @@ svg {
 
   .helper-buttons {
     right: var(--spacing-small);
+  }
+
+  footer {
+    div {
+      width: 90%;
+    }
   }
 }

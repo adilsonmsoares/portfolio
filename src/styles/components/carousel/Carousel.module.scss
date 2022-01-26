@@ -1,39 +1,44 @@
+@import '@styles/mixins';
+
 .carousel {
   overflow: hidden;
-  position: relative;
 
-  .inner {
-    white-space: nowrap;
-    transition: transform 0.3s;
-  }
+  .wrapper {
+    position: relative;
 
-  .item {
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    background-color: green;
-    color: #fff;
-  }
-
-  .btn-indicator {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-
-    &--back {
-      left: var(--spacing-small);
+    .inner {
+      white-space: nowrap;
+      transition: transform 0.3s;
     }
 
-    &--forward {
-      right: var(--spacing-small);
+    .item {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+      background-color: green;
+      color: #fff;
+    }
+
+    .btn-indicator {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &--back {
+        left: var(--spacing-small);
+      }
+
+      &--forward {
+        right: var(--spacing-small);
+      }
     }
   }
 
   .slick-dots {
     display: flex;
-    padding-top: var(--spacing-small);
+    padding: var(--spacing-small) 0;
     justify-content: center;
 
     .dot {
@@ -52,4 +57,7 @@
       background-color: var(--special-color);
     }
   }
+}
+
+@include small-screen() {
 }

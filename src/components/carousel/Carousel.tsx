@@ -35,42 +35,44 @@ export default function Carousel({ images }: Props) {
 
   return (
     <div className={styles.carousel} {...handlers}>
-      <div
-        className={styles.inner}
-        style={{ transform: `translateX(-${activeIndex * 100}%)` }}
-      >
-        <div className={styles.item}>item1</div>
-        <div className={styles.item}>item2</div>
-        <div className={styles.item}>item3</div>
-        <div className={styles.item}>item4</div>
-        <div className={styles.item}>item5</div>
+      <div className={styles.wrapper}>
+        <div
+          className={styles.inner}
+          style={{ transform: `translateX(-${activeIndex * 100}%)` }}
+        >
+          <div className={styles.item}>item1</div>
+          <div className={styles.item}>item2</div>
+          <div className={styles.item}>item3</div>
+          <div className={styles.item}>item4</div>
+          <div className={styles.item}>item5</div>
+        </div>
+        <Button
+          type="circular"
+          htmlElement="div"
+          onClick={() => {
+            updateIndex(activeIndex - 1)
+          }}
+          className={[
+            styles['btn-indicator'],
+            styles['btn-indicator--back']
+          ].join(' ')}
+        >
+          <BackIcon />
+        </Button>
+        <Button
+          type="circular"
+          htmlElement="div"
+          onClick={() => {
+            updateIndex(activeIndex + 1)
+          }}
+          className={[
+            styles['btn-indicator'],
+            styles['btn-indicator--forward']
+          ].join(' ')}
+        >
+          <ForwardIcon />
+        </Button>
       </div>
-      <Button
-        type="circular"
-        htmlElement="div"
-        onClick={() => {
-          updateIndex(activeIndex - 1)
-        }}
-        className={[
-          styles['btn-indicator'],
-          styles['btn-indicator--back']
-        ].join(' ')}
-      >
-        <BackIcon />
-      </Button>
-      <Button
-        type="circular"
-        htmlElement="div"
-        onClick={() => {
-          updateIndex(activeIndex + 1)
-        }}
-        className={[
-          styles['btn-indicator'],
-          styles['btn-indicator--forward']
-        ].join(' ')}
-      >
-        <ForwardIcon />
-      </Button>
       <ul className={styles['slick-dots']}>
         {images.map((item, index) => {
           return (

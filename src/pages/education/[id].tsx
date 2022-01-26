@@ -24,10 +24,9 @@ function EducationDetails({
   return (
     <Layout isLoading={isLoading}>
       <div
-        className={[
-          'container container-page container-full-screen',
-          styles['education-page']
-        ].join(' ')}
+        className={['container container-page', styles['education-page']].join(
+          ' '
+        )}
         id="education"
       >
         <div className={styles.header}>
