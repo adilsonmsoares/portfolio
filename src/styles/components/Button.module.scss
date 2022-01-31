@@ -32,11 +32,7 @@
 
   &--disabled {
     opacity: 0.3;
-    // &:hover {
-    //   background-color: unset;
-    //   color: unset;
-    //   fill: unset;
-    // }
+    pointer-events: none;
   }
 
   :first-child:not(:only-child) {
