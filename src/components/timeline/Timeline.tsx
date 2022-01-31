@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@styles/components/list/Timeline.module.scss'
+import styles from '@styles/components/timeline/Timeline.module.scss'
 import { ViewerData } from '@shared/types'
 import Link from 'next/link'
 import useHorizontalScroll from '@hooks/useScrollHorizontal'

@@ -1,7 +1,7 @@
 import useData from '@hooks/useData'
 import { ViewerData } from '@shared/types'
 import styles from '@styles/containers/Education.module.scss'
-import Timeline from '@components/list/Timeline'
+import Timeline from '@components/timeline/Timeline'
 import Typhography from '@components/typhography/Typhography'
 
 export default function Education() {
