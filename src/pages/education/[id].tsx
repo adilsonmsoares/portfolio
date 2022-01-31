@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next'
 import useData from '@hooks/useData'
 import { ViewerData } from '@shared/types'
-import DetailViewer from '@components/detailViewer/DetailViewer'
+import DetailViewer from '@components/DetailViewer'
 
 function EducationDetails({
   data

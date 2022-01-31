@@ -1,9 +1,9 @@
 import React from 'react'
 import useDarkMode from 'use-dark-mode'
-import Navbar from '@components/navbar/Navbar'
-import Button from '@components/button/Button'
+import Navbar from '@components/Navbar'
+import Button from '@components/Button'
 import BulbIcon from '@assets/icons/bulb.svg'
-import Loading from '@components/loading/Loading'
+import Loading from '@components/Loading'
 
 type Props = {
   isLoading?: boolean

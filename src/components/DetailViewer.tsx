@@ -1,10 +1,10 @@
 import { ViewerData } from '@shared/types'
 import ExternalLinkIcon from '@assets/icons/ExternalLink.svg'
-import Button from '@components/button/Button'
-import Layout from '@components/layout/Layout'
-import Typhography from '@components/typhography/Typhography'
-import Carousel from '@components/carousel/Carousel'
-import styles from '@styles/components/detailViewer/DetailViewer.module.scss'
+import Button from '@components/Button'
+import Layout from '@components/Layout'
+import Typhography from '@components/Typhography'
+import Carousel from '@components/Carousel'
+import styles from '@styles/components/DetailViewer.module.scss'
 
 type Props = {
   data: ViewerData | undefined

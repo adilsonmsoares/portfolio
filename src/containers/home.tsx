@@ -4,7 +4,7 @@ import GitHub from '@assets/icons/github.svg'
 import styles from '@styles/containers/Home.module.scss'
 import { PersonalData } from '@shared/types'
 import useData from '@hooks/useData'
-import Typhography from '@components/typhography/Typhography'
+import Typhography from '@components/Typhography'
 
 export default function Home() {
   const data = useData<PersonalData>('personal.json')

@@ -1,8 +1,8 @@
 import useData from '@hooks/useData'
 import { ViewerData } from '@shared/types'
 import styles from '@styles/containers/Education.module.scss'
-import Timeline from '@components/timeline/Timeline'
-import Typhography from '@components/typhography/Typhography'
+import Timeline from '@components/Timeline'
+import Typhography from '@components/Typhography'
 
 export default function Education() {
   const data = useData<ViewerData[]>('education.json')

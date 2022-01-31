@@ -1,7 +1,7 @@
 import useData from '@hooks/useData'
 import { PersonalData } from '@shared/types'
 import styles from '@styles/containers/About.module.scss'
-import Typhography from '@components/typhography/Typhography'
+import Typhography from '@components/Typhography'
 
 export default function Education() {
   const data = useData<PersonalData>('personal.json')

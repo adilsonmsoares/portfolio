@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@styles/components/button/Button.module.scss'
+import styles from '@styles/components/Button.module.scss'
 import Link from 'next/link'
 
 type Props = {
