@@ -40,11 +40,13 @@ export default function Carousel({ images }: Props) {
           className={styles.inner}
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >
-          <div className={styles.item}>item1</div>
-          <div className={styles.item}>item2</div>
-          <div className={styles.item}>item3</div>
-          <div className={styles.item}>item4</div>
-          <div className={styles.item}>item5</div>
+          {images.map((image, index) => {
+            return (
+              <div key={index} className={styles.item}>
+                <img src={image.url} alt={image.alt} />
+              </div>
+            )
+          })}
         </div>
         <Button
           type="circular"
@@ -56,6 +58,7 @@ export default function Carousel({ images }: Props) {
             styles['btn-indicator'],
             styles['btn-indicator--back']
           ].join(' ')}
+          disabled={activeIndex == 0}
         >
           <BackIcon />
         </Button>
@@ -69,6 +72,7 @@ export default function Carousel({ images }: Props) {
             styles['btn-indicator'],
             styles['btn-indicator--forward']
           ].join(' ')}
+          disabled={activeIndex == images.length - 1}
         >
           <ForwardIcon />
         </Button>

@@ -3,6 +3,7 @@ import styles from '@styles/components/list/Timeline.module.scss'
 import { ViewerData } from '@shared/types'
 import Link from 'next/link'
 import Typhography from '@components/typhography/Typhography'
+import { useHorizontalScroll } from '@hooks/useScrollHorizontal'
 
 type Props = {
   data: ViewerData[]
@@ -10,9 +11,11 @@ type Props = {
 }
 
 export default function Timeline({ data, page }: Props) {
+  const scrollRef = useHorizontalScroll()
+
   return (
     <div className={styles.timeline}>
-      <div className={styles.container}>
+      <div className={styles.container} ref={scrollRef}>
         {data.map((item, index) => {
           return (
             <div key={index} className={styles.bubble}>

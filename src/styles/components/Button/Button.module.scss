@@ -30,6 +30,15 @@
     text-transform: uppercase;
   }
 
+  &--disabled {
+    opacity: 0.3;
+    // &:hover {
+    //   background-color: unset;
+    //   color: unset;
+    //   fill: unset;
+    // }
+  }
+
   :first-child:not(:only-child) {
     margin-right: 10px;
   }

@@ -9,16 +9,22 @@
     .inner {
       white-space: nowrap;
       transition: transform 0.3s;
-    }
 
-    .item {
-      width: 100%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      height: 200px;
-      background-color: green;
-      color: #fff;
+      .item {
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+        background-color: var(--border-color);
+        color: #fff;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
     }
 
     .btn-indicator {
@@ -62,6 +68,12 @@
 @include small-screen() {
   .carousel {
     .wrapper {
+      .inner {
+        .item {
+          height: 30vh;
+        }
+      }
+
       .btn-indicator {
         display: none;
       }
