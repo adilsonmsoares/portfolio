@@ -5,17 +5,13 @@ import styles from '@styles/containers/Home.module.scss'
 import { PersonalData } from '@shared/types'
 import useData from '@hooks/useData'
 import Typhography from '@components/Typhography'
+import Container from '@components/Container'
 
 export default function Home() {
   const data = useData<PersonalData>('personal.json')
 
   return (
-    <div
-      className={[
-        'container container-full-screen',
-        styles['home-container']
-      ].join(' ')}
-    >
+    <Container sectionId="home" className={styles['home-container']} fullScreen>
       <div className={styles.main}>
         <div className={styles.header}>
           <Typhography type="title" color="primary" strong upperCase>
@@ -40,6 +36,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-    </div>
+    </Container>
   )
 }
