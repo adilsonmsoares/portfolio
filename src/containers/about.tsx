@@ -1,10 +1,10 @@
 import useData from '@hooks/useData'
-import { PersonalData } from '@shared/types'
+import { PersonalModel } from '@shared/types'
 import Typhography from '@components/Typhography'
 import Container from '@components/Container'
 
 export default function Education() {
-  const data = useData<PersonalData>('personal.json')
+  const data = useData<PersonalModel>('personal.json')
 
   return (
     <Container sectionId="aboutme" page>

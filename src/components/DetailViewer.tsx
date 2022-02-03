@@ -1,4 +1,4 @@
-import { ViewerData } from '@shared/types'
+import { ViewModel } from '@shared/types'
 import Button from '@components/Button'
 import Layout from '@components/Layout'
 import Typhography from '@components/Typhography'
@@ -7,7 +7,7 @@ import styles from '@styles/components/DetailViewer.module.scss'
 import Icon from '@components/Icon'
 
 type Props = {
-  data: ViewerData | undefined
+  data: ViewModel | undefined
   isLoading: boolean
 }
 

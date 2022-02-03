@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { InferGetServerSidePropsType, GetServerSidePropsContext } from 'next'
 import useData from '@hooks/useData'
-import { ViewerData } from '@shared/types'
+import { ViewModel } from '@shared/types'
 import DetailViewer from '@components/DetailViewer'
 
 function EducationDetails({
@@ -20,7 +20,7 @@ function EducationDetails({
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
   let { id } = context.query
-  let list = useData<ViewerData[]>('education.json')
+  let list = useData<ViewModel[]>('education.json')
   let data = list.find(e => e.id === id)
 
   return {

@@ -1,0 +1,156 @@
+[
+    {
+        "type": "Technical",
+        "section": [
+            {
+                "title": "Back-end",
+                "skills": [
+                    {
+                        "name": "C#",
+                        "iconName": "csharp"
+                    },
+                    {
+                        "name": "Java",
+                        "iconName": "java"
+                    },
+                    {
+                        "name": "Python",
+                        "iconName": "python"
+                    },
+                    {
+                        "name": "Node.JS",
+                        "iconName": "nodejs"
+                    },
+                    {
+                        "name": "C",
+                        "iconName": "clanguage"
+                    }
+                ]
+            },
+            {
+                "title": "Frontend-end",
+                "skills": [
+                    {
+                        "name": "React",
+                        "iconName": "react"
+                    },
+                    {
+                        "name": "Javascript",
+                        "iconName": "javascript"
+                    },
+                    {
+                        "name": "Flutter",
+                        "iconName": "flutter"
+                    },
+                    {
+                        "name": "HTML",
+                        "iconName": "hmtl"
+                    },
+                    {
+                        "name": "CSS",
+                        "iconName": "css"
+                    }
+                ]
+            },
+            {
+                "title": "Database",
+                "skills": [
+                    {
+                        "name": "SQL",
+                        "iconName": "sql"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "Additional",
+        "section": [
+            {
+                "title": "Development",
+                "skills": [
+                    {
+                        "name": "GIT"
+                    },
+                    {
+                        "name": "Agile methodologies (SCRUM + Kanban)"
+                    }
+                ]
+            },
+            {
+                "title": "Design",
+                "skills": [
+                    {
+                        "name": "UI/UX Design"
+                    },
+                    {
+                        "name": "Adobe XD"
+                    },
+                    {
+                        "name": "Adobe Photoshop"
+                    }
+                ]
+            },
+            {
+                "title": "Languages",
+                "skills": [
+                    {
+                        "name": "Portuguese"
+                    },
+                    {
+                        "name": "English"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "Recent",
+        "section": [
+            {
+                "title": "Recently used technologies",
+                "skills": [
+                    {
+                        "name": "React"
+                    },
+                    {
+                        "name": ".NET Core"
+                    },
+                    {
+                        "name": "SQL"
+                    },
+                    {
+                        "name": "Flutter"
+                    },
+                    {
+                        "name": "ASP.NET Framework"
+                    },
+                    {
+                        "name": "HTML"
+                    },
+                    {
+                        "name": "CSS"
+                    },
+                    {
+                        "name": "NextJS"
+                    },
+                    {
+                        "name": "SASS"
+                    },
+                    {
+                        "name": "GIT"
+                    },
+                    {
+                        "name": "Azure Devops"
+                    },
+                    {
+                        "name": "Typescript"
+                    },
+                    {
+                        "name": "React"
+                    }
+                ]
+            }
+        ]
+    }
+]

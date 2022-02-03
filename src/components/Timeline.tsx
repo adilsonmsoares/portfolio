@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from '@styles/components/Timeline.module.scss'
-import { ViewerData } from '@shared/types'
+import { ViewModel } from '@shared/types'
 import Link from 'next/link'
 import useHorizontalScroll from '@hooks/useScrollHorizontal'
 import Typhography from '@components/Typhography'
 
 type Props = {
-  data: ViewerData[]
+  data: ViewModel[]
   page: string
 }
 

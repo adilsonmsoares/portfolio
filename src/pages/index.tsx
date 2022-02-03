@@ -3,6 +3,7 @@ import HomeContainer from '@containers/Home'
 import About from '@containers/About'
 import Education from '@containers/Education'
 import Layout from '@components/Layout'
+import Skills from '@containers/Skills'
 
 const Index: NextPage = () => {
   return (
@@ -10,6 +11,7 @@ const Index: NextPage = () => {
       <HomeContainer />
       <About />
       <Education />
+      <Skills />
     </Layout>
   )
 }

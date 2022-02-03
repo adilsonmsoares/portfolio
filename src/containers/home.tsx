@@ -1,12 +1,12 @@
 import styles from '@styles/containers/Home.module.scss'
-import { PersonalData } from '@shared/types'
+import { PersonalModel } from '@shared/types'
 import useData from '@hooks/useData'
 import Typhography from '@components/Typhography'
 import Container from '@components/Container'
 import Icon from '@components/Icon'
 
 export default function Home() {
-  const data = useData<PersonalData>('personal.json')
+  const data = useData<PersonalModel>('personal.json')
 
   return (
     <Container sectionId="home" className={styles['home-container']} fullScreen>
