@@ -10,23 +10,21 @@ export default function Home() {
 
   return (
     <Container sectionId="home" className={styles['home-container']} fullScreen>
-      <div className={styles.main}>
-        <div className={styles.header}>
-          <Typhography type="title" color="primary" strong upperCase>
-            {data.title}
-          </Typhography>
-          <Typhography type="sub-title" color="primary">
-            {data.subtitle}
-          </Typhography>
-        </div>
-        <div className={styles.description}>{data.shortDescription}</div>
-        <div className={styles.contacts}>
-          {Object.keys(data.contacts).map((key, index) => (
-            <a href={data.contacts[key]} target="_blank" key={key}>
-              <Icon name={key} />
-            </a>
-          ))}
-        </div>
+      <div className={styles.header}>
+        <Typhography type="title" color="primary" strong upperCase>
+          {data.title}
+        </Typhography>
+        <Typhography type="sub-title" color="primary">
+          {data.subtitle}
+        </Typhography>
+      </div>
+      <div className={styles.description}>{data.shortDescription}</div>
+      <div className={styles.contacts}>
+        {Object.keys(data.contacts).map(key => (
+          <a href={data.contacts[key]} target="_blank" key={key}>
+            <Icon name={key} />
+          </a>
+        ))}
       </div>
     </Container>
   )

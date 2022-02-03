@@ -1,6 +1,7 @@
 import React from 'react'
-import BackIcon from '@assets/icons/arrowBack.svg'
-import ForwardIcon from '@assets/icons/arrowforward.svg'
+import ArrowBackIcon from '@assets/icons/arrowBack.svg'
+import ArrowForwardIcon from '@assets/icons/arrowforward.svg'
+import ArrowDownIcon from '@assets/icons/arrowDown.svg'
 import ExternalLinkIcon from '@assets/icons/externalLink.svg'
 import BulbIcon from '@assets/icons/bulb.svg'
 import TwitterIcon from '@assets/icons/twitter.svg'
@@ -16,8 +17,9 @@ export default function Icon({ name }: Props) {
     <>
       {
         {
-          back: <BackIcon />,
-          forward: <ForwardIcon />,
+          arrowBack: <ArrowBackIcon />,
+          arrowForward: <ArrowForwardIcon />,
+          arrowDown: <ArrowDownIcon />,
           externalLink: <ExternalLinkIcon />,
           bulb: <BulbIcon />,
           twitter: <TwitterIcon />,
