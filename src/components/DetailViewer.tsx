@@ -1,10 +1,10 @@
 import { ViewerData } from '@shared/types'
-import ExternalLinkIcon from '@assets/icons/ExternalLink.svg'
 import Button from '@components/Button'
 import Layout from '@components/Layout'
 import Typhography from '@components/Typhography'
 import Carousel from '@components/Carousel'
 import styles from '@styles/components/DetailViewer.module.scss'
+import Icon from '@components/Icon'
 
 type Props = {
   data: ViewerData | undefined
@@ -59,7 +59,7 @@ export default function DetailViewer({ data, isLoading }: Props) {
               textStrong={true}
               textUpper={true}
             >
-              <ExternalLinkIcon />
+              <Icon name="externalLink" />
               <span>{data?.visitButton.text}</span>
             </Button>
           </div>

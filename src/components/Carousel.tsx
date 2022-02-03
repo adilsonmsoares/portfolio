@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from 'react'
-import styles from '@styles/components/Carousel.module.scss'
-import Image from 'next/image'
-import Button from '@components/Button'
-import BackIcon from '@assets/icons/arrowBack.svg'
-import ForwardIcon from '@assets/icons/arrowforward.svg'
+import React, { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
+import styles from '@styles/components/Carousel.module.scss'
+import Button from '@components/Button'
+import Icon from '@components/Icon'
 
 type Props = {
   images: [
@@ -60,7 +58,7 @@ export default function Carousel({ images }: Props) {
           ].join(' ')}
           disabled={activeIndex == 0}
         >
-          <BackIcon />
+          <Icon name="back" />
         </Button>
         <Button
           type="circular"
@@ -74,7 +72,7 @@ export default function Carousel({ images }: Props) {
           ].join(' ')}
           disabled={activeIndex == images.length - 1}
         >
-          <ForwardIcon />
+          <Icon name="forward" />
         </Button>
       </div>
       <ul className={styles['slick-dots']}>

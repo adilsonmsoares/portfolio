@@ -2,8 +2,8 @@ import React from 'react'
 import useDarkMode from 'use-dark-mode'
 import Navbar from '@components/Navbar'
 import Button from '@components/Button'
-import BulbIcon from '@assets/icons/bulb.svg'
 import Loading from '@components/Loading'
+import Icon from '@components/Icon'
 
 type Props = {
   isLoading?: boolean
@@ -17,7 +17,7 @@ const Layout: React.FC<Props> = ({ children, isLoading, hideNavbar }) => {
     <>
       <div className="helper-buttons">
         <Button onClick={darkmode.toggle} type="circular" htmlElement="div">
-          <BulbIcon />
+          <Icon name="bulb" />
         </Button>
       </div>
       {!hideNavbar && <Navbar />}

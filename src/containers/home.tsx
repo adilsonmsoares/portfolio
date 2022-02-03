@@ -1,11 +1,9 @@
-import TwitterIcon from '@assets/icons/twitter.svg'
-import LinkedinIcon from '@assets/icons/linkedin.svg'
-import GitHub from '@assets/icons/github.svg'
 import styles from '@styles/containers/Home.module.scss'
 import { PersonalData } from '@shared/types'
 import useData from '@hooks/useData'
 import Typhography from '@components/Typhography'
 import Container from '@components/Container'
+import Icon from '@components/Icon'
 
 export default function Home() {
   const data = useData<PersonalData>('personal.json')
@@ -25,13 +23,7 @@ export default function Home() {
         <div className={styles.contacts}>
           {Object.keys(data.contacts).map((key, index) => (
             <a href={data.contacts[key]} target="_blank" key={key}>
-              {key === 'linkedin' ? (
-                <LinkedinIcon />
-              ) : key === 'twitter' ? (
-                <TwitterIcon />
-              ) : (
-                <GitHub />
-              )}
+              <Icon name={key} />
             </a>
           ))}
         </div>
