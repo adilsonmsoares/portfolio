@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row;
     padding-bottom: var(--spacing-medium);
-    overflow-y: hidden;
+    overflow-x: scroll;
     position: relative;
     align-items: center;
   }

@@ -22,7 +22,7 @@
                         "iconName": "nodejs"
                     },
                     {
-                        "name": "C",
+                        "name": "C Language",
                         "iconName": "clanguage"
                     }
                 ]
@@ -44,7 +44,7 @@
                     },
                     {
                         "name": "HTML",
-                        "iconName": "hmtl"
+                        "iconName": "html"
                     },
                     {
                         "name": "CSS",
