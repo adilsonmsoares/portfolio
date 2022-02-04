@@ -46,25 +46,26 @@
 
       .tab-pane {
         width: 100%;
-        padding: var(--spacing-base);
-        margin-top: var(--spacing-base);
-        margin-bottom: var(--spacing-base);
+        padding: 0 var(--spacing-base);
         display: inline-flex;
+        height: 400px;
+        overflow-y: scroll;
 
         .pane-section {
+          padding-top: var(--spacing-medium);
+
+          &:last-child {
+            padding-bottom: var(--spacing-medium);
+          }
           .skills-content {
-            margin-top: var(--spacing-base);
-            margin-bottom: var(--spacing-base);
             white-space: initial;
 
             .skill {
               display: inline-block;
               text-align: center;
 
-              &:not(:last-child) {
-                margin-right: var(--spacing-base);
-                margin-bottom: var(--spacing-base);
-              }
+              margin-top: var(--spacing-base);
+              margin-right: var(--spacing-base);
 
               svg {
                 display: block;
