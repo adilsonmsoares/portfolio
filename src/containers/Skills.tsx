@@ -40,38 +40,41 @@ export default function Skills() {
             )
           })}
         </ul>
-        <div className={styles.content}>
+        <div
+          className={styles.content}
+          style={{ transform: `translateX(-${activeTabIndex * 100}%)` }}
+        >
           {data.map((skillType, index) => {
             return (
-              <div
-                className={styles['tab-pane']}
-                key={index}
-                style={{ transform: `translateX(-${activeTabIndex * 100}%)` }}
-              >
-                {skillType.section.map((section, index) => {
-                  return (
-                    <div key={index} className={styles['pane-section']}>
-                      <Typhography
-                        type="sub-sub-title"
-                        strong
-                        upperCase
-                        color="primary"
-                      >
-                        {section.title}
-                      </Typhography>
-                      <div className={styles['skills-content']}>
-                        {section.skills.map((skill, index) => {
-                          return (
-                            <div key={index} className={styles.skill}>
-                              {skill.iconName && <Icon name={skill.iconName} />}
-                              {skill.name}
-                            </div>
-                          )
-                        })}
+              <div className={styles['tab-pane']} key={index}>
+                <div>
+                  {skillType.section.map((section, index) => {
+                    return (
+                      <div key={index} className={styles['pane-section']}>
+                        <Typhography
+                          type="sub-sub-title"
+                          strong
+                          upperCase
+                          color="primary"
+                        >
+                          {section.title}
+                        </Typhography>
+                        <div className={styles['skills-content']}>
+                          {section.skills.map((skill, index) => {
+                            return (
+                              <div key={index} className={styles.skill}>
+                                {skill.iconName && (
+                                  <Icon name={skill.iconName} />
+                                )}
+                                {skill.name}
+                              </div>
+                            )
+                          })}
+                        </div>
                       </div>
-                    </div>
-                  )
-                })}
+                    )
+                  })}
+                </div>
               </div>
             )
           })}

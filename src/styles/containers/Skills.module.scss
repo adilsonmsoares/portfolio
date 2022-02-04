@@ -17,6 +17,7 @@
     background-image: var(--background-color-gradient);
     box-shadow: var(--shadow-color) var(--shadow-translate);
     font-size: var(--font-size-small);
+    overflow: hidden;
 
     .nav {
       width: 100%;
@@ -40,15 +41,22 @@
     }
 
     .content {
+      white-space: nowrap;
+      transition: transform 0.3s;
+
       .tab-pane {
+        width: 100%;
         padding: var(--spacing-base);
         margin-top: var(--spacing-base);
         margin-bottom: var(--spacing-base);
+        display: inline-flex;
 
         .pane-section {
           .skills-content {
             margin-top: var(--spacing-base);
             margin-bottom: var(--spacing-base);
+            white-space: initial;
+
             .skill {
               display: inline-block;
               text-align: center;
