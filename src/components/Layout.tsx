@@ -17,7 +17,7 @@ const Layout: React.FC<Props> = ({ children, isLoading, hideNavbar }) => {
     <>
       <div className="helper-buttons">
         <Button onClick={darkmode.toggle} type="circular" htmlElement="div">
-          <Icon name="bulb" />
+          <Icon name="bulb" small />
         </Button>
       </div>
       {!hideNavbar && <Navbar />}

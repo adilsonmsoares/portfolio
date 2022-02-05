@@ -59,7 +59,7 @@ export default function DetailViewer({ data, isLoading }: Props) {
               textStrong={true}
               textUpper={true}
             >
-              <Icon name="externalLink" />
+              <Icon name="externalLink" small />
               <span>{data?.visitButton.text}</span>
             </Button>
           </div>

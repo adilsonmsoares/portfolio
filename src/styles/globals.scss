@@ -61,18 +61,27 @@ a {
   display: flex;
 }
 
-svg {
-  width: auto;
+.icon {
   height: var(--icon-size-medium);
   max-width: var(--icon-size-medium);
 
-  path {
-    fill: var(--color-secondary);
+  &--small {
+    height: var(--icon-size-small);
+    max-width: var(--icon-size-small);
   }
 
-  &:hover {
+  &:hover:not(.icon--no-effect) {
     path {
       fill: var(--color-primary);
+    }
+  }
+
+  svg {
+    height: inherit;
+    width: inherit;
+
+    path {
+      fill: var(--color-secondary);
     }
   }
 }

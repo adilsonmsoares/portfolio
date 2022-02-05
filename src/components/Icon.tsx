@@ -21,11 +21,19 @@ import SqlIcon from '@assets/icons/sql.svg'
 
 type Props = {
   name: string
+  small?: boolean
+  noEffect?: boolean
 }
 
-export default function Icon({ name }: Props) {
+export default function Icon({ name, small, noEffect }: Props) {
+  var classNames = [
+    'icon',
+    small && 'icon--small',
+    noEffect && 'icon--no-effect'
+  ].join(' ')
+
   return (
-    <>
+    <span className={classNames}>
       {
         {
           arrowBack: <ArrowBackIcon />,
@@ -49,6 +57,6 @@ export default function Icon({ name }: Props) {
           sql: <SqlIcon />
         }[name]
       }
-    </>
+    </span>
   )
 }

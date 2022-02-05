@@ -58,7 +58,7 @@ export default function Carousel({ images }: Props) {
           ].join(' ')}
           disabled={activeIndex == 0}
         >
-          <Icon name="arrowBack" />
+          <Icon name="arrowBack" small />
         </Button>
         <Button
           type="circular"
@@ -72,7 +72,7 @@ export default function Carousel({ images }: Props) {
           ].join(' ')}
           disabled={activeIndex == images.length - 1}
         >
-          <Icon name="arrowForward" />
+          <Icon name="arrowForward" small />
         </Button>
       </div>
       <ul className={styles['slick-dots']}>

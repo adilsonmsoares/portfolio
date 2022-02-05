@@ -64,7 +64,7 @@ export default function Skills() {
                             return (
                               <div key={index} className={styles.skill}>
                                 {skill.iconName && (
-                                  <Icon name={skill.iconName} />
+                                  <Icon name={skill.iconName} noEffect />
                                 )}
                                 {skill.name}
                               </div>

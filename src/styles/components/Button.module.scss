@@ -35,15 +35,6 @@
     pointer-events: none;
   }
 
-  :first-child:not(:only-child) {
-    margin-right: 10px;
-  }
-
-  svg {
-    height: var(--icon-size-small);
-    max-width: var(--icon-size-small);
-  }
-
   &-default {
     height: 50px;
     border-style: solid;
@@ -80,14 +71,6 @@
     &--primary {
       color: var(--color-secondary);
       background-color: var(--background-color-secondary);
-
-      &:hover {
-        svg {
-          path {
-            fill: var(--color-primary);
-          }
-        }
-      }
     }
   }
 }
