@@ -1,12 +1,12 @@
 import React from 'react'
 import styles from '@styles/components/Timeline.module.scss'
-import { ViewModel } from '@shared/types'
+import { DetailViewModel } from '@shared/types'
 import Link from 'next/link'
 import useHorizontalScroll from '@hooks/useScrollHorizontal'
 import Typhography from '@components/Typhography'
 
 type Props = {
-  data: ViewModel[]
+  data: DetailViewModel[]
   page: string
 }
 
@@ -27,7 +27,7 @@ export default function Timeline({ data, page }: Props) {
                         {item.title}
                       </Typhography>
                       <Typhography type="sub-sub-title">
-                        {item.entity}
+                        {item.entity.name}
                       </Typhography>
                     </div>
                     <Typhography type="sub-sub-title">

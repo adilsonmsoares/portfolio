@@ -2,7 +2,9 @@
     {
         "id": "csmpt1",
         "title": "Software Engineer",
-        "entity": "EPED",
+        "entity": {
+            "name": "EPED"
+        },
         "startDate": "09/2011",
         "endDate": "07/2014",
         "sectionDescription": [
@@ -52,7 +54,9 @@
     {
         "id": "csmpt2",
         "title": "Computer Systems Management and Programming Technician",
-        "entity": "EPED",
+        "entity": {
+            "name": "EPED"
+        },
         "startDate": "09/2011",
         "endDate": "07/2014",
         "sectionDescription": [
@@ -69,7 +73,9 @@
     {
         "id": "csmpt",
         "title": "Computer Systems Management and Programming Technician",
-        "entity": "EPED",
+        "entity": {
+            "name": "EPED"
+        },
         "startDate": "09/2011",
         "endDate": "07/2014",
         "sectionDescription": [
@@ -86,7 +92,9 @@
     {
         "id": "csmpt4",
         "title": "Computer Systems Management and Programming Technician",
-        "entity": "EPED",
+        "entity": {
+            "name": "EPED"
+        },
         "startDate": "09/2011",
         "endDate": "07/2014",
         "sectionDescription": [
@@ -103,7 +111,9 @@
     {
         "id": "csmpt5",
         "title": "Computer Systems Management and Programming Technician",
-        "entity": "EPED",
+        "entity": {
+            "name": "EPED"
+        },
         "startDate": "09/2011",
         "endDate": "07/2014",
         "sectionDescription": [

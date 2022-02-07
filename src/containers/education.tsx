@@ -1,11 +1,11 @@
 import useData from '@hooks/useData'
-import { ViewModel } from '@shared/types'
+import { DetailViewModel } from '@shared/types'
 import Timeline from '@components/Timeline'
 import Typhography from '@components/Typhography'
 import Container from '@components/Container'
 
 export default function Education() {
-  const data = useData<ViewModel[]>('education.json')
+  const data = useData<DetailViewModel[]>('education.json')
 
   return (
     <Container sectionId="education" page>

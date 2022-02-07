@@ -1,4 +1,4 @@
-import { ViewModel } from '@shared/types'
+import { DetailViewModel } from '@shared/types'
 import Button from '@components/Button'
 import Layout from '@components/Layout'
 import Typhography from '@components/Typhography'
@@ -7,7 +7,7 @@ import styles from '@styles/components/DetailViewer.module.scss'
 import Icon from '@components/Icon'
 
 type Props = {
-  data: ViewModel | undefined
+  data: DetailViewModel | undefined
   isLoading: boolean
 }
 
@@ -21,7 +21,7 @@ export default function DetailViewer({ data, isLoading }: Props) {
           </Typhography>
           <div className={styles.info}>
             <Typhography type="sub-sub-title" color="primary" upperCase>
-              {data?.entity}
+              {data?.entity.name}
             </Typhography>
             <Typhography type="sub-sub-title" color="primary" upperCase>
               {data?.startDate} - {data?.endDate}

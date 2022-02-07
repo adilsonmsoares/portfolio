@@ -8,10 +8,13 @@ export type PersonalModel = {
   contacts: ContactModel
 }
 
-export type ViewModel = {
+export type DetailViewModel = {
   id: string
   title: string
-  entity: string
+  entity: {
+    name: string
+    logoUrl: string
+  }
   startDate: string
   endDate: string
   shortDescription: string
