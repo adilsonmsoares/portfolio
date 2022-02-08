@@ -4,6 +4,7 @@ import About from '@containers/About'
 import Education from '@containers/Education'
 import Layout from '@components/Layout'
 import Skills from '@containers/Skills'
+import Experience from '@containers/Experience'
 
 const Index: NextPage = () => {
   return (
@@ -12,6 +13,7 @@ const Index: NextPage = () => {
       <About />
       <Education />
       <Skills />
+      <Experience />
     </Layout>
   )
 }
