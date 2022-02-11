@@ -38,7 +38,8 @@
   align-items: center;
 
   .main-info {
-    width: calc(100% - 150px);
+    display: block;
+    width: calc(100% - 120px);
     padding-right: var(--spacing-base);
 
     .header {
@@ -95,6 +96,7 @@
     .main-info {
       width: 100%;
       padding-bottom: var(--spacing-base);
+      padding-right: 0;
 
       .description {
         -webkit-line-clamp: 3;
