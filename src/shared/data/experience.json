@@ -3,6 +3,7 @@
         "id": "csmpt1",
         "title": "Software Engineer",
         "entity": {
+            "logoUrl": "/images/logo-inspireit.png",
             "name": "EPED"
         },
         "startDate": "09/2011",
@@ -71,7 +72,7 @@
         ]
     },
     {
-        "id": "csmpt",
+        "id": "csmpt3",
         "title": "Computer Systems Management and Programming Technician",
         "entity": {
             "name": "EPED"

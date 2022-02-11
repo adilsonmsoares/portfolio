@@ -2,11 +2,15 @@
   .header {
     margin-bottom: var(--spacing-medium);
     padding-bottom: var(--spacing-small);
-    border-bottom: var(--border-size) solid var(--border-color);
+    border-bottom: var(--border-size) solid var(--color-tertiary);
 
     .info {
       display: flex;
       justify-content: space-between;
+
+      :first-child {
+        padding-right: var(--spacing-base);
+      }
     }
   }
 

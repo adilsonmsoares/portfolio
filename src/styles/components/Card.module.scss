@@ -1,0 +1,109 @@
+@import '@styles/mixins';
+
+.card-list {
+  overflow: hidden;
+
+  .wrapper {
+    position: relative;
+
+    .inner {
+      white-space: nowrap;
+      transition: transform 0.3s;
+
+      .item {
+        width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        white-space: initial;
+
+        > * {
+          margin-top: var(--spacing-base);
+        }
+      }
+    }
+  }
+
+  @include slick-dots;
+}
+
+.simple-card {
+  padding: var(--spacing-base);
+  background-image: var(--background-color-gradient);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-color) var(--shadow-translate);
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .main-info {
+    width: calc(100% - 150px);
+    padding-right: var(--spacing-base);
+
+    .header {
+      .sub-header {
+        display: flex;
+        justify-content: space-between;
+
+        :first-child {
+          padding-right: var(--spacing-base);
+        }
+      }
+    }
+
+    .description {
+      padding-top: var(--spacing-base);
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      white-space: normal;
+    }
+  }
+
+  .entity-logo {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: var(--spacing-base);
+    border-left: var(--border-size) solid var(--color-tertiary);
+
+    img {
+      width: 100%;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    span {
+      text-transform: uppercase;
+      text-align: center;
+      white-space: pre-line;
+      font-weight: bold;
+      color: var(--color-tertiary);
+    }
+  }
+}
+
+@include small-screen() {
+  .simple-card {
+    flex-direction: column;
+
+    .main-info {
+      width: 100%;
+      padding-bottom: var(--spacing-base);
+    }
+
+    .entity-logo {
+      padding-left: 0;
+      padding-top: var(--spacing-base);
+      border-left: none;
+      border-top: var(--border-size) solid var(--color-tertiary);
+      width: 100%;
+    }
+  }
+}

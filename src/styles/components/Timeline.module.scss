@@ -2,7 +2,6 @@
   display: flex;
   justify-content: center;
   position: relative;
-  justify-content: center;
 
   .container {
     display: flex;
@@ -14,7 +13,7 @@
   }
 
   .line {
-    border-bottom: var(--border-size) solid var(--border-color);
+    border-bottom: var(--border-size) solid var(--color-tertiary);
     width: 100%;
     height: 0;
     position: absolute;
@@ -79,8 +78,8 @@
           box-sizing: border-box;
 
           border: 7px solid transparent;
-          border-color: transparent transparent var(--background-color-primary)
-            var(--background-color-primary);
+          color-tertiary: transparent transparent
+            var(--background-color-primary) var(--background-color-primary);
           background-color: var(--background-color-primary);
           transform-origin: 0 0;
           transform: rotate(-45deg);

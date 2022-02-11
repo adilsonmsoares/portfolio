@@ -9,3 +9,31 @@
     @content;
   }
 }
+
+@mixin slick-dots {
+  .slick-dots {
+    display: flex;
+    padding: var(--spacing-base) 0;
+    justify-content: center;
+
+    .dot {
+      border-radius: 50%;
+      width: 13px;
+      height: 13px;
+      background-color: var(--background-color-secondary);
+      box-shadow: var(--shadow-color) var(--shadow-translate);
+
+      &:not(:first-child) {
+        margin-left: var(--spacing-small);
+      }
+
+      &:hover:not(.active) {
+        cursor: pointer;
+      }
+    }
+
+    .active {
+      background-color: var(--special-color);
+    }
+  }
+}

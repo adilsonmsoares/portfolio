@@ -3,10 +3,10 @@
   --background-color-secondary: var(--white-smoke);
   --color-primary: var(--black);
   --color-secondary: var(--black-gray);
+  --color-tertiary: var(--gray);
   --special-color: var(--blue);
   --special-color-contrast: var(--white);
   --shadow-color: var(--gray-dark);
-  --border-color: var(--gray);
   --background-color-gradient: linear-gradient(
     to top right,
     var(--background-color-primary),
@@ -19,10 +19,10 @@
   --background-color-secondary: var(--black-light);
   --color-primary: var(--white);
   --color-secondary: var(--white-gray);
+  --color-tertiary: var(--black);
   --special-color: var(--blue);
   --special-color-contrast: var(--white);
   --shadow-color: var(--black);
-  --border-color: var(--black);
   --background-color-gradient: linear-gradient(
     to top right,
     var(--background-color-primary),
