@@ -16,7 +16,9 @@ export default function SimpleCard({ data, page }: Props) {
       <div className={styles['main-info']}>
         <div className={styles.header}>
           <Typhography type="sub-title" color="primary" strong upperCase>
-            {data.title}
+            <Link href={`/${page}/${data.id}`}>
+              <a> {data.title}</a>
+            </Link>
           </Typhography>
           <div className={styles['sub-header']}>
             <Typhography type="sub-sub-title">{data.entity.name}</Typhography>

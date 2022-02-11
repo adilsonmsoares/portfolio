@@ -95,6 +95,10 @@
     .main-info {
       width: 100%;
       padding-bottom: var(--spacing-base);
+
+      .description {
+        -webkit-line-clamp: 3;
+      }
     }
 
     .entity-logo {
