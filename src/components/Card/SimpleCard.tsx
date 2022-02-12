@@ -1,12 +1,11 @@
 import React from 'react'
 import styles from '@styles/components/Card.module.scss'
-import { DetailViewModel } from '@shared/types'
+import { SimpleCardViewModel } from '@shared/types'
 import Link from 'next/link'
-import useHorizontalScroll from '@hooks/useScrollHorizontal'
 import Typhography from '@components/Typhography'
 
 type Props = {
-  data: DetailViewModel
+  data: SimpleCardViewModel
   page: string
 }
 

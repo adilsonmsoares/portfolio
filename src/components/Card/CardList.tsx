@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import Link from 'next/link'
 import styles from '@styles/components/Card.module.scss'
-import { DetailViewModel } from '@shared/types'
+import { SimpleCardViewModel, ThumbnailViewModel } from '@shared/types'
 import Typhography from '@components/Typhography'
 import Button from '@components/Button'
 import Icon from '@components/Icon'
@@ -10,7 +10,7 @@ import SimpleCard from './SimpleCard'
 import ThumbnailCard from './ThumbnailCard'
 
 type Props = {
-  data: DetailViewModel[]
+  data: SimpleCardViewModel[] | ThumbnailViewModel[]
   page: string
   type?: 'simple' | 'thumbnail'
 }
@@ -40,9 +40,17 @@ const CardList: React.FC<Props> = ({ data, page, type }) => {
       .slice(slideIndex * maxPerSlide, slideIndex * maxPerSlide + maxPerSlide)
       .map((item, index) => {
         return type === 'simple' ? (
-          <SimpleCard data={item} page={page} key={index} />
+          <SimpleCard
+            data={item as SimpleCardViewModel}
+            page={page}
+            key={index}
+          />
         ) : (
-          <ThumbnailCard data={item} page={page} key={index} />
+          <ThumbnailCard
+            data={item as ThumbnailViewModel}
+            page={page}
+            key={index}
+          />
         )
       })
   }

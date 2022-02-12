@@ -13,7 +13,6 @@ export type DetailViewModel = {
   title: string
   entity: {
     name: string
-    logoUrl: string
   }
   startDate: string
   endDate: string
@@ -34,6 +33,17 @@ export type DetailViewModel = {
     text: string
     url: string
   }
+}
+
+export type SimpleCardViewModel = DetailViewModel & {
+  entity: {
+    name: string
+    logoUrl: string
+  }
+}
+
+export type ThumbnailViewModel = DetailViewModel & {
+  stack: [string]
 }
 
 export type SkillModel = {

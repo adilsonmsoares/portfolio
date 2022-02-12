@@ -1,18 +1,18 @@
 import useData from '@hooks/useData'
-import { SimpleCardViewModel } from '@shared/types'
+import { ThumbnailViewModel } from '@shared/types'
 import Typhography from '@components/Typhography'
 import Container from '@components/Container'
 import CardList from '@components/Card/CardList'
 
-export default function Experience() {
-  const data = useData<SimpleCardViewModel[]>('experiences.json')
+export default function Project() {
+  const data = useData<ThumbnailViewModel[]>('projects.json')
 
   return (
-    <Container sectionId="experience" page>
+    <Container sectionId="project" page>
       <Typhography type="title" color="primary" strong upperCase header>
-        Experience
+        Projects
       </Typhography>
-      <CardList data={data} page="experience" />
+      <CardList data={data} page="project" type="thumbnail" />
     </Container>
   )
 }

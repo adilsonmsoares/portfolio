@@ -89,6 +89,9 @@
   }
 }
 
+.thumbnail {
+}
+
 @include small-screen() {
   .simple-card {
     flex-direction: column;
