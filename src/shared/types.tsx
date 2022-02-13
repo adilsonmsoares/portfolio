@@ -42,7 +42,7 @@ export type SimpleCardViewModel = DetailViewModel & {
   }
 }
 
-export type ThumbnailViewModel = DetailViewModel & {
+export type ThumbnailCardViewModel = DetailViewModel & {
   stack: [string]
 }
 

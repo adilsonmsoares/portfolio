@@ -5,7 +5,7 @@ import Typhography from '@components/Typhography'
 import Container from '@components/Container'
 import CarouselItem from '@components/Carousel/CarouselItem'
 import Carousel from '@components/Carousel/Carousel'
-import SimpleCard from '@components/Card/DetailCard'
+import SimpleCard from '@components/Card/SimpleCard'
 
 export default function Experience() {
   const data = useData<SimpleCardViewModel[]>('experiences.json')

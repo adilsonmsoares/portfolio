@@ -1,11 +1,11 @@
 import React from 'react'
 import styles from '@styles/components/Card/Thumbnail.module.scss'
-import { ThumbnailViewModel } from '@shared/types'
+import { ThumbnailCardViewModel } from '@shared/types'
 import Link from 'next/link'
 import Typhography from '@components/Typhography'
 
 type Props = {
-  data: ThumbnailViewModel
+  data: ThumbnailCardViewModel
   page: string
 }
 

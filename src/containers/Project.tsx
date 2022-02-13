@@ -1,5 +1,5 @@
 import useData from '@hooks/useData'
-import { ThumbnailViewModel } from '@shared/types'
+import { ThumbnailCardViewModel } from '@shared/types'
 import Typhography from '@components/Typhography'
 import Container from '@components/Container'
 import styles from '@styles/containers/Project.module.scss'
@@ -7,7 +7,7 @@ import ThumbnailCard from '@components/Card/ThumbnailCard'
 import useHorizontalScroll from '@hooks/useScrollHorizontal'
 
 export default function Project() {
-  const data = useData<ThumbnailViewModel[]>('projects.json')
+  const data = useData<ThumbnailCardViewModel[]>('projects.json')
   const scrollRef = useHorizontalScroll()
 
   return (
@@ -17,13 +17,7 @@ export default function Project() {
       </Typhography>
       <div className={styles.content} ref={scrollRef}>
         {data.map((item, index) => {
-          return (
-            <ThumbnailCard
-              data={item as ThumbnailViewModel}
-              page="project"
-              key={index}
-            />
-          )
+          return <ThumbnailCard data={item} page="project" key={index} />
         })}
       </div>
     </Container>
