@@ -1,9 +1,10 @@
 import { DetailViewModel } from '@shared/types'
+import styles from '@styles/components/DetailViewer.module.scss'
 import Button from '@components/Button'
 import Layout from '@components/Layout'
 import Typhography from '@components/Typhography'
-import Carousel from '@components/Carousel'
-import styles from '@styles/components/DetailViewer.module.scss'
+import Carousel from '@components/Carousel/Carousel'
+import CarouselItem from '@components/Carousel/CarouselItem'
 import Icon from '@components/Icon'
 
 type Props = {
@@ -29,7 +30,17 @@ export default function DetailViewer({ data, isLoading }: Props) {
           </div>
         </div>
         <div className={styles.main}>
-          {data?.images && <Carousel images={data?.images} />}
+          {data?.images && (
+            <Carousel>
+              {data.images.map((image, index) => {
+                return (
+                  <CarouselItem key={index}>
+                    <img src={image.url} alt={image.alt} />
+                  </CarouselItem>
+                )
+              })}
+            </Carousel>
+          )}
           {data?.sectionDescription.map((section, index) => {
             return (
               <div key={index} className={styles.description}>

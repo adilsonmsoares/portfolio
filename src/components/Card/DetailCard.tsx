@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '@styles/components/Card.module.scss'
+import styles from '@styles/components/Card/DetailCard.module.scss'
 import { SimpleCardViewModel } from '@shared/types'
 import Link from 'next/link'
 import Typhography from '@components/Typhography'
@@ -9,9 +9,9 @@ type Props = {
   page: string
 }
 
-export default function SimpleCard({ data, page }: Props) {
+export default function DetailCard({ data, page }: Props) {
   return (
-    <div className={styles['simple-card']}>
+    <div className={styles['card']}>
       <Link href={`/${page}/${data.id}`}>
         <a className={styles['main-info']}>
           <div className={styles.header}>

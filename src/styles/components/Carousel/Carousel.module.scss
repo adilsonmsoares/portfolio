@@ -3,6 +3,18 @@
 .carousel {
   overflow: hidden;
 
+  &--transparent {
+    .item {
+      background-color: initial !important;
+    }
+  }
+
+  &--full-height {
+    .item {
+      height: initial !important;
+    }
+  }
+
   .wrapper {
     position: relative;
 
@@ -14,8 +26,7 @@
         width: 100%;
         display: inline-flex;
         height: 40vh;
-        background-color: var(--color-tertiary);
-        color: #fff;
+        background-color: var(--border-color);
 
         img {
           width: 100%;

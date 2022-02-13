@@ -1,26 +1,28 @@
 import React, { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import styles from '@styles/components/Carousel.module.scss'
+import styles from '@styles/components/Carousel/Carousel.module.scss'
 import Button from '@components/Button'
 import Icon from '@components/Icon'
 
 type Props = {
-  images: [
-    {
-      url: string
-      alt: string
-    }
-  ]
+  children: React.ReactNode
+  transparentBackground?: boolean
+  fullHeight?: boolean
 }
 
-export default function Carousel({ images }: Props) {
+const Carousel: React.FC<Props> = ({
+  children,
+  transparentBackground,
+  fullHeight
+}) => {
   const [activeIndex, setActiveIndex] = useState(0)
+  const numberChildren = React.Children.count(children)
 
   const updateIndex = (newIndex: number) => {
     if (newIndex < 0) {
       newIndex = 0
-    } else if (newIndex >= images.length) {
-      newIndex = images.length - 1
+    } else if (newIndex >= numberChildren) {
+      newIndex = numberChildren - 1
     }
 
     setActiveIndex(newIndex)
@@ -31,20 +33,20 @@ export default function Carousel({ images }: Props) {
     onSwipedRight: () => updateIndex(activeIndex - 1)
   })
 
+  let classNames = [
+    styles.carousel,
+    transparentBackground && styles['carousel--transparent'],
+    fullHeight && styles['carousel--full-height']
+  ].join(' ')
+
   return (
-    <div className={styles.carousel} {...handlers}>
+    <div className={classNames} {...handlers}>
       <div className={styles.wrapper}>
         <div
           className={styles.inner}
           style={{ transform: `translateX(-${activeIndex * 100}%)` }}
         >
-          {images.map((image, index) => {
-            return (
-              <div key={index} className={styles.item}>
-                <img src={image.url} alt={image.alt} />
-              </div>
-            )
-          })}
+          {children}
         </div>
         <Button
           type="circular"
@@ -70,13 +72,13 @@ export default function Carousel({ images }: Props) {
             styles['btn-indicator'],
             styles['btn-indicator--forward']
           ].join(' ')}
-          disabled={activeIndex == images.length - 1}
+          disabled={activeIndex == numberChildren - 1}
         >
           <Icon name="arrowForward" small />
         </Button>
       </div>
       <ul className={styles['slick-dots']}>
-        {images.map((item, index) => {
+        {[...Array(numberChildren)].map((item, index) => {
           return (
             <li
               key={index}
@@ -92,3 +94,5 @@ export default function Carousel({ images }: Props) {
     </div>
   )
 }
+
+export default Carousel

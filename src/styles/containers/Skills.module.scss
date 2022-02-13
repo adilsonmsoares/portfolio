@@ -27,15 +27,15 @@
       .nav-item {
         flex: 1;
         padding: var(--spacing-base) 0;
-        border-bottom: var(--border-size) solid var(--color-tertiary);
+        border-bottom: var(--border-size) solid var(--border-color);
 
         &--active {
-          color-tertiary: var(--color-primary);
+          border-color: var(--color-primary);
         }
 
         &:hover:not(&--active) {
           cursor: pointer;
-          color-tertiary: var(--color-primary);
+          border-color: var(--color-primary);
         }
       }
     }

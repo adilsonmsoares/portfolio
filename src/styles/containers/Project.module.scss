@@ -1,0 +1,11 @@
+.project-container {
+  .content {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+
+    > * {
+      margin: var(--spacing-base);
+    }
+  }
+}

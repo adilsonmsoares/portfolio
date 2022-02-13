@@ -1,0 +1,10 @@
+.experience-container {
+  .card-list {
+    display: flex;
+    flex-direction: column;
+
+    > *:not(:first-child) {
+      margin-top: var(--spacing-base);
+    }
+  }
+}
