@@ -15,10 +15,12 @@ export default function Project() {
       <Typhography type="title" color="primary" strong upperCase header>
         Projects
       </Typhography>
-      <div className={styles.content} ref={scrollRef}>
-        {data.map((item, index) => {
-          return <ThumbnailCard data={item} page="project" key={index} />
-        })}
+      <div className={styles['card-list']}>
+        <div className={styles.content} ref={scrollRef}>
+          {data.map((item, index) => {
+            return <ThumbnailCard data={item} page="project" key={index} />
+          })}
+        </div>
       </div>
     </Container>
   )

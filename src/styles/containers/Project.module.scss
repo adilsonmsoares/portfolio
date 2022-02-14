@@ -1,11 +1,16 @@
 .project-container {
-  .content {
+  .card-list {
     display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
+    justify-content: center;
 
-    > * {
-      margin: var(--spacing-base);
+    .content {
+      display: flex;
+      flex-direction: row;
+      overflow-x: scroll;
+
+      > * {
+        margin: var(--spacing-base);
+      }
     }
   }
 }
