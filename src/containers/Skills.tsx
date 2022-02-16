@@ -1,5 +1,5 @@
 import useData from '@hooks/useData'
-import { SkillModel } from '@shared/types'
+import { SkillViewModel } from '@shared/types'
 import styles from '@styles/containers/Skills.module.scss'
 import Typhography from '@components/Typhography'
 import Container from '@components/Container'
@@ -8,7 +8,7 @@ import Icon from '@components/Icon'
 
 export default function Skills() {
   const [activeTabIndex, setActiveTabIndex] = useState(0)
-  const data = useData<SkillModel[]>('skills.json')
+  const data = useData<SkillViewModel[]>('skills.json')
   const navItems = data.map(item => item.type)
 
   return (

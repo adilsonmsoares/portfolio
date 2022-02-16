@@ -35,18 +35,7 @@ export type DetailViewModel = {
   }
 }
 
-export type SimpleCardViewModel = DetailViewModel & {
-  entity: {
-    name: string
-    logoUrl: string
-  }
-}
-
-export type ThumbnailCardViewModel = DetailViewModel & {
-  stack: [string]
-}
-
-export type SkillModel = {
+export type SkillViewModel = {
   type: string
   section: [
     {
@@ -60,3 +49,19 @@ export type SkillModel = {
     }
   ]
 }
+
+export type ExperienceViewModel = DetailViewModel & {
+  entity: {
+    name: string
+    logoUrl: string
+  }
+}
+
+export type ProjectViewModel = DetailViewModel & {
+  stack: string[]
+  categories: string[]
+}
+
+export type SimpleCardViewModel = ExperienceViewModel
+
+export type ThumbnailCardViewModel = ProjectViewModel

@@ -53,7 +53,10 @@
         "visitButton": {
             "text": "Visit Website",
             "url": "/education/csmpt2"
-        }
+        },
+        "categories": [
+            "software"
+        ]
     },
     {
         "id": "csmpt2",
@@ -108,7 +111,10 @@
         "visitButton": {
             "text": "Visit Website",
             "url": "/education/csmpt2"
-        }
+        },
+        "categories": [
+            "software"
+        ]
     },
     {
         "id": "csmpt3",
@@ -164,7 +170,10 @@
         "visitButton": {
             "text": "Visit Website",
             "url": "/education/csmpt2"
-        }
+        },
+        "categories": [
+            "design"
+        ]
     },
     {
         "id": "csmpt4",
@@ -220,7 +229,10 @@
         "visitButton": {
             "text": "Visit Website",
             "url": "/education/csmpt2"
-        }
+        },
+        "categories": [
+            "software"
+        ]
     },
     {
         "id": "csmpt1",
@@ -276,6 +288,9 @@
         "visitButton": {
             "text": "Visit Website",
             "url": "/education/csmpt2"
-        }
+        },
+        "categories": [
+            "design"
+        ]
     }
 ]

@@ -1,5 +1,5 @@
 import useData from '@hooks/useData'
-import { SimpleCardViewModel } from '@shared/types'
+import { ExperienceViewModel, SimpleCardViewModel } from '@shared/types'
 import styles from '@styles/containers/Experience.module.scss'
 import Typhography from '@components/Typhography'
 import Container from '@components/Container'
@@ -8,7 +8,7 @@ import Carousel from '@components/Carousel/Carousel'
 import SimpleCard from '@components/Card/SimpleCard'
 
 export default function Experience() {
-  const data = useData<SimpleCardViewModel[]>('experiences.json')
+  const data = useData<ExperienceViewModel[]>('experiences.json')
   const maxPerSlide = 3
   const maxSlide = Math.ceil(data.length / maxPerSlide)
 
@@ -16,7 +16,13 @@ export default function Experience() {
     return data
       .slice(slideIndex * maxPerSlide, slideIndex * maxPerSlide + maxPerSlide)
       .map((item, index) => {
-        return <SimpleCard data={item} page="experience" key={index} />
+        return (
+          <SimpleCard
+            data={item as SimpleCardViewModel}
+            page="experience"
+            key={index}
+          />
+        )
       })
   }
 
