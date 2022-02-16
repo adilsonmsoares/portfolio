@@ -6,9 +6,6 @@
     margin-bottom: var(--spacing-base);
 
     .nav-item {
-      padding: 5px 0;
-      text-align: right;
-
       &--active {
         border-bottom: var(--border-size) solid var(--color-primary);
       }
