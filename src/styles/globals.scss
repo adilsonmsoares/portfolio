@@ -78,7 +78,7 @@ a {
 
   svg {
     height: inherit;
-    width: inherit;
+    max-width: inherit;
 
     path {
       fill: var(--color-secondary);

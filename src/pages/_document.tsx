@@ -18,7 +18,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <link
-            href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
             rel="stylesheet"
           />
           <noscript>You need to enable JavaScript to run this app.</noscript>

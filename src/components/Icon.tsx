@@ -16,7 +16,7 @@ import JavascriptIcon from '@assets/icons/javascript.svg'
 import NodeJSIcon from '@assets/icons/nodejs.svg'
 import PythonIcon from '@assets/icons/python.svg'
 import ReactIcon from '@assets/icons/react.svg'
-import SendIcon from '@assets/icons/send.svg'
+import EmailIcon from '@assets/icons/email.svg'
 import SqlIcon from '@assets/icons/sql.svg'
 
 type Props = {
@@ -53,7 +53,7 @@ export default function Icon({ name, small, noEffect }: Props) {
           nodejs: <NodeJSIcon />,
           python: <PythonIcon />,
           react: <ReactIcon />,
-          send: <SendIcon />,
+          email: <EmailIcon />,
           sql: <SqlIcon />
         }[name]
       }

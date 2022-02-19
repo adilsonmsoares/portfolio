@@ -21,7 +21,11 @@ export default function Home() {
       <div className={styles.description}>{data.shortDescription}</div>
       <div className={styles.contacts}>
         {Object.keys(data.contacts).map(key => (
-          <a href={data.contacts[key]} target="_blank" key={key}>
+          <a
+            href={`${key === 'email' ? 'mailto:' : ''}${data.contacts[key]}`}
+            target="_blank"
+            key={key}
+          >
             <Icon name={key} />
           </a>
         ))}

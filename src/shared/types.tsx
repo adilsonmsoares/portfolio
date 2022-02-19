@@ -6,6 +6,7 @@ export type PersonalModel = {
   shortDescription: string
   description: string[]
   contacts: ContactModel
+  location: string
 }
 
 export type DetailViewModel = {

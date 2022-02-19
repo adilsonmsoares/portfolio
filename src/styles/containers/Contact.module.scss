@@ -1,0 +1,65 @@
+@import '@styles/mixins';
+
+.contact-me-container {
+  box-shadow: 0 -20px 10px -20px rgba(0, 0, 0, 0.8);
+
+  .content {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border-right: var(--border-size) solid var(--border-color);
+      max-width: 250px;
+
+      :first-child {
+        margin-bottom: var(--spacing-base);
+      }
+
+      .links {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+
+        a {
+          &:not(:last-child) {
+            margin-right: var(--spacing-small);
+          }
+        }
+      }
+    }
+
+    .card-message {
+      border-radius: var(--border-radius);
+      border: var(--border-size) solid var(--border-color);
+      padding: var(--spacing-base);
+      margin-left: var(--spacing-medium);
+      font-weight: 300;
+
+      .footer {
+        padding: var(--spacing-big) 0 var(--spacing-base) 0;
+      }
+    }
+  }
+}
+
+@include small-screen() {
+  .contact-me-container {
+    .content {
+      flex-direction: column-reverse;
+
+      .info {
+        border: none;
+        max-width: initial;
+        margin-top: var(--spacing-medium);
+      }
+
+      .card-message {
+        margin: initial;
+      }
+    }
+  }
+}
