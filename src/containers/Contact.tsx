@@ -13,7 +13,7 @@ export default function ContactMe() {
 
   return (
     <Container
-      sectionId="contactme"
+      sectionId="contact"
       page
       className={styles['contact-me-container']}
     >
