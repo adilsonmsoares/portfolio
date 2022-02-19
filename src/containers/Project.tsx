@@ -4,7 +4,6 @@ import Typhography from '@components/Typhography'
 import Container from '@components/Container'
 import styles from '@styles/containers/Project.module.scss'
 import ThumbnailCard from '@components/Card/ThumbnailCard'
-import useHorizontalScroll from '@hooks/useScrollHorizontal'
 import { useEffect, useState } from 'react'
 
 function ExtractCategories(data: ProjectViewModel[]) {
@@ -23,7 +22,6 @@ function ExtractCategories(data: ProjectViewModel[]) {
 
 export default function Project() {
   const data = useData<ProjectViewModel[]>('projects.json')
-  const scrollRef = useHorizontalScroll()
   const navItems = ExtractCategories(data)
   const [selectedCategory, setSelectedCategory] = useState('All')
   let [filteredData, setFilteredData] = useState(data)
@@ -61,7 +59,7 @@ export default function Project() {
         })}
       </ul>
       <div className={styles['card-list']}>
-        <div className={styles.content} ref={scrollRef}>
+        <div className={styles.content}>
           {filteredData.map((item, index) => {
             return (
               <ThumbnailCard

@@ -2,7 +2,6 @@ import React from 'react'
 import styles from '@styles/components/Timeline.module.scss'
 import { DetailViewModel } from '@shared/types'
 import Link from 'next/link'
-import useHorizontalScroll from '@hooks/useScrollHorizontal'
 import Typhography from '@components/Typhography'
 
 type Props = {
@@ -11,11 +10,9 @@ type Props = {
 }
 
 export default function Timeline({ data, page }: Props) {
-  const scrollRef = useHorizontalScroll()
-
   return (
     <div className={styles.timeline}>
-      <div className={styles.container} ref={scrollRef}>
+      <div className={styles.container}>
         {data.map((item, index) => {
           return (
             <div key={index} className={styles.bubble}>
