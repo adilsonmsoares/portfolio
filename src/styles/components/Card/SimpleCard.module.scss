@@ -44,7 +44,7 @@
     justify-content: center;
     align-items: center;
     padding-left: var(--spacing-base);
-    border-left: var(--border-size) solid var(--border-color);
+    border-left: var(--border-size) solid var(--color-tertiary);
 
     img {
       width: 100%;
@@ -57,7 +57,7 @@
       text-align: center;
       white-space: pre-line;
       font-weight: bold;
-      color: var(--border-color);
+      color: var(--color-tertiary);
     }
   }
 }
@@ -78,7 +78,7 @@
       padding-left: 0;
       padding-top: var(--spacing-base);
       border-left: none;
-      border-top: var(--border-size) solid var(--border-color);
+      border-top: var(--border-size) solid var(--color-tertiary);
     }
   }
 }
