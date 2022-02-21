@@ -30,12 +30,12 @@
         border-bottom: var(--border-size) solid var(--color-tertiary);
 
         &--active {
-          color-tertiary: var(--color-primary);
+          border-color: var(--color-primary);
         }
 
         &:hover:not(&--active) {
           cursor: pointer;
-          color-tertiary: var(--color-primary);
+          border-color: var(--color-primary);
         }
       }
     }

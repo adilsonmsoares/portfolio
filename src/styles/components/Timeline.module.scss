@@ -77,8 +77,8 @@
           box-sizing: border-box;
 
           border: 7px solid transparent;
-          color-tertiary: transparent transparent
-            var(--background-color-primary) var(--background-color-primary);
+          border-color: transparent transparent var(--background-color-primary)
+            var(--background-color-primary);
           background-color: var(--background-color-primary);
           transform-origin: 0 0;
           transform: rotate(-45deg);
