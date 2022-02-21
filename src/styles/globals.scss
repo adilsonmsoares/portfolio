@@ -108,7 +108,7 @@ a {
   position: fixed;
   bottom: var(--spacing-big);
   right: var(--spacing-base);
-  z-index: 1;
+  z-index: 2;
 
   > *:not(:last-child) {
     margin-bottom: var(--spacing-small);
