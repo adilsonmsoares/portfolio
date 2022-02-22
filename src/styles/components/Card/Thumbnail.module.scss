@@ -12,7 +12,7 @@
   position: relative;
 
   * {
-    color: var(--white);
+    color: var(--gray);
   }
 
   .main {
@@ -21,7 +21,7 @@
 
     hr {
       height: var(--border-size);
-      background-color: var(--white);
+      background-color: var(--gray);
       border: none;
       width: 30px;
     }
