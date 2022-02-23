@@ -42,17 +42,15 @@ export default function ContactMe() {
         </div>
         <div className={styles['card-message']}>
           <Typhography type="title" color="primary" upperCase>
-            Send
+            To doubt
           </Typhography>
           <Typhography type="title" color="primary" upperCase strong>
-            Me
+            or
           </Typhography>
           <Typhography type="title" color="primary" upperCase>
-            A message
+            Work together
           </Typhography>
-          <Typhography type="sub-sub-title">
-            Using my contact channels
-          </Typhography>
+          <Typhography type="sub-sub-title">Send me a message</Typhography>
           <div className={styles.footer}>
             <Typhography type="sub-sub-title">
               I'll try my best to get back to you!
