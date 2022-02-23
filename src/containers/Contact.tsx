@@ -51,11 +51,11 @@ export default function ContactMe() {
             A message
           </Typhography>
           <Typhography type="sub-sub-title">
-            Using my contacts channels
+            Using my contact channels
           </Typhography>
           <div className={styles.footer}>
             <Typhography type="sub-sub-title">
-              I’ll try my best to get back to you!
+              I'll try my best to get back to you!
             </Typhography>
           </div>
         </div>
