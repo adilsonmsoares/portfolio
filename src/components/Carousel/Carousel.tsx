@@ -77,20 +77,22 @@ const Carousel: React.FC<Props> = ({
           <Icon name="arrowForward" small />
         </Button>
       </div>
-      <ul className={styles['slick-dots']}>
-        {[...Array(numberChildren)].map((item, index) => {
-          return (
-            <li
-              key={index}
-              className={[
-                styles.dot,
-                activeIndex == index && styles['active']
-              ].join(' ')}
-              onClick={() => updateIndex(index)}
-            />
-          )
-        })}
-      </ul>
+      {numberChildren > 1 && (
+        <ul className={styles['slick-dots']}>
+          {[...Array(numberChildren)].map((item, index) => {
+            return (
+              <li
+                key={index}
+                className={[
+                  styles.dot,
+                  activeIndex == index && styles['active']
+                ].join(' ')}
+                onClick={() => updateIndex(index)}
+              />
+            )
+          })}
+        </ul>
+      )}
     </div>
   )
 }
