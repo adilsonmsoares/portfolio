@@ -55,34 +55,34 @@ export default function Navbar() {
         >
           <ul className={styles['navbar-nav']}>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link" href="/#aboutme">
-                About
-              </a>
+              <Link href="/#aboutme">
+                <a className="nav-link">About</a>
+              </Link>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link" href="/#education">
-                Education
-              </a>
+              <Link href="/#education">
+                <a className="nav-link">Education</a>
+              </Link>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link" href="/#skills">
-                Skills
-              </a>
+              <Link href="/#skills">
+                <a className="nav-link">Skills</a>
+              </Link>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link" href="/#experience">
-                Experience
-              </a>
+              <Link href="/#experience">
+                <a className="nav-link">Experience</a>
+              </Link>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link" href="/#projects">
-                Projects
-              </a>
+              <Link href="/#projects">
+                <a className="nav-link">Projects</a>
+              </Link>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link" href="/#contact">
-                Contact
-              </a>
+              <Link href="/#contact">
+                <a className="nav-link">Contact</a>
+              </Link>
             </li>
           </ul>
         </div>

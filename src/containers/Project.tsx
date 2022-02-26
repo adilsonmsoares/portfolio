@@ -36,7 +36,11 @@ export default function Project() {
   }, [selectedCategory])
 
   return (
-    <Container sectionId="project" page className={styles['project-container']}>
+    <Container
+      sectionId="projects"
+      page
+      className={styles['project-container']}
+    >
       <Typhography type="title" color="primary" strong upperCase header>
         Projects
       </Typhography>
