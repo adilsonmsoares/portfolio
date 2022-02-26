@@ -1,7 +1,6 @@
-import React from 'react'
-import { useEffect, useState } from 'react'
 import styles from '@styles/components/Navbar.module.scss'
 import Link from 'next/link'
+import React, { useEffect, useState } from 'react'
 
 export default function Navbar() {
   const [scrollY, setScrollY] = useState(0)

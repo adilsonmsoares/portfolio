@@ -1,5 +1,5 @@
-import React from 'react'
 import styles from '@styles/components/Carousel/Carousel.module.scss'
+import React from 'react'
 
 type Props = {
   children: React.ReactNode

@@ -1,7 +1,7 @@
+import Container from '@components/Container'
+import Typhography from '@components/Typhography'
 import useData from '@hooks/useData'
 import { PersonalModel } from '@shared/types'
-import Typhography from '@components/Typhography'
-import Container from '@components/Container'
 
 export default function Education() {
   const data = useData<PersonalModel>('personal.json')

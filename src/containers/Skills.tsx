@@ -1,10 +1,10 @@
+import Container from '@components/Container'
+import Icon from '@components/Icon'
+import Typhography from '@components/Typhography'
 import useData from '@hooks/useData'
 import { SkillViewModel } from '@shared/types'
 import styles from '@styles/containers/Skills.module.scss'
-import Typhography from '@components/Typhography'
-import Container from '@components/Container'
 import { useState } from 'react'
-import Icon from '@components/Icon'
 
 export default function Skills() {
   const [activeTabIndex, setActiveTabIndex] = useState(0)

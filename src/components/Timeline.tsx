@@ -1,8 +1,8 @@
-import React from 'react'
-import styles from '@styles/components/Timeline.module.scss'
-import { DetailViewModel } from '@shared/types'
-import Link from 'next/link'
 import Typhography from '@components/Typhography'
+import { DetailViewModel } from '@shared/types'
+import styles from '@styles/components/Timeline.module.scss'
+import Link from 'next/link'
+import React from 'react'
 
 type Props = {
   data: DetailViewModel[]

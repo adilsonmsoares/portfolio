@@ -1,8 +1,8 @@
-import React from 'react'
-import useDarkMode from 'use-dark-mode'
-import Navbar from '@components/Navbar'
 import Button from '@components/Button'
 import Icon from '@components/Icon'
+import Navbar from '@components/Navbar'
+import React from 'react'
+import useDarkMode from 'use-dark-mode'
 
 type Props = {}
 
