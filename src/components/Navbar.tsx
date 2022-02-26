@@ -31,7 +31,7 @@ export default function Navbar() {
     >
       <div className={styles.wrapper}>
         <Link href="/">
-          <a className={styles['navbar-brand']}>
+          <a className={styles['navbar-brand']} onClick={closeNav}>
             <span>adilson</span>
             <span>soares</span>
           </a>
@@ -65,22 +65,22 @@ export default function Navbar() {
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link disabled" href="/#skills">
+              <a className="nav-link" href="/#skills">
                 Skills
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link disabled" href="/#experience">
+              <a className="nav-link" href="/#experience">
                 Experience
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link disabled" href="/#projects">
+              <a className="nav-link" href="/#projects">
                 Projects
               </a>
             </li>
             <li className={styles['nav-item']} onClick={closeNav}>
-              <a className="nav-link disabled" href="/#contact">
+              <a className="nav-link" href="/#contact">
                 Contact
               </a>
             </li>
