@@ -6,7 +6,7 @@ export default function Navbar() {
   const [scrollY, setScrollY] = useState(0)
   const [IsNavOpen, setIsNavOpen] = useState(false)
 
-  const handleScroll = () => {
+  const updateScrollYValue = () => {
     setScrollY(window.scrollY)
   }
 
@@ -15,11 +15,11 @@ export default function Navbar() {
   }
 
   useEffect(() => {
-    handleScroll()
+    updateScrollYValue()
 
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener('scroll', updateScrollYValue)
     return () => {
-      window.removeEventListener('scroll', handleScroll)
+      window.removeEventListener('scroll', updateScrollYValue)
     }
   }, [])
 
