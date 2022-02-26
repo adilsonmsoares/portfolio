@@ -7,15 +7,7 @@ import DetailViewer from '@components/DetailViewer'
 function EducationDetails({
   data
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
-  const [isLoading, setLoading] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false)
-    }, 0) // wait to setup load
-  }, [])
-
-  return <DetailViewer isLoading={isLoading} data={data} />
+  return <DetailViewer data={data} />
 }
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {

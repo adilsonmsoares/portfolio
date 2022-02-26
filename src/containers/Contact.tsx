@@ -1,15 +1,12 @@
-import styles from '@styles/containers/Contact.module.scss'
-import Typhography from '@components/Typhography'
 import Container from '@components/Container'
+import Icon from '@components/Icon'
+import Typhography from '@components/Typhography'
 import useData from '@hooks/useData'
 import { PersonalModel } from '@shared/types'
-import Icon from '@components/Icon'
-import { useState } from 'react'
-import Button from '@components/Button'
+import styles from '@styles/containers/Contact.module.scss'
 
 export default function ContactMe() {
   const data = useData<PersonalModel>('personal.json')
-  const [acceptPrivacypolicy, setAcceptPrivacypolicy] = useState(false)
 
   return (
     <Container

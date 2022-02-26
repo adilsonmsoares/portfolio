@@ -1,8 +1,8 @@
-import React from 'react'
-import styles from '@styles/components/Card/Thumbnail.module.scss'
-import { ThumbnailCardViewModel } from '@shared/types'
-import Link from 'next/link'
 import Typhography from '@components/Typhography'
+import { ThumbnailCardViewModel } from '@shared/types'
+import styles from '@styles/components/Card/Thumbnail.module.scss'
+import Link from 'next/link'
+import React from 'react'
 
 type Props = {
   data: ThumbnailCardViewModel

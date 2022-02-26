@@ -1,20 +1,19 @@
-import { DetailViewModel } from '@shared/types'
-import styles from '@styles/components/DetailViewer.module.scss'
 import Button from '@components/Button'
-import Layout from '@components/Layout'
-import Typhography from '@components/Typhography'
 import Carousel from '@components/Carousel/Carousel'
 import CarouselItem from '@components/Carousel/CarouselItem'
 import Icon from '@components/Icon'
+import Layout from '@components/Layout'
+import Typhography from '@components/Typhography'
+import { DetailViewModel } from '@shared/types'
+import styles from '@styles/components/DetailViewer.module.scss'
 
 type Props = {
   data: DetailViewModel | undefined
-  isLoading: boolean
 }
 
-export default function DetailViewer({ data, isLoading }: Props) {
+export default function DetailViewer({ data }: Props) {
   return (
-    <Layout isLoading={isLoading}>
+    <Layout>
       <div className={['container container-page', styles['viewer']].join(' ')}>
         <div className={styles.header}>
           <Typhography type="title" color="primary" strong upperCase>

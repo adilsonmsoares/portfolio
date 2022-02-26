@@ -2,15 +2,11 @@ import React from 'react'
 import useDarkMode from 'use-dark-mode'
 import Navbar from '@components/Navbar'
 import Button from '@components/Button'
-import Loading from '@components/Loading'
 import Icon from '@components/Icon'
 
-type Props = {
-  isLoading?: boolean
-  hideNavbar?: boolean
-}
+type Props = {}
 
-const Layout: React.FC<Props> = ({ children, isLoading, hideNavbar }) => {
+const Layout: React.FC<Props> = ({ children }) => {
   const darkmode = useDarkMode(true)
 
   return (
@@ -20,9 +16,8 @@ const Layout: React.FC<Props> = ({ children, isLoading, hideNavbar }) => {
           <Icon name="bulb" small />
         </Button>
       </div>
-      {!hideNavbar && <Navbar />}
-      {isLoading && <Loading />}
-      {!isLoading && children}
+      <Navbar />
+      {children}
       <footer>
         <div>
           <div>Adilson Soares © Copyright 2020</div>
@@ -33,9 +28,6 @@ const Layout: React.FC<Props> = ({ children, isLoading, hideNavbar }) => {
   )
 }
 
-Layout.defaultProps = {
-  isLoading: false,
-  hideNavbar: false
-}
+Layout.defaultProps = {}
 
 export default Layout
