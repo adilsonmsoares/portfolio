@@ -14,15 +14,12 @@ export default function ContactMe() {
       page
       className={styles['contact-me-container']}
     >
-      <Typhography type="title" color="primary" strong upperCase header>
-        Get in touch
-      </Typhography>
       <div className={styles.content}>
         <div className={styles.info}>
           <Typhography type="title" color="primary" strong>
-            Let's build something amazing.
+            Let's build something amazing
           </Typhography>
-          <Typhography type="sub-title">{data.location}</Typhography>
+          <Typhography type="sub-title">Feel free to reach out</Typhography>
           <div className={styles['links']}>
             {Object.keys(data.contacts).map(key => (
               <a
@@ -35,23 +32,6 @@ export default function ContactMe() {
                 <Icon name={key} />
               </a>
             ))}
-          </div>
-        </div>
-        <div className={styles['card-message']}>
-          <Typhography type="title" color="primary" upperCase>
-            To doubt
-          </Typhography>
-          <Typhography type="title" color="primary" upperCase strong>
-            or
-          </Typhography>
-          <Typhography type="title" color="primary" upperCase>
-            Work together
-          </Typhography>
-          <Typhography type="sub-sub-title">Send me a message</Typhography>
-          <div className={styles.footer}>
-            <Typhography type="sub-sub-title">
-              I'll try my best to get back to you!
-            </Typhography>
           </div>
         </div>
       </div>
