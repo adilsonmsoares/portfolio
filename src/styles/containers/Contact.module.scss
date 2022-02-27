@@ -25,18 +25,6 @@
         }
       }
     }
-
-    .card-message {
-      border-radius: var(--border-radius);
-      border: var(--border-size) solid var(--color-tertiary);
-      padding: var(--spacing-base);
-      margin-left: var(--spacing-medium);
-      font-weight: 300;
-
-      .footer {
-        padding: var(--spacing-big) 0 var(--spacing-base) 0;
-      }
-    }
   }
 }
 
