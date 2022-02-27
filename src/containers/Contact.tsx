@@ -5,7 +5,7 @@ import useData from '@hooks/useData'
 import { PersonalModel } from '@shared/types'
 import styles from '@styles/containers/Contact.module.scss'
 
-export default function ContactMe() {
+export default function Contact() {
   const data = useData<PersonalModel>('personal.json')
 
   return (
