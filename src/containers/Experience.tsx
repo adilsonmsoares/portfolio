@@ -1,11 +1,11 @@
-import SimpleCard from 'components/Card/SimpleCard'
-import Carousel from 'components/Carousel/Carousel'
-import CarouselItem from 'components/Carousel/CarouselItem'
-import Container from 'components/Container'
-import Typhography from 'components/Typhography'
-import useData from 'hooks/useData'
-import { ExperienceViewModel, SimpleCardViewModel } from 'shared/types'
-import styles from 'styles/containers/Experience.module.scss'
+import SimpleCard from '@components/Card/SimpleCard'
+import Carousel from '@components/Carousel/Carousel'
+import CarouselItem from '@components/Carousel/CarouselItem'
+import Container from '@components/Container'
+import Typhography from '@components/Typhography'
+import useData from '@hooks/useData'
+import { ExperienceViewModel, SimpleCardViewModel } from '@shared/types'
+import styles from '@styles/containers/Experience.module.scss'
 
 export default function Experience() {
   const data = useData<ExperienceViewModel[]>('experiences.json')

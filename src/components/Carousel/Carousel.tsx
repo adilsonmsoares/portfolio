@@ -1,8 +1,8 @@
-import Button from 'components/Button'
-import Icon from 'components/Icon'
+import Button from '@components/Button'
+import Icon from '@components/Icon'
+import styles from '@styles/components/Carousel/Carousel.module.scss'
 import React, { useState } from 'react'
 import { useSwipeable } from 'react-swipeable'
-import styles from 'styles/components/Carousel/Carousel.module.scss'
 
 type Props = {
   children: React.ReactNode

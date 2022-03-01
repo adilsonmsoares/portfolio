@@ -1,7 +1,7 @@
-import DetailViewer from 'components/DetailViewer'
-import useData from 'hooks/useData'
+import DetailViewer from '@components/DetailViewer'
+import useData from '@hooks/useData'
+import { DetailViewModel } from '@shared/types'
 import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
-import { DetailViewModel } from 'shared/types'
 
 function ExperienceDetails({
   data

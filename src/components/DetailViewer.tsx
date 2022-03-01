@@ -1,11 +1,11 @@
-import Button from 'components/Button'
-import Carousel from 'components/Carousel/Carousel'
-import CarouselItem from 'components/Carousel/CarouselItem'
-import Icon from 'components/Icon'
-import Layout from 'components/Layout'
-import Typhography from 'components/Typhography'
-import { DetailViewModel } from 'shared/types'
-import styles from 'styles/components/DetailViewer.module.scss'
+import Button from '@components/Button'
+import Carousel from '@components/Carousel/Carousel'
+import CarouselItem from '@components/Carousel/CarouselItem'
+import Icon from '@components/Icon'
+import Layout from '@components/Layout'
+import Typhography from '@components/Typhography'
+import { DetailViewModel } from '@shared/types'
+import styles from '@styles/components/DetailViewer.module.scss'
 
 type Props = {
   data: DetailViewModel | undefined

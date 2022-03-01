@@ -1,10 +1,10 @@
-import ThumbnailCard from 'components/Card/ThumbnailCard'
-import Container from 'components/Container'
-import Typhography from 'components/Typhography'
-import useData from 'hooks/useData'
+import ThumbnailCard from '@components/Card/ThumbnailCard'
+import Container from '@components/Container'
+import Typhography from '@components/Typhography'
+import useData from '@hooks/useData'
+import { ProjectViewModel, ThumbnailCardViewModel } from '@shared/types'
+import styles from '@styles/containers/Project.module.scss'
 import { useEffect, useState } from 'react'
-import { ProjectViewModel, ThumbnailCardViewModel } from 'shared/types'
-import styles from 'styles/containers/Project.module.scss'
 
 function ExtractCategories(data: ProjectViewModel[]) {
   var categories: string[] = ['All']

@@ -1,8 +1,8 @@
-import Typhography from 'components/Typhography'
+import Typhography from '@components/Typhography'
+import { SimpleCardViewModel } from '@shared/types'
+import styles from '@styles/components/Card/SimpleCard.module.scss'
 import Link from 'next/link'
 import React from 'react'
-import { SimpleCardViewModel } from 'shared/types'
-import styles from 'styles/components/Card/SimpleCard.module.scss'
 
 type Props = {
   data: SimpleCardViewModel
