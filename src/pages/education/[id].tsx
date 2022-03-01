@@ -1,22 +1,19 @@
 import DetailViewer from '@components/DetailViewer'
 import useData from '@hooks/useData'
 import { DetailViewModel } from '@shared/types'
-import { GetServerSidePropsContext, InferGetServerSidePropsType } from 'next'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 
-function EducationDetails({
-  data
-}: InferGetServerSidePropsType<typeof getServerSideProps>) {
+export default function EducationDetails() {
+  const [data, setdata] = useState<DetailViewModel>()
+  const router = useRouter()
+
+  useEffect(() => {
+    let { id } = router.query
+    let list = useData<DetailViewModel[]>('education.json')
+    let data = list.find(e => e.id === id)
+    setdata(data)
+  })
+
   return <DetailViewer data={data} />
 }
-
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  let { id } = context.query
-  let list = useData<DetailViewModel[]>('education.json')
-  let data = list.find(e => e.id === id)
-
-  return {
-    props: { data }
-  }
-}
-
-export default EducationDetails
