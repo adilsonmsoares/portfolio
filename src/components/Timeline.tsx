@@ -1,8 +1,8 @@
-import Typhography from '@components/Typhography'
-import { DetailViewModel } from '@shared/types'
-import styles from '@styles/components/Timeline.module.scss'
+import Typhography from 'components/Typhography'
 import Link from 'next/link'
 import React from 'react'
+import { DetailViewModel } from 'shared/types'
+import styles from 'styles/components/Timeline.module.scss'
 
 type Props = {
   data: DetailViewModel[]

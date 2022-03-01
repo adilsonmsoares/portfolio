@@ -1,9 +1,9 @@
-import Container from '@components/Container'
-import Icon from '@components/Icon'
-import Typhography from '@components/Typhography'
-import useData from '@hooks/useData'
-import { PersonalModel } from '@shared/types'
-import styles from '@styles/containers/Home.module.scss'
+import Container from 'components/Container'
+import Icon from 'components/Icon'
+import Typhography from 'components/Typhography'
+import useData from 'hooks/useData'
+import { PersonalModel } from 'shared/types'
+import styles from 'styles/containers/Home.module.scss'
 
 export default function Home() {
   const data = useData<PersonalModel>('personal.json')

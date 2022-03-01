@@ -1,6 +1,6 @@
-import styles from '@styles/components/Button.module.scss'
 import Link from 'next/link'
 import React from 'react'
+import styles from 'styles/components/Button.module.scss'
 
 type Props = {
   htmlElement: 'button' | 'a' | 'div'

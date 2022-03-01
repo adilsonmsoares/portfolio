@@ -1,5 +1,5 @@
-import styles from '@styles/components/Typhography.module.scss'
 import React from 'react'
+import styles from 'styles/components/Typhography.module.scss'
 
 type Props = {
   type: 'title' | 'sub-title' | 'sub-sub-title'
