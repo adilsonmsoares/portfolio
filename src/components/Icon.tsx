@@ -1,5 +1,5 @@
 import ArrowBackIcon from '@assets/icons/arrowBack.svg'
-import ArrowForwardIcon from '@assets/icons/arrowforward.svg'
+import ArrowForwardIcon from '@assets/icons/arrowForward.svg'
 import BulbIcon from '@assets/icons/bulb.svg'
 import CLanguageIcon from '@assets/icons/c.svg'
 import CSharpIcon from '@assets/icons/csharp.svg'
