@@ -19,7 +19,7 @@
       "@styles/*":["styles/*"],
       "@components/*":["components/*"],
       "@containers/*":["containers/*"],
-      "@assets/*":["public/*"],
+      "@assets/*":["../public/*"],
       "@shared/*":["shared/*"],
       "@hooks/*":["hooks/*"]
     }
