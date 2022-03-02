@@ -26,7 +26,7 @@ export default function Contact() {
                 href={`${key === 'email' ? 'mailto:' : ''}${
                   data.contacts[key]
                 }`}
-                target="_blank"
+                target={key === 'email' ? '' : '_blank'}
                 key={key}
               >
                 <Icon name={key} />

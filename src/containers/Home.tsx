@@ -23,7 +23,7 @@ export default function Home() {
         {Object.keys(data.contacts).map(key => (
           <a
             href={`${key === 'email' ? 'mailto:' : ''}${data.contacts[key]}`}
-            target="_blank"
+            target={key === 'email' ? '' : '_blank'}
             key={key}
           >
             <Icon name={key} />
