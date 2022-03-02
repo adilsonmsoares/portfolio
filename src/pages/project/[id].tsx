@@ -1,17 +1,36 @@
 import DetailViewer from '@components/DetailViewer'
 import useData from '@hooks/useData'
 import { DetailViewModel } from '@shared/types'
-import { useEffect, useState } from 'react'
+import {
+  GetStaticPathsContext,
+  GetStaticPropsContext,
+  InferGetStaticPropsType
+} from 'next'
+import { ParsedUrlQuery } from 'querystring'
 
-export default function ExperienceDetails() {
-  const [data, setdata] = useState<DetailViewModel>()
+const list = useData<DetailViewModel[]>('projects.json')
 
-  useEffect(() => {
-    let id = window.location.pathname.split('/').pop()
-    let list = useData<DetailViewModel[]>('projects.json')
-    let data = list.find(e => e.id === id)
-    setdata(data)
-  })
-
+function projectDetail({
+  data
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return <DetailViewer data={data} />
 }
+
+export async function getStaticPaths(context: GetStaticPathsContext) {
+  const paths = list.map(item => {
+    return {
+      params: { id: item.id }
+    }
+  })
+
+  return { paths, fallback: false }
+}
+
+export function getStaticProps(context: GetStaticPropsContext) {
+  const { id } = context.params as ParsedUrlQuery
+  let data = list.find(e => e.id === id)
+
+  return { props: { data } }
+}
+
+export default projectDetail
