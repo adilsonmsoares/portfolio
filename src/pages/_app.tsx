@@ -9,7 +9,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="shortcut icon" href={prefix + 'favicon.svg'} />
+        <link rel="shortcut icon" href={prefix + '/favicon.svg'} />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
       </Head>
       <NextNProgress
