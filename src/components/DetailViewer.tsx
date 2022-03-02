@@ -11,6 +11,8 @@ type Props = {
   data: DetailViewModel | undefined
 }
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 export default function DetailViewer({ data }: Props) {
   return (
     <Layout>
@@ -34,7 +36,7 @@ export default function DetailViewer({ data }: Props) {
               {data.images.map((image, index) => {
                 return (
                   <CarouselItem key={index}>
-                    <img src={image.url} alt={image.alt} />
+                    <img src={prefix + image.url} alt={image.alt} />
                   </CarouselItem>
                 )
               })}

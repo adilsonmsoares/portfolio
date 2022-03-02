@@ -9,6 +9,8 @@ type Props = {
   page: string
 }
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 export default function ThumbnailCard({ data, page }: Props) {
   return (
     <Link href={`/${page}/${data.id}`}>
@@ -33,7 +35,10 @@ export default function ThumbnailCard({ data, page }: Props) {
           })}
         </div>
         <div className={styles['image-container']}>
-          <img src={data.images[0].url} alt={data.images[0].alt + ' Logo'} />
+          <img
+            src={prefix + data.images[0].url}
+            alt={data.images[0].alt + ' Logo'}
+          />
         </div>
       </a>
     </Link>

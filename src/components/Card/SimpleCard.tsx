@@ -9,6 +9,8 @@ type Props = {
   page: string
 }
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 export default function SimpleCard({ data, page }: Props) {
   return (
     <div className={styles['card']}>
@@ -32,7 +34,10 @@ export default function SimpleCard({ data, page }: Props) {
       </Link>
       <div className={styles['entity-logo']}>
         {data.entity.logoUrl ? (
-          <img src={data.entity.logoUrl} alt={data.entity.name + ' Logo'} />
+          <img
+            src={prefix + data.entity.logoUrl}
+            alt={data.entity.name + ' Logo'}
+          />
         ) : (
           <span>No Logo Available</span>
         )}

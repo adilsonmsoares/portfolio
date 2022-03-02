@@ -6,6 +6,8 @@ import { SkillViewModel } from '@shared/types'
 import styles from '@styles/containers/Skills.module.scss'
 import { useState } from 'react'
 
+const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
+
 export default function Skills() {
   const [activeTabIndex, setActiveTabIndex] = useState(0)
   const data = useData<SkillViewModel[]>('skills.json')
@@ -17,7 +19,7 @@ export default function Skills() {
         Skills
       </Typhography>
       <img
-        src="/images/skills_cover.jpg"
+        src={prefix + '/images/skills_cover.jpg'}
         alt="Skills cover image"
         className={styles['cover-image']}
       />
