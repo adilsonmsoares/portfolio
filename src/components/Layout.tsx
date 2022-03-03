@@ -1,14 +1,16 @@
 import Button from '@components/Button'
 import Icon from '@components/Icon'
+import Loading from '@components/Loading'
 import Navbar from '@components/Navbar'
 import React from 'react'
 import useDarkMode from 'use-dark-mode'
 
 type Props = {
+  isLoading?: boolean
   scrollSmooth?: boolean
 }
 
-const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
+const Layout: React.FC<Props> = ({ children, isLoading, scrollSmooth }) => {
   const darkmode = useDarkMode(true)
 
   const setSmoothScroll = (scrollSmooth?: boolean) => {
@@ -29,7 +31,8 @@ const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
         </Button>
       </div>
       <Navbar />
-      {children}
+      {isLoading && <Loading />}
+      {!isLoading && children}
       <footer>
         <div>
           <div>Designed and developed Adilson Soares</div>
@@ -41,6 +44,7 @@ const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
 }
 
 Layout.defaultProps = {
+  isLoading: false,
   scrollSmooth: false
 }
 
