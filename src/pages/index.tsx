@@ -16,6 +16,10 @@ const Index: NextPage = () => {
     setTimeout(() => {
       setIsLoading(false)
     }, 1200)
+
+    return () => {
+      setIsLoading(false)
+    }
   }, [])
 
   return (

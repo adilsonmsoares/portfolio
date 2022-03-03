@@ -21,6 +21,10 @@ export default function DetailViewer({ data }: Props) {
     setTimeout(() => {
       setIsLoading(false)
     }, 1200)
+
+    return () => {
+      setIsLoading(false)
+    }
   }, [])
 
   return (
