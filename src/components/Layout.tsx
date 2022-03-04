@@ -1,8 +1,7 @@
 import Button from '@components/Button'
 import Icon from '@components/Icon'
-import Loading from '@components/Loading'
 import Navbar from '@components/Navbar'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import useDarkMode from 'use-dark-mode'
 
 type Props = {
@@ -19,53 +18,6 @@ const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
         document.documentElement.classList.remove('scroll-smooth')
     }
   }
-
-  const onRefreshPage = () => {
-    localStorage.setItem('lastHistoryIdx', '-1')
-  }
-
-  const onPopStateEvent = () => {
-    popStateEventTriggered = true
-    localStorage.setItem('lastHistoryIdx', window.history.state.idx)
-  }
-
-  var popStateEventTriggered = false
-  useEffect(() => {
-    window.addEventListener('beforeunload', onRefreshPage)
-    window.addEventListener('popstate', onPopStateEvent)
-
-    return () => {
-      if (!popStateEventTriggered) {
-        localStorage.setItem(
-          'lastHistoryIdx',
-          String(window.history.state.idx - 1)
-        )
-      }
-
-      window.removeEventListener('beforeunload', onRefreshPage)
-      window.removeEventListener('popstate', onPopStateEvent)
-    }
-  }, [])
-
-  const [isLoading, setIsLoading] = useState(false)
-  useEffect(() => {
-    if (
-      window.history.state.idx ===
-      Number(localStorage.getItem('lastHistoryIdx'))
-    ) {
-      return
-    }
-
-    setIsLoading(true)
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1200)
-
-    return () => {
-      setIsLoading(false)
-    }
-  }, [])
-
   setSmoothScroll(scrollSmooth)
 
   return (
@@ -76,8 +28,7 @@ const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
         </Button>
       </div>
       <Navbar />
-      {isLoading && <Loading />}
-      {!isLoading && children}
+      {children}
       <footer>
         <div>
           <div>Designed and developed Adilson Soares</div>
