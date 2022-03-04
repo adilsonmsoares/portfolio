@@ -1,12 +1,13 @@
 .viewer {
   .header {
     margin-bottom: var(--spacing-medium);
-    padding-bottom: var(--spacing-small);
-    border-bottom: var(--border-size) solid var(--color-tertiary);
 
     .info {
       display: flex;
       justify-content: space-between;
+      border-bottom: var(--border-size) solid var(--color-tertiary);
+      margin-bottom: var(--spacing-small);
+      padding-bottom: var(--spacing-small);
 
       :first-child {
         padding-right: var(--spacing-base);

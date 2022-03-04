@@ -18,17 +18,17 @@ export default function DetailViewer({ data }: Props) {
     <Layout>
       <div className={['container container-page', styles['viewer']].join(' ')}>
         <div className={styles.header}>
-          <Typhography type="title" color="primary" strong upperCase>
-            {data?.title}
-          </Typhography>
           <div className={styles.info}>
-            <Typhography type="sub-sub-title" color="primary" upperCase>
+            <Typhography type="sub-sub-title" upperCase>
               {data?.entity.name}
             </Typhography>
-            <Typhography type="sub-sub-title" color="primary" upperCase>
+            <Typhography type="sub-sub-title" upperCase>
               {data?.startDate} - {data?.endDate}
             </Typhography>
           </div>
+          <Typhography type="title" color="special" strong upperCase>
+            {data?.title}
+          </Typhography>
         </div>
         <div className={styles.main}>
           {data?.images && (
@@ -48,7 +48,7 @@ export default function DetailViewer({ data }: Props) {
                 {section.title && (
                   <Typhography
                     type="sub-title"
-                    color="primary"
+                    color="special"
                     strong
                     upperCase
                   >

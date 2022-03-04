@@ -3,7 +3,7 @@ import React from 'react'
 
 type Props = {
   type: 'title' | 'sub-title' | 'sub-sub-title'
-  color?: 'default' | 'primary'
+  color?: 'default' | 'primary' | 'special'
   header?: boolean
   strong?: boolean
   upperCase?: boolean

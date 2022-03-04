@@ -5,6 +5,10 @@
     color: var(--color-primary);
   }
 
+  &--special {
+    color: var(--special-color);
+  }
+
   &--uppercase {
     text-transform: uppercase;
   }
