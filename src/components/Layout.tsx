@@ -30,7 +30,7 @@ const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
       <Navbar />
       {children}
       <footer>
-        <div>
+        <div className="footer-content">
           <div>Designed and developed Adilson Soares</div>
           <div>All Rights Reserved</div>
         </div>

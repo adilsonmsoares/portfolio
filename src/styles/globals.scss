@@ -90,7 +90,7 @@ a {
 
 .container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1024px;
   margin-right: auto;
   margin-left: auto;
   padding-left: var(--spacing-base);
@@ -120,7 +120,7 @@ a {
 footer {
   text-align: center;
 
-  > div {
+  .footer-content {
     min-width: fit-content;
     width: 60%;
     margin: 0 auto;

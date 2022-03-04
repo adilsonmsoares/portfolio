@@ -30,7 +30,11 @@
         border-bottom: var(--border-size) solid var(--color-tertiary);
 
         &--active {
-          border-color: var(--color-primary);
+          border-color: var(--special-color);
+
+          > * {
+            color: var(--special-color);
+          }
         }
 
         &:hover:not(&--active) {
