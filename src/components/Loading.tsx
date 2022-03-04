@@ -1,4 +1,4 @@
-import Favicon from '@assets/favicon_transparent.svg'
+import Favicon from '@assets/favicon.svg'
 import styles from '@styles/components/Loading.module.scss'
 import React from 'react'
 
