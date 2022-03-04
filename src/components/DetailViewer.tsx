@@ -6,7 +6,6 @@ import Layout from '@components/Layout'
 import Typhography from '@components/Typhography'
 import { DetailViewModel } from '@shared/types'
 import styles from '@styles/components/DetailViewer.module.scss'
-import { useEffect, useState } from 'react'
 
 type Props = {
   data: DetailViewModel | undefined
@@ -15,20 +14,8 @@ type Props = {
 const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export default function DetailViewer({ data }: Props) {
-  const [isLoading, setIsLoading] = useState(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1200)
-
-    return () => {
-      setIsLoading(false)
-    }
-  }, [])
-
   return (
-    <Layout isLoading={isLoading}>
+    <Layout>
       <div className={['container container-page', styles['viewer']].join(' ')}>
         <div className={styles.header}>
           <Typhography type="title" color="primary" strong upperCase>
