@@ -19,8 +19,8 @@ export default function Timeline({ data, page }: Props) {
               <div className={styles.box}>
                 <Link href={`/${page}/${item.id}`}>
                   <a className={styles.main}>
-                    <div>
-                      <Typhography type="sub-title" color="primary" strong>
+                    <div className={styles.title}>
+                      <Typhography type="sub-title" color="special" strong>
                         {item.title}
                       </Typhography>
                       <Typhography type="sub-sub-title">

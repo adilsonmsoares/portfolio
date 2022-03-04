@@ -58,6 +58,12 @@
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+
+        .title {
+          :first-child {
+            margin-bottom: 5px;
+          }
+        }
       }
 
       .triangle {
