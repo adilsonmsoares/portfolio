@@ -16,7 +16,7 @@ export default function ThumbnailCard({ data, page }: Props) {
     <Link href={`/${page}/${data.id}`}>
       <a className={styles.thumbnail}>
         <div className={styles.main}>
-          <Typhography type="sub-title" color="primary" upperCase strong>
+          <Typhography type="sub-title" color="primary" strong>
             {data.title}
           </Typhography>
           <hr />
@@ -26,7 +26,6 @@ export default function ThumbnailCard({ data, page }: Props) {
                 key={index}
                 type="sub-sub-title"
                 color="primary"
-                upperCase
                 strong
               >
                 {item}
