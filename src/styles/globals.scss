@@ -121,7 +121,6 @@ footer {
   text-align: center;
 
   .footer-content {
-    min-width: fit-content;
     width: 60%;
     margin: 0 auto;
     padding: var(--spacing-small) 0;
@@ -140,7 +139,7 @@ footer {
   }
 
   footer {
-    & > div {
+    .footer-content {
       width: 90%;
     }
   }
