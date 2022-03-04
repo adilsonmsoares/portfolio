@@ -6,10 +6,11 @@ import Typhography from '@components/Typhography'
 import useData from '@hooks/useData'
 import { ExperienceViewModel, SimpleCardViewModel } from '@shared/types'
 import styles from '@styles/containers/Experience.module.scss'
+import { useEffect, useState } from 'react'
 
 export default function Experience() {
   const data = useData<ExperienceViewModel[]>('experiences.json')
-  const maxPerSlide = 3
+  const [maxPerSlide, SetMaxPerSlide] = useState(3)
   const maxSlide = Math.ceil(data.length / maxPerSlide)
 
   const renderCards = (slideIndex: number) => {
@@ -25,6 +26,16 @@ export default function Experience() {
         )
       })
   }
+
+  const isMobileDevice = (): Boolean => {
+    return window.screen.width < 768
+  }
+
+  useEffect(() => {
+    if (isMobileDevice()) {
+      SetMaxPerSlide(2)
+    }
+  }, [])
 
   return (
     <Container
