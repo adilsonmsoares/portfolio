@@ -24,7 +24,7 @@ const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
     <>
       <div className="helper-buttons">
         <Button onClick={darkmode.toggle} type="circular" htmlElement="div">
-          <Icon name="bulb" small />
+          <Icon name={darkmode.value ? 'sun' : 'moon'} small />
         </Button>
       </div>
       <Navbar />

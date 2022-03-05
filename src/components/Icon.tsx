@@ -1,6 +1,6 @@
+import SunIcon from '@assets//icons/sun.svg'
 import ArrowBackIcon from '@assets/icons/arrowBack.svg'
 import ArrowForwardIcon from '@assets/icons/arrowForward.svg'
-import BulbIcon from '@assets/icons/bulb.svg'
 import CLanguageIcon from '@assets/icons/c.svg'
 import CSharpIcon from '@assets/icons/csharp.svg'
 import CSSIcon from '@assets/icons/css.svg'
@@ -12,6 +12,7 @@ import HTMLICon from '@assets/icons/html.svg'
 import JavaIcon from '@assets/icons/java.svg'
 import JavascriptIcon from '@assets/icons/javascript.svg'
 import LinkedinIcon from '@assets/icons/linkedin.svg'
+import MoonIcon from '@assets/icons/moon.svg'
 import NodeJSIcon from '@assets/icons/nodejs.svg'
 import PythonIcon from '@assets/icons/python.svg'
 import ReactIcon from '@assets/icons/react.svg'
@@ -39,7 +40,8 @@ export default function Icon({ name, small, noEffect }: Props) {
           arrowBack: <ArrowBackIcon />,
           arrowForward: <ArrowForwardIcon />,
           externalLink: <ExternalLinkIcon />,
-          bulb: <BulbIcon />,
+          sun: <SunIcon />,
+          moon: <MoonIcon />,
           twitter: <TwitterIcon />,
           linkedin: <LinkedinIcon />,
           github: <GitHubIcon />,
