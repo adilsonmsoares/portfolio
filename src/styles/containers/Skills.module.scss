@@ -39,7 +39,9 @@
 
         &:hover:not(&--active) {
           cursor: pointer;
-          border-color: var(--color-primary);
+          > * {
+            color: var(--special-color);
+          }
         }
       }
     }

@@ -20,7 +20,9 @@
 
       &:hover:not(&--active) {
         cursor: pointer;
-        border-bottom: var(--border-size) solid var(--color-primary);
+        > * {
+          color: var(--special-color);
+        }
       }
     }
   }
