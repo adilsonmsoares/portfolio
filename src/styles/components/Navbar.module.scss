@@ -109,17 +109,25 @@
     }
 
     .navbar-collapse {
-      display: none;
+      width: 100%;
+      position: fixed;
+      top: 70px;
+      left: 0;
+
+      overflow: hidden;
+      ul {
+        height: 0;
+        padding: 0 var(--spacing-base);
+        background-color: var(--background-color-primary);
+        transition: height 0.8s, padding-top 0.7s, padding-bottom 0.7s ease-in;
+      }
 
       &--show {
-        width: 100%;
-        display: initial;
-        position: fixed;
-        top: 70px;
-        left: 0;
-        height: calc(100vh - 70px);
-        background-color: var(--background-color-primary);
-        padding: var(--spacing-base);
+        ul {
+          height: calc(100vh - 70px);
+          padding: var(--spacing-base);
+          transition: height 0.8s, padding-top 0.7s, padding-bottom 0.7s ease-in;
+        }
       }
     }
 
