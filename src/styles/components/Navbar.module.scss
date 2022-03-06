@@ -40,6 +40,10 @@
     border: none;
     padding: 0;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     .toggle-line {
       width: 25px;
       height: 2px;
@@ -108,31 +112,23 @@
       }
     }
 
-    .navbar-collapse {
+    .navbar-nav {
+      flex-direction: column;
       width: 100%;
       position: fixed;
       top: 70px;
       left: 0;
-
       overflow: hidden;
-      ul {
-        height: 0;
-        padding: 0 var(--spacing-base);
-        background-color: var(--background-color-primary);
-        transition: height 0.8s, padding-top 0.7s, padding-bottom 0.7s ease-in;
-      }
+      height: 0;
+      padding: 0 var(--spacing-base);
+      background-color: var(--background-color-primary);
+      transition: height 0.3s, padding-top 0.5s, padding-bottom 0.3s ease-in;
 
       &--show {
-        ul {
-          height: calc(100vh - 70px);
-          padding: var(--spacing-base);
-          transition: height 0.8s, padding-top 0.7s, padding-bottom 0.7s ease-in;
-        }
+        height: calc(100vh - 70px);
+        padding: var(--spacing-base);
+        transition: height 0.5s, padding-top 0.3s, padding-bottom 0.3s ease-in;
       }
-    }
-
-    .navbar-nav {
-      flex-direction: column;
 
       .nav-item {
         &:not(:last-child) {

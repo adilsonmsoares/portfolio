@@ -47,45 +47,43 @@ export default function Navbar() {
           <span className={styles['toggle-line']}></span>
           <span className={styles['toggle-line']}></span>
         </button>
-        <div
+        <ul
           className={[
-            styles['navbar-collapse'],
-            IsNavOpen && styles['navbar-collapse--show']
+            styles['navbar-nav'],
+            IsNavOpen && styles['navbar-nav--show']
           ].join(' ')}
         >
-          <ul className={styles['navbar-nav']}>
-            <li className={styles['nav-item']} onClick={closeNav}>
-              <Link href="/#aboutme">
-                <a className="nav-link">About</a>
-              </Link>
-            </li>
-            <li className={styles['nav-item']} onClick={closeNav}>
-              <Link href="/#education">
-                <a className="nav-link">Education</a>
-              </Link>
-            </li>
-            <li className={styles['nav-item']} onClick={closeNav}>
-              <Link href="/#skills">
-                <a className="nav-link">Skills</a>
-              </Link>
-            </li>
-            <li className={styles['nav-item']} onClick={closeNav}>
-              <Link href="/#experience">
-                <a className="nav-link">Experience</a>
-              </Link>
-            </li>
-            <li className={styles['nav-item']} onClick={closeNav}>
-              <Link href="/#projects">
-                <a className="nav-link">Projects</a>
-              </Link>
-            </li>
-            <li className={styles['nav-item']} onClick={closeNav}>
-              <Link href="/#contact">
-                <a className="nav-link">Contact</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
+          <li className={styles['nav-item']} onClick={closeNav}>
+            <Link href="/#aboutme">
+              <a className="nav-link">About</a>
+            </Link>
+          </li>
+          <li className={styles['nav-item']} onClick={closeNav}>
+            <Link href="/#education">
+              <a className="nav-link">Education</a>
+            </Link>
+          </li>
+          <li className={styles['nav-item']} onClick={closeNav}>
+            <Link href="/#skills">
+              <a className="nav-link">Skills</a>
+            </Link>
+          </li>
+          <li className={styles['nav-item']} onClick={closeNav}>
+            <Link href="/#experience">
+              <a className="nav-link">Experience</a>
+            </Link>
+          </li>
+          <li className={styles['nav-item']} onClick={closeNav}>
+            <Link href="/#projects">
+              <a className="nav-link">Projects</a>
+            </Link>
+          </li>
+          <li className={styles['nav-item']} onClick={closeNav}>
+            <Link href="/#contact">
+              <a className="nav-link">Contact</a>
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   )
