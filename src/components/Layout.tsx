@@ -1,6 +1,7 @@
 import Button from '@components/Button'
 import Icon from '@components/Icon'
 import Navbar from '@components/Navbar'
+import { usePageLoaded } from '@hooks/usePageLoaded'
 import React from 'react'
 import useDarkMode from 'use-dark-mode'
 
@@ -10,6 +11,7 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
   const darkmode = useDarkMode(true)
+  const loaded = usePageLoaded()
 
   const setSmoothScroll = (scrollSmooth?: boolean) => {
     if (typeof window !== 'undefined') {
@@ -24,7 +26,7 @@ const Layout: React.FC<Props> = ({ children, scrollSmooth }) => {
     <>
       <div className="helper-buttons">
         <Button onClick={darkmode.toggle} type="circular" htmlElement="div">
-          <Icon name={darkmode.value ? 'sun' : 'moon'} small />
+          {loaded && <Icon name={darkmode.value ? 'sun' : 'moon'} small />}
         </Button>
       </div>
       <Navbar />
