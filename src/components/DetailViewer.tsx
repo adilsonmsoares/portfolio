@@ -15,7 +15,7 @@ const prefix = process.env.NEXT_PUBLIC_BASE_PATH || ''
 
 export default function DetailViewer({ data }: Props) {
   return (
-    <Layout>
+    <Layout page={data?.title}>
       <div className={['container container-page', styles['viewer']].join(' ')}>
         <div className={styles.header}>
           <div className={styles.info}>
