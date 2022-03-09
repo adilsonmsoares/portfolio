@@ -38,7 +38,7 @@ const Layout: React.FC<Props> = ({ children, page, scrollSmooth }) => {
       {children}
       <footer>
         <div className="footer-content">
-          <div>Designed and developed Adilson Soares</div>
+          <div>Designed and developed by Adilson Soares</div>
           <div>All Rights Reserved</div>
         </div>
       </footer>
