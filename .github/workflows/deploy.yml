@@ -28,9 +28,11 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /portfolio
+          NEXT_PUBLIC_BASE_URL: https://adilsonmsoares.github.io/portfolio
       - run: npm run export
         env:
           NEXT_PUBLIC_BASE_PATH: /portfolio
+          NEXT_PUBLIC_BASE_URL: https://adilsonmsoares.github.io/portfolio
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
