@@ -22,7 +22,7 @@ export default class MyDocument extends Document {
           <meta name="title" content="Adilson Soares" />
           <meta
             name="description"
-            content="Adilson Soares is a Software Developer and Engineer trained to build well-structured applications in terms of architecture and code quality in order to promote a good user experience."
+            content="Adilson Soares is a Software Developer and Engineer skilled to build well-structured applications in terms of architecture and code quality in order to promote a good user experience."
           />
 
           {/* Open Graph / Facebook */}
@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
           <meta property="og:title" content="Adilson Soares" />
           <meta
             property="og:description"
-            content="Adilson Soares is a Software Developer and Engineer trained to build well-structured applications in terms of architecture and code quality in order to promote a good user experience."
+            content="Adilson Soares is a Software Developer and Engineer skilled to build well-structured applications in terms of architecture and code quality in order to promote a good user experience."
           />
           <meta property="og:image" content={baseUrl + '/images/metaTag.jpg'} />
 
@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
           <meta property="twitter:title" content="Adilson Soares" />
           <meta
             property="twitter:description"
-            content="Adilson Soares is a Software Developer and Engineer trained to build well-structured applications in terms of architecture and code quality in order to promote a good user experience."
+            content="Adilson Soares is a Software Developer and Engineer skilled to build well-structured applications in terms of architecture and code quality in order to promote a good user experience."
           />
           <meta
             property="twitter:image"
