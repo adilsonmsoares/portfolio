@@ -36,7 +36,10 @@ export default class MyDocument extends Document {
             property="og:description"
             content="Adilson Soares is a Software Developer and Engineer trained to build well-structured applications in terms of architecture and code quality in order to promote a good user experience."
           />
-          <meta property="og:image" content={prefix + '/images/metaTag.jpg'} />
+          <meta
+            property="og:image"
+            content={'%PUBLIC_URL%/images/metaTag.jpg'}
+          />
 
           {/* Twitter */}
           <meta property="twitter:card" content="summary_large_image" />
@@ -51,7 +54,7 @@ export default class MyDocument extends Document {
           />
           <meta
             property="twitter:image"
-            content={prefix + '/images/metaTag.jpg'}
+            content={'%PUBLIC_URL%/portfolio/images/metaTag.jpg'}
           />
           <meta charSet="utf-8" />
           <link
