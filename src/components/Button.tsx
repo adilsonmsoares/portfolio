@@ -57,7 +57,7 @@ const Button: React.FC<Props> = ({
       </a>
     </Link>
   ) : (
-    <div className={classNames} {...{ onClick, disabled }}>
+    <div className={classNames} {...{ onClick }}>
       {children}
     </div>
   )

@@ -21,7 +21,6 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
             rel="stylesheet"
           />
-          <noscript>You need to enable JavaScript to run this app.</noscript>
         </Head>
         <body>
           <Main />
