@@ -21,7 +21,7 @@ export default function Error({ errorType }: Props) {
       fullScreen
     >
       <div className={styles['alert-icon']}>
-        <Icon name="alert" />
+        <Icon name="alert" noEffect />
       </div>
       <div className={styles.main}>
         <Typhography type="sub-sub-title" upperCase>
