@@ -71,7 +71,7 @@ export default function DetailViewer({ data }: Props) {
               textUpper
               roundedCorner
             >
-              <Icon name="externalLink" small />
+              <Icon name="externalLink" small noEffect />
               <span>{data?.visitButton.text}</span>
             </Button>
           </div>
