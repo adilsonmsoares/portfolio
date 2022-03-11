@@ -1,6 +1,12 @@
 .typhography {
   text-decoration: none;
 
+  @at-root {
+    h1#{&} {
+      margin: 0;
+    }
+  }
+
   &--primary {
     color: var(--color-primary);
   }

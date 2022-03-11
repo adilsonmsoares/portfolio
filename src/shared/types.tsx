@@ -9,6 +9,10 @@ export type PersonalModel = {
   location: string
 }
 
+export type ErrorViewModel = {
+  [errorType: string]: { title: string; description: string }
+}
+
 export type DetailViewModel = {
   id: string
   title: string

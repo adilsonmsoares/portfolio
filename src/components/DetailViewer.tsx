@@ -65,7 +65,6 @@ export default function DetailViewer({ data }: Props) {
         {data?.visitButton && (
           <div className={styles.footer}>
             <Button
-              type="default"
               htmlElement="a"
               href={data?.visitButton.url}
               textStrong

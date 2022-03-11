@@ -4,7 +4,7 @@ import React from 'react'
 
 type Props = {
   htmlElement: 'button' | 'a' | 'div'
-  type: 'default' | 'circular'
+  type?: 'default' | 'circular'
   color?: 'primary'
   textStrong?: boolean
   textUpper?: boolean

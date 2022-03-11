@@ -16,7 +16,7 @@ export default function Contact() {
     >
       <div className={styles.content}>
         <div className={styles.info}>
-          <Typhography type="title" color="primary" strong>
+          <Typhography type="title" color="primary" strong header>
             Let's build something amazing
           </Typhography>
           <Typhography type="sub-title">Feel free to reach out</Typhography>

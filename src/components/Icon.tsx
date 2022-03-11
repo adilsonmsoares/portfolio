@@ -1,4 +1,4 @@
-import SunIcon from '@assets//icons/sun.svg'
+import AlertIcon from '@assets/icons/alert.svg'
 import ArrowBackIcon from '@assets/icons/arrowBack.svg'
 import ArrowForwardIcon from '@assets/icons/arrowForward.svg'
 import CLanguageIcon from '@assets/icons/c.svg'
@@ -17,6 +17,7 @@ import NodeJSIcon from '@assets/icons/nodejs.svg'
 import PythonIcon from '@assets/icons/python.svg'
 import ReactIcon from '@assets/icons/react.svg'
 import SqlIcon from '@assets/icons/sql.svg'
+import SunIcon from '@assets/icons/sun.svg'
 import TwitterIcon from '@assets/icons/twitter.svg'
 import React from 'react'
 
@@ -56,7 +57,8 @@ export default function Icon({ name, small, noEffect }: Props) {
           python: <PythonIcon />,
           react: <ReactIcon />,
           email: <EmailIcon />,
-          sql: <SqlIcon />
+          sql: <SqlIcon />,
+          alert: <AlertIcon />
         }[name]
       }
     </span>

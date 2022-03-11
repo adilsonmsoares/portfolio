@@ -1,0 +1,45 @@
+@import '@styles/mixins';
+
+.error-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .alert-icon {
+    margin: var(--spacing-medium);
+
+    span {
+      height: 75px;
+      max-width: revert;
+
+      svg,
+      path {
+        fill: var(--color-secondary);
+      }
+    }
+  }
+
+  .main {
+    max-width: 700px;
+
+    h1 {
+      padding: 0;
+    }
+
+    p {
+      margin-top: 25px;
+    }
+  }
+}
+
+@include small-screen() {
+  .error-container {
+    flex-direction: column;
+    justify-content: center;
+
+    .alert-icon {
+      margin-top: 0;
+      margin-bottom: var(--spacing-base);
+    }
+  }
+}

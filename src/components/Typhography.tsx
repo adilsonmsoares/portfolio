@@ -26,7 +26,12 @@ const Typhography: React.FC<Props> = ({
     upperCase && styles[`typhography--uppercase`]
   ].join(' ')
 
-  return <div className={classNames}>{children}</div>
+  return (
+    <>
+      {header && <h1 className={classNames}>{children}</h1>}
+      {!header && <div className={classNames}>{children}</div>}
+    </>
+  )
 }
 
 Typhography.defaultProps = {
