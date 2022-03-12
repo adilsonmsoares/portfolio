@@ -1,3 +1,4 @@
+import Error from '@containers/Error'
 import Document, {
   DocumentContext,
   Head,
@@ -47,13 +48,15 @@ export default class MyDocument extends Document {
             property="twitter:image"
             content={baseUrl + '/images/metaTag.jpg'}
           />
-          <meta charSet="utf-8" />
           <link
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,700"
             rel="stylesheet"
           />
         </Head>
         <body>
+          <noscript>
+            <Error errorType="noscript" />
+          </noscript>
           <Main />
           <NextScript />
         </body>

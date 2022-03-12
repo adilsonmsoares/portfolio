@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Container sectionId="home" className={styles['home-container']} fullScreen>
       <div className={styles.header}>
-        <Typhography type="title" color="primary" strong upperCase>
+        <Typhography type="title" color="primary" strong upperCase header>
           {data.title}
         </Typhography>
         <Typhography type="sub-title" color="primary">
@@ -22,8 +22,8 @@ export default function Home() {
       <div className={styles.contacts}>
         {Object.keys(data.contacts).map(key => (
           <a
-            href={`${key === 'email' ? 'mailto:' : ''}${data.contacts[key]}`}
-            target={key === 'email' ? '' : '_blank'}
+            href={(key === 'email' ? 'mailto:' : '') + data.contacts[key]}
+            {...(key !== 'email' && { target: '_blank' })}
             key={key}
           >
             <Icon name={key} />

@@ -23,10 +23,8 @@ export default function Contact() {
           <div className={styles['links']}>
             {Object.keys(data.contacts).map(key => (
               <a
-                href={`${key === 'email' ? 'mailto:' : ''}${
-                  data.contacts[key]
-                }`}
-                target={key === 'email' ? '' : '_blank'}
+                href={(key === 'email' ? 'mailto:' : '') + data.contacts[key]}
+                {...(key !== 'email' && { target: '_blank' })}
                 key={key}
               >
                 <Icon name={key} />
