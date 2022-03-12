@@ -52,7 +52,10 @@ const Button: React.FC<Props> = ({
     </button>
   ) : htmlElement === 'a' ? (
     <Link href={href || ''}>
-      <a className={classNames} target={isExternal(href || '') ? '_blank' : ''}>
+      <a
+        className={classNames}
+        {...(isExternal(href || '') && { target: '_blank' })}
+      >
         {children}
       </a>
     </Link>
