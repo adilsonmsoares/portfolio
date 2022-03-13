@@ -1,8 +1,4 @@
 {
-    "noscript": {
-        "title": "The JavaScript is not enabled",
-        "description": "Was verified that your browser JavaScript is disabled. Please enable it or change for another browser with JavaScript enabled."
-    },
     "404": {
         "title": "Page not found",
         "description": "The page you are looking for might have been removed or is temporarily unavailable."
