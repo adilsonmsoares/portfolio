@@ -71,6 +71,12 @@
     &--primary {
       color: var(--color-secondary);
       background-color: var(--background-color-secondary);
+
+      &:hover {
+        svg path {
+          fill: var(--color-primary);
+        }
+      }
     }
   }
 }
