@@ -12,7 +12,7 @@ export default function Education() {
       <Typhography type="title" color="primary" strong upperCase header>
         Education
       </Typhography>
-      <Timeline data={data} page="education" />
+      <Timeline data={data} />
     </Container>
   )
 }
