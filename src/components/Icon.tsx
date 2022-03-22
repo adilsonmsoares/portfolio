@@ -4,6 +4,7 @@ import ArrowForwardIcon from '@assets/icons/arrowForward.svg'
 import CLanguageIcon from '@assets/icons/c.svg'
 import CSharpIcon from '@assets/icons/csharp.svg'
 import CSSIcon from '@assets/icons/css.svg'
+import DotNetIcon from '@assets/icons/dotnet.svg'
 import EmailIcon from '@assets/icons/email.svg'
 import ExternalLinkIcon from '@assets/icons/externalLink.svg'
 import FlutterIcon from '@assets/icons/flutter.svg'
@@ -13,6 +14,7 @@ import JavaIcon from '@assets/icons/java.svg'
 import JavascriptIcon from '@assets/icons/javascript.svg'
 import LinkedinIcon from '@assets/icons/linkedin.svg'
 import MoonIcon from '@assets/icons/moon.svg'
+import NextJSIcon from '@assets/icons/nextjs.svg'
 import NodeJSIcon from '@assets/icons/nodejs.svg'
 import PythonIcon from '@assets/icons/python.svg'
 import ReactIcon from '@assets/icons/react.svg'
@@ -54,8 +56,10 @@ export default function Icon({ name, small, noEffect }: Props) {
           java: <JavaIcon />,
           javascript: <JavascriptIcon />,
           nodejs: <NodeJSIcon />,
+          nextjs: <NextJSIcon />,
           python: <PythonIcon />,
           react: <ReactIcon />,
+          dotnet: <DotNetIcon />,
           email: <EmailIcon />,
           sql: <SqlIcon />,
           alert: <AlertIcon />

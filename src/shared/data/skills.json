@@ -10,20 +10,12 @@
                         "iconName": "csharp"
                     },
                     {
-                        "name": "Java",
-                        "iconName": "java"
-                    },
-                    {
-                        "name": "Python",
-                        "iconName": "python"
+                        "name": ".Net",
+                        "iconName": "dotnet"
                     },
                     {
                         "name": "Node.JS",
                         "iconName": "nodejs"
-                    },
-                    {
-                        "name": "C Language",
-                        "iconName": "clanguage"
                     }
                 ]
             },
@@ -31,24 +23,16 @@
                 "title": "Frontend-end",
                 "skills": [
                     {
-                        "name": "React",
-                        "iconName": "react"
-                    },
-                    {
                         "name": "Javascript",
                         "iconName": "javascript"
                     },
                     {
-                        "name": "Flutter",
-                        "iconName": "flutter"
+                        "name": "React",
+                        "iconName": "react"
                     },
                     {
-                        "name": "HTML",
-                        "iconName": "html"
-                    },
-                    {
-                        "name": "CSS",
-                        "iconName": "css"
+                        "name": "Next.js",
+                        "iconName": "nextjs"
                     }
                 ]
             },
@@ -73,7 +57,47 @@
                         "name": "GIT"
                     },
                     {
+                        "name": "Azure DevOps"
+                    },
+                    {
                         "name": "Agile methodologies (SCRUM + Kanban)"
+                    }
+                ]
+            },
+            {
+                "title": "Development Technics",
+                "skills": [
+                    {
+                        "name": "SOLID"
+                    },
+                    {
+                        "name": "Redux + Hooks"
+                    },
+                    {
+                        "name": "Applicational Telemetry"
+                    },
+                    {
+                        "name": "Clean Code"
+                    },
+                    {
+                        "name": "Architecture"
+                    },
+                    {
+                        "name": "Design Patterns"
+                    }
+                ]
+            },
+            {
+                "title": "Soft skills",
+                "skills": [
+                    {
+                        "name": "Critical Thinking"
+                    },
+                    {
+                        "name": "Problem solver"
+                    },
+                    {
+                        "name": "Teamwork"
                     }
                 ]
             },
@@ -111,6 +135,9 @@
                 "title": "Recently used technologies",
                 "skills": [
                     {
+                        "name": "Next.js"
+                    },
+                    {
                         "name": "React"
                     },
                     {
@@ -120,9 +147,6 @@
                         "name": "SQL"
                     },
                     {
-                        "name": "Flutter"
-                    },
-                    {
                         "name": "ASP.NET Framework"
                     },
                     {
@@ -130,9 +154,6 @@
                     },
                     {
                         "name": "CSS"
-                    },
-                    {
-                        "name": "NextJS"
                     },
                     {
                         "name": "SASS"
@@ -145,9 +166,6 @@
                     },
                     {
                         "name": "Typescript"
-                    },
-                    {
-                        "name": "React"
                     }
                 ]
             }
