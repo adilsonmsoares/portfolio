@@ -19,14 +19,12 @@ export default function DetailViewer({ data }: Props) {
       <div className={['container container-page', styles['viewer']].join(' ')}>
         <div className={styles.header}>
           <div className={styles.info}>
-            <Typhography type="sub-sub-title" upperCase>
-              {data?.entity.name}
-            </Typhography>
-            <Typhography type="sub-sub-title" upperCase>
+            <Typhography type="sub-sub-title">{data?.entity.name}</Typhography>
+            <Typhography type="sub-sub-title">
               {data?.startDate} - {data?.endDate}
             </Typhography>
           </div>
-          <Typhography type="title" color="special" strong upperCase>
+          <Typhography type="title" color="special" strong>
             {data?.title}
           </Typhography>
         </div>
@@ -46,12 +44,7 @@ export default function DetailViewer({ data }: Props) {
             return (
               <div key={index} className={styles.description}>
                 {section.title && (
-                  <Typhography
-                    type="sub-title"
-                    color="special"
-                    strong
-                    upperCase
-                  >
+                  <Typhography type="sub-title" color="special" strong>
                     {section.title}
                   </Typhography>
                 )}
@@ -68,7 +61,6 @@ export default function DetailViewer({ data }: Props) {
               htmlElement="a"
               href={data?.visitButton.url}
               textStrong
-              textUpper
               roundedCorner
             >
               <Icon name="externalLink" small noEffect />

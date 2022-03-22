@@ -59,6 +59,7 @@ const Carousel: React.FC<Props> = ({
             styles['btn-indicator--back']
           ].join(' ')}
           disabled={activeIndex == 0}
+          hidden={numberChildren <= 1}
         >
           <Icon name="arrowBack" small />
         </Button>
@@ -73,6 +74,7 @@ const Carousel: React.FC<Props> = ({
             styles['btn-indicator--forward']
           ].join(' ')}
           disabled={activeIndex == numberChildren - 1}
+          hidden={numberChildren <= 1}
         >
           <Icon name="arrowForward" small />
         </Button>
