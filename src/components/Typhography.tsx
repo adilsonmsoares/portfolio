@@ -21,7 +21,6 @@ const Typhography: React.FC<Props> = ({
     styles.typhography,
     type && styles[`typhography-${type}`],
     color && styles[`typhography--${color}`],
-    header && styles[`typhography-header`],
     strong && styles[`typhography--strong`],
     upperCase && styles[`typhography--uppercase`]
   ].join(' ')

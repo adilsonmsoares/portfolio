@@ -3,7 +3,7 @@
 
   @at-root {
     h1#{&} {
-      margin: 0;
+      margin: 0 0 var(--spacing-medium) 0;
     }
   }
 
@@ -33,9 +33,5 @@
 
   &-sub-sub-title {
     font-size: var(--font-size-small);
-  }
-
-  &-header {
-    padding-bottom: var(--spacing-medium);
   }
 }
