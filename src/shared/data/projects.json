@@ -1,15 +1,15 @@
 [
     {
-        "id": "csmpt1",
-        "title": "Gascan",
+        "id": "portfolio",
+        "title": "Porfolio",
         "entity": {
-            "name": "InspireIT"
+            "name": "Own"
         },
         "startDate": "09/2011",
         "endDate": "07/2014",
         "stack": [
-            "ASP.NET Core",
-            "Jquery"
+            "Next.js",
+            "TypeScript"
         ],
         "sectionDescription": [
             {
@@ -30,162 +30,30 @@
         ],
         "images": [
             {
-                "url": "/images/gascan.png",
-                "alt": "gascan"
-            },
-            {
-                "url": "/images/gllg.png",
-                "alt": "gllg"
-            },
-            {
-                "url": "/images/img_home.jpg",
-                "alt": "Home"
-            },
-            {
-                "url": "/images/inspire_it_internal_portal.png",
-                "alt": "InspireIT Portal"
-            },
-            {
-                "url": "/images/portfolio.png",
-                "alt": "Portfolio"
+                "url": "/images/projects/portfolio.jpg",
+                "alt": "Portfolio image"
             }
         ],
         "visitButton": {
-            "text": "Visit Website",
-            "url": "/education/csmpt2"
+            "text": "View source",
+            "url": "https://github.com/adilsonmsoares/portfolio"
         },
         "categories": [
-            "software"
-        ]
-    },
-    {
-        "id": "csmpt2",
-        "title": "GLLG",
-        "entity": {
-            "name": "InspireIT"
-        },
-        "startDate": "09/2011",
-        "endDate": "07/2014",
-        "stack": [
-            "ASP.NET Framework"
-        ],
-        "sectionDescription": [
-            {
-                "title": null,
-                "description": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in cursus turpis, vitae semper lorem. Cras ligula nibh, congue vel dolor quis, interdum blandit diam. Quisque nunc risus, euismod ac ex sollicitudin, pulvinar bibendum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae felis id massa ultrices dictum. Aliquam gravida pretium tristique. Maecenas dictum, lacus ut fringilla consequat, odio turpis tempus dui, eu luctus lorem diam mollis arcu. Cras nec vestibulum ex, eu hendrerit dui. Curabitur sed lorem arcu.",
-                    "Nulla eu arcu ut felis congue pellentesque. Suspendisse massa nibh, ultricies sit amet mi sed, interdum semper metus. Nulla dictum risus sodales arcu semper sollicitudin. Ut eleifend orci eget metus posuere rutrum. Integer rutrum viverra massa et sagittis. Suspendisse congue imperdiet diam, ac luctus orci pulvinar elementum. Nullam interdum imperdiet dignissim. Nunc vitae vulputate odio."
-                ]
-            },
-            {
-                "title": "Section two",
-                "description": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in cursus turpis, vitae semper lorem. Cras ligula nibh, congue vel dolor quis, interdum blandit diam. Quisque nunc risus, euismod ac ex sollicitudin, pulvinar bibendum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae felis id massa ultrices dictum. Aliquam gravida pretium tristique. Maecenas dictum, lacus ut fringilla consequat, odio turpis tempus dui, eu luctus lorem diam mollis arcu. Cras nec vestibulum ex, eu hendrerit dui. Curabitur sed lorem arcu.",
-                    "Nulla eu arcu ut felis congue pellentesque. Suspendisse massa nibh, ultricies sit amet mi sed, interdum semper metus. Nulla dictum risus sodales arcu semper sollicitudin. Ut eleifend orci eget metus posuere rutrum. Integer rutrum viverra massa et sagittis. Suspendisse congue imperdiet diam, ac luctus orci pulvinar elementum. Nullam interdum imperdiet dignissim. Nunc vitae vulputate odio.",
-                    "Mauris non rhoncus ex. Praesent eu semper nunc. Quisque vel nunc sit amet enim vulputate sagittis sed a diam. In porta sem congue, efficitur nibh id, volutpat diam. Duis rutrum ante nulla, sollicitudin ultricies ipsum malesuada in. Praesent elementum gravida nulla id fringilla. Duis sed metus vitae enim aliquam consectetur. Maecenas a congue purus, non fringilla enim. Proin nisl ligula, feugiat at quam vel, gravida mattis felis. Sed quis magna vel risus egestas ultrices et eu justo. Duis egestas justo ut purus viverra sodales."
-                ]
-            }
-        ],
-        "images": [
-            {
-                "url": "/images/gascan.png",
-                "alt": "gascan"
-            },
-            {
-                "url": "/images/gllg.png",
-                "alt": "gllg"
-            },
-            {
-                "url": "/images/img_home.jpg",
-                "alt": "Home"
-            },
-            {
-                "url": "/images/inspire_it_internal_portal.png",
-                "alt": "InspireIT Portal"
-            },
-            {
-                "url": "/images/portfolio.png",
-                "alt": "Portfolio"
-            }
-        ],
-        "visitButton": {
-            "text": "Visit Website",
-            "url": "/education/csmpt2"
-        },
-        "categories": [
-            "software"
-        ]
-    },
-    {
-        "id": "csmpt3",
-        "title": "Omnio",
-        "entity": {
-            "name": "InspireIT"
-        },
-        "startDate": "09/2011",
-        "endDate": "07/2014",
-        "stack": [
-            ".NET Core",
-            "React"
-        ],
-        "sectionDescription": [
-            {
-                "title": null,
-                "description": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in cursus turpis, vitae semper lorem. Cras ligula nibh, congue vel dolor quis, interdum blandit diam. Quisque nunc risus, euismod ac ex sollicitudin, pulvinar bibendum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae felis id massa ultrices dictum. Aliquam gravida pretium tristique. Maecenas dictum, lacus ut fringilla consequat, odio turpis tempus dui, eu luctus lorem diam mollis arcu. Cras nec vestibulum ex, eu hendrerit dui. Curabitur sed lorem arcu.",
-                    "Nulla eu arcu ut felis congue pellentesque. Suspendisse massa nibh, ultricies sit amet mi sed, interdum semper metus. Nulla dictum risus sodales arcu semper sollicitudin. Ut eleifend orci eget metus posuere rutrum. Integer rutrum viverra massa et sagittis. Suspendisse congue imperdiet diam, ac luctus orci pulvinar elementum. Nullam interdum imperdiet dignissim. Nunc vitae vulputate odio."
-                ]
-            },
-            {
-                "title": "Section two",
-                "description": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in cursus turpis, vitae semper lorem. Cras ligula nibh, congue vel dolor quis, interdum blandit diam. Quisque nunc risus, euismod ac ex sollicitudin, pulvinar bibendum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae felis id massa ultrices dictum. Aliquam gravida pretium tristique. Maecenas dictum, lacus ut fringilla consequat, odio turpis tempus dui, eu luctus lorem diam mollis arcu. Cras nec vestibulum ex, eu hendrerit dui. Curabitur sed lorem arcu.",
-                    "Nulla eu arcu ut felis congue pellentesque. Suspendisse massa nibh, ultricies sit amet mi sed, interdum semper metus. Nulla dictum risus sodales arcu semper sollicitudin. Ut eleifend orci eget metus posuere rutrum. Integer rutrum viverra massa et sagittis. Suspendisse congue imperdiet diam, ac luctus orci pulvinar elementum. Nullam interdum imperdiet dignissim. Nunc vitae vulputate odio.",
-                    "Mauris non rhoncus ex. Praesent eu semper nunc. Quisque vel nunc sit amet enim vulputate sagittis sed a diam. In porta sem congue, efficitur nibh id, volutpat diam. Duis rutrum ante nulla, sollicitudin ultricies ipsum malesuada in. Praesent elementum gravida nulla id fringilla. Duis sed metus vitae enim aliquam consectetur. Maecenas a congue purus, non fringilla enim. Proin nisl ligula, feugiat at quam vel, gravida mattis felis. Sed quis magna vel risus egestas ultrices et eu justo. Duis egestas justo ut purus viverra sodales."
-                ]
-            }
-        ],
-        "images": [
-            {
-                "url": "/images/gascan.png",
-                "alt": "gascan"
-            },
-            {
-                "url": "/images/gllg.png",
-                "alt": "gllg"
-            },
-            {
-                "url": "/images/img_home.jpg",
-                "alt": "Home"
-            },
-            {
-                "url": "/images/inspire_it_internal_portal.png",
-                "alt": "InspireIT Portal"
-            },
-            {
-                "url": "/images/portfolio.png",
-                "alt": "Portfolio"
-            }
-        ],
-        "visitButton": {
-            "text": "Visit Website",
-            "url": "/education/csmpt2"
-        },
-        "categories": [
+            "software",
             "design"
         ]
     },
     {
-        "id": "csmpt4",
-        "title": "InspireIT Home",
+        "id": "mautic",
+        "title": "Mautic Marketing Automation",
         "entity": {
-            "name": "InspireIT"
+            "name": "Cofidis Portugal"
         },
         "startDate": "09/2011",
         "endDate": "07/2014",
         "stack": [
-            ".NET Core",
-            "React"
+            "Mautic",
+            ".NET 5"
         ],
         "sectionDescription": [
             {
@@ -206,45 +74,29 @@
         ],
         "images": [
             {
-                "url": "/images/gascan.png",
-                "alt": "gascan"
-            },
-            {
-                "url": "/images/gllg.png",
-                "alt": "gllg"
-            },
-            {
-                "url": "/images/img_home.jpg",
-                "alt": "Home"
-            },
-            {
-                "url": "/images/inspire_it_internal_portal.png",
-                "alt": "InspireIT Portal"
-            },
-            {
-                "url": "/images/portfolio.png",
-                "alt": "Portfolio"
+                "url": "/images/projects/logo-mautic.png",
+                "alt": "Mautic logo image"
             }
         ],
         "visitButton": {
-            "text": "Visit Website",
-            "url": "/education/csmpt2"
+            "text": "View Mautic",
+            "url": "https://www.mautic.org/"
         },
         "categories": [
             "software"
         ]
     },
     {
-        "id": "csmpt1",
-        "title": "Gascan",
+        "id": "dotNetjobAgent",
+        "title": ".NET Job Agent",
         "entity": {
-            "name": "Adilson Soares"
+            "name": "Cofidis Portugal"
         },
         "startDate": "09/2011",
         "endDate": "07/2014",
         "stack": [
-            "Adobe XD",
-            "React"
+            ".NET 3.1",
+            "HangFire"
         ],
         "sectionDescription": [
             {
@@ -265,32 +117,60 @@
         ],
         "images": [
             {
-                "url": "/images/gascan.png",
-                "alt": "gascan"
-            },
-            {
-                "url": "/images/gllg.png",
-                "alt": "gllg"
-            },
-            {
-                "url": "/images/img_home.jpg",
-                "alt": "Home"
-            },
-            {
-                "url": "/images/inspire_it_internal_portal.png",
-                "alt": "InspireIT Portal"
-            },
-            {
-                "url": "/images/portfolio.png",
-                "alt": "Portfolio"
+                "url": "/images/projects/hangfire.png",
+                "alt": "Hangfire image"
             }
         ],
         "visitButton": {
-            "text": "Visit Website",
-            "url": "/education/csmpt2"
+            "text": "View source",
+            "url": "https://github.com/adilsonmsoares/portfolio"
         },
         "categories": [
-            "design"
+            "software"
+        ]
+    },
+    {
+        "id": "lognugetpackage",
+        "title": "Log Nugget package",
+        "entity": {
+            "name": "Cofidis Portugal"
+        },
+        "startDate": "09/2011",
+        "endDate": "07/2014",
+        "stack": [
+            ".NET Standard",
+            "Serilog",
+            "ElasticSearch"
+        ],
+        "sectionDescription": [
+            {
+                "title": null,
+                "description": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in cursus turpis, vitae semper lorem. Cras ligula nibh, congue vel dolor quis, interdum blandit diam. Quisque nunc risus, euismod ac ex sollicitudin, pulvinar bibendum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae felis id massa ultrices dictum. Aliquam gravida pretium tristique. Maecenas dictum, lacus ut fringilla consequat, odio turpis tempus dui, eu luctus lorem diam mollis arcu. Cras nec vestibulum ex, eu hendrerit dui. Curabitur sed lorem arcu.",
+                    "Nulla eu arcu ut felis congue pellentesque. Suspendisse massa nibh, ultricies sit amet mi sed, interdum semper metus. Nulla dictum risus sodales arcu semper sollicitudin. Ut eleifend orci eget metus posuere rutrum. Integer rutrum viverra massa et sagittis. Suspendisse congue imperdiet diam, ac luctus orci pulvinar elementum. Nullam interdum imperdiet dignissim. Nunc vitae vulputate odio."
+                ]
+            },
+            {
+                "title": "Section two",
+                "description": [
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in cursus turpis, vitae semper lorem. Cras ligula nibh, congue vel dolor quis, interdum blandit diam. Quisque nunc risus, euismod ac ex sollicitudin, pulvinar bibendum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae felis id massa ultrices dictum. Aliquam gravida pretium tristique. Maecenas dictum, lacus ut fringilla consequat, odio turpis tempus dui, eu luctus lorem diam mollis arcu. Cras nec vestibulum ex, eu hendrerit dui. Curabitur sed lorem arcu.",
+                    "Nulla eu arcu ut felis congue pellentesque. Suspendisse massa nibh, ultricies sit amet mi sed, interdum semper metus. Nulla dictum risus sodales arcu semper sollicitudin. Ut eleifend orci eget metus posuere rutrum. Integer rutrum viverra massa et sagittis. Suspendisse congue imperdiet diam, ac luctus orci pulvinar elementum. Nullam interdum imperdiet dignissim. Nunc vitae vulputate odio.",
+                    "Mauris non rhoncus ex. Praesent eu semper nunc. Quisque vel nunc sit amet enim vulputate sagittis sed a diam. In porta sem congue, efficitur nibh id, volutpat diam. Duis rutrum ante nulla, sollicitudin ultricies ipsum malesuada in. Praesent elementum gravida nulla id fringilla. Duis sed metus vitae enim aliquam consectetur. Maecenas a congue purus, non fringilla enim. Proin nisl ligula, feugiat at quam vel, gravida mattis felis. Sed quis magna vel risus egestas ultrices et eu justo. Duis egestas justo ut purus viverra sodales."
+                ]
+            }
+        ],
+        "images": [
+            {
+                "url": "/images/projects/log-nugget-package.jpg",
+                "alt": "Log nugget package image"
+            }
+        ],
+        "visitButton": {
+            "text": "View source",
+            "url": "https://github.com/adilsonmsoares/portfolio"
+        },
+        "categories": [
+            "software"
         ]
     }
 ]
