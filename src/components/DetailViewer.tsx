@@ -49,7 +49,13 @@ export default function DetailViewer({ data }: Props) {
                   </Typhography>
                 )}
                 {section.description.map((description, index) => {
-                  return <p key={index}>{description}</p>
+                  return description.startsWith('-') ? (
+                    <p key={index} className={styles['bullet-item']}>
+                      {description.replace(/^-/, '')}
+                    </p>
+                  ) : (
+                    <p key={index}>{description}</p>
+                  )
                 })}
               </div>
             )

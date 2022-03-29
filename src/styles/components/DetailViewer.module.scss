@@ -20,6 +20,14 @@
   .main {
     .description {
       margin: var(--spacing-medium) 0;
+
+      .bullet-item {
+        margin: 7px 0 7px 25px;
+        &:before {
+          content: '•';
+          margin-right: 7px;
+        }
+      }
     }
   }
 
