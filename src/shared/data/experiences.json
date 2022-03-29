@@ -19,12 +19,12 @@
             {
                 "title": "Cofidis Portugal",
                 "description": [
-                    "Helped Cofidis Portugal, as an outsourcing collaborator, in the creation and digital transformation of its products, contributing to the team to which belongs to plan, create and migrate applications, and supporting them in the choices of the architecture to implement as well as participating in the developments.",
-                    "Participated in Telemetry Team and Test-driven development (TDD) team, helping them implement development standards to be followed by all teams.",
+                    "Helped Cofidis Portugal, as an outsourcing collaborator, in the creation and digital transformation of its products, contributing to the team to which belongs to plan, create and migrate applications, supporting them in the choices of the architecture to implement as well as participating in the developments.",
+                    "While was involved in the team's projects, participated in the Application Telemetry Team and Test-driven development (TDD) team, defining nugget packages, namings conventions and development standards to be used by the teams.",
                     "Created REST APIs and Micro Services from scratch, according to new developments and roadmap defined for the digital transformation.",
-                    "Created a log nugget during the participation in Telemetry team, to be used by all teams and facilitate their developments giving them a solution to this sensitive theme with main purpose of eliminate simple information dump, facility their process of analyzing an information flow,  direct logs to different profiles (System Admins, DEV, Support, among others), ensure compliance with security standards (eg.: GDPR), and monitor the performance of applications and features.",
-                    "Configured build and release pipelines, in Azure DevOps, for new APIs developed by the team.",
-                    "Implemented Mautic Marketing Automation in the Cofidis ecosystem to be used by the Marketing department in their campaigns, leaving them with all the configurations completed and providing them knowledge sessions to understand how the platform works.",
+                    "Created a log nugget package during the participation in Application Telemetry team, to be used by all teams and facilitate their developments giving them a solution to this sensitive theme with main purpose of eliminate simple information dump, facility their process of analyzing an information flow,  direct logs to different profiles (System Admins, DEV, Support, among others), ensure compliance with security standards (eg.: GDPR), and monitor the performance of applications and features.",
+                    "Configured build and release pipelines, in Azure DevOps, for new APIs developed.",
+                    "Implemented Mautic Marketing Automation in the Cofidis ecosystem to be used by Marketing department in their campaigns, leaving them with all the configurations completed and providing them knowledge sessions to understand how the platform works.",
                     "Main technologies used: .NET Core, .NET 5, .NET Framework 4.5+, SQL, SSIS, PostgreSQL, Hangfire, Dapper, Entity Framework, Onion Architecture, RabbitMQ, Mautic."
                 ]
             },
