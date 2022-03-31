@@ -37,7 +37,7 @@
           }
         }
 
-        &:hover:not(&--active) {
+        &:hover {
           cursor: pointer;
           > * {
             color: var(--special-color);

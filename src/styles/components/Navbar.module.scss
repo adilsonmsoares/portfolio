@@ -68,6 +68,8 @@
     }
 
     .nav-item {
+      color: var(--color-secondary);
+
       &:not(:last-child) {
         margin-right: var(--spacing-medium);
       }

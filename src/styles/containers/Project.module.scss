@@ -18,7 +18,7 @@
         margin-left: var(--spacing-base);
       }
 
-      &:hover:not(&--active) {
+      &:hover {
         cursor: pointer;
         > * {
           color: var(--special-color);
