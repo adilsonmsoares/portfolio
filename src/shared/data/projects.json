@@ -185,13 +185,8 @@
             {
                 "title": null,
                 "description": [
-                    "This boilerplate was created to serve as a base project for a quick start of an API in .NET, with a structured architecture opened for scalability and easy to maintenance. Its conception results in previous episodes where new developments emerged and the need to have an empty project with basic configurations already defined was felt."
-                ]
-            },
-            {
-                "title": "Features included",
-                "description": [
-                    "Below is a list of basic features that this API offers:",
+                    "This boilerplate was created to serve as a base project for a quick start of an API in .NET, with a structured architecture opened for scalability and easy to maintenance. Its conception results in previous episodes where new developments emerged and the need to have an empty project with basic configurations already defined was felt.",
+                    "Below is a list of basic features that this boilerplate API offers:",
                     "- Structured architecture based on layers",
                     "- API request examples",
                     "- Log events using Serilog",
@@ -200,24 +195,40 @@
                 ]
             },
             {
-                "title": "Main conventions to follow",
+                "title": "Contribution",
                 "description": [
-                    "All projects need rules to be follow to maintain a standardized project with readable code that can be understood by new developers. In this sense, and based on the chosen architecture, the main rules to follow are:",
-                    "- Above layers are aware of the below layers, but the opposite is not true",
-                    "- Data transfer between layers must be done through a data transfer protocol such as DTO (Data Transfer Object)",
-                    "- The layers/services should only do what is their job. For example: the presentation layer should not save data or have business logic."
+                    "Was responsible for designing and creating the boilerplate from scratch, choosing the architecture and packages needed for it, as well as basic features it needed to offer."
+                ]
+            },
+            {
+                "title": "Technical Sheet",
+                "description": [
+                    "Technologies involved on this project:",
+                    "- .NET 5",
+                    "- xUnit",
+                    "- Onion Architecture",
+                    "- Serilog",
+                    "- FluentValidation",
+                    "- FluentAssertions",
+                    "- Moq",
+                    "- Dapper ORM",
+                    "- Swagger"
                 ]
             },
             {
                 "description": [
-                    "For a detailed explanation of the chosen architecture and its layers or to start using this boilerplate go to the git repository by clicking the button below."
+                    "For a more detailed explanation of the chosen architecture and its layers or to start using this boilerplate, go to its git repository by clicking in the button below."
                 ]
             }
         ],
         "images": [
             {
-                "url": "/images/projects/dot_net_api_boilerplate_diagram.png",
+                "url": "/images/projects/apiboilerplate/diagram.png",
                 "alt": ".NET API Boilerplate diagram"
+            },
+            {
+                "url": "/images/projects/apiboilerplate/swagger.jpg",
+                "alt": ".NET API Boilerplate"
             }
         ],
         "visitButton": {
