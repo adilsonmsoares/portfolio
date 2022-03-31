@@ -5,8 +5,7 @@
         "entity": {
             "name": "Own"
         },
-        "startDate": "09/2011",
-        "endDate": "07/2014",
+        "endDate": "Apr 2022",
         "stack": [
             "Next.js",
             "TypeScript"
@@ -49,8 +48,7 @@
         "entity": {
             "name": "Cofidis Portugal"
         },
-        "startDate": "09/2011",
-        "endDate": "07/2014",
+        "startDate": "Sep 2021",
         "stack": [
             "Mautic",
             ".NET 5"
@@ -74,7 +72,7 @@
         ],
         "images": [
             {
-                "url": "/images/projects/logo-mautic.png",
+                "url": "/images/projects/logo_mautic.png",
                 "alt": "Mautic logo image"
             }
         ],
@@ -92,8 +90,7 @@
         "entity": {
             "name": "Cofidis Portugal"
         },
-        "startDate": "09/2011",
-        "endDate": "07/2014",
+        "endDate": "Sep 2021",
         "stack": [
             ".NET 3.1",
             "HangFire"
@@ -135,8 +132,7 @@
         "entity": {
             "name": "Cofidis Portugal"
         },
-        "startDate": "09/2011",
-        "endDate": "07/2014",
+        "endDate": "Oct 2021",
         "stack": [
             ".NET Standard",
             "Serilog",
@@ -161,13 +157,72 @@
         ],
         "images": [
             {
-                "url": "/images/projects/log-nugget-package.jpg",
+                "url": "/images/projects/log_nugget_package.jpg",
                 "alt": "Log nugget package image"
             }
         ],
         "visitButton": {
             "text": "View source",
             "url": "https://github.com/adilsonmsoares/portfolio"
+        },
+        "categories": [
+            "software"
+        ]
+    },
+    {
+        "id": "apiboilerplate",
+        "title": ".NET API Boilerplate",
+        "entity": {
+            "name": "Own"
+        },
+        "endDate": "Oct 2021",
+        "stack": [
+            ".NET 5",
+            "FluentValidation",
+            "xUnit"
+        ],
+        "sectionDescription": [
+            {
+                "title": null,
+                "description": [
+                    "This boilerplate was created to serve as a base project for a quick start of an API in .NET, with a structured architecture opened for scalability and easy to maintenance. Its conception results in previous episodes where new developments emerged and the need to have an empty project with basic configurations already defined was felt."
+                ]
+            },
+            {
+                "title": "Features included",
+                "description": [
+                    "Below is a list of basic features that this API offers:",
+                    "- Structured architecture based on layers",
+                    "- API request examples",
+                    "- Log events using Serilog",
+                    "- FluentValidation",
+                    "- Unit test examples in xUnit"
+                ]
+            },
+            {
+                "title": "Main conventions to follow",
+                "description": [
+                    "All projects need rules to be follow to maintain a standardized project with readable code that can be understood by new developers. In this sense, and based on the chosen architecture, the main rules to follow are:",
+                    "- Above layers are aware of the below layers, but the opposite is not true",
+                    "- Data transfer between layers must be done through a data transfer protocol such as DTO (Data Transfer Object)",
+                    "- The layers/services should only do what is their job. For example: the presentation layer should not save data or have business logic."
+                ]
+            },
+            {
+                "description": [
+                    "For a detailed explanation of the chosen architecture and its layers or to start using this boilerplate go to the git repository by clicking the button below."
+                ]
+            }
+        ],
+        "images": [
+            {
+                "url": "/images/projects/dot_net_api_boilerplate_diagram.png",
+                "alt": ".NET API Boilerplate diagram"
+            }
+        ],
+        "visitButton": {
+            "text": "View repo",
+            "url": "https://github.com/adilsonmsoares/API_Boilerplate"
         },
         "categories": [
             "software"

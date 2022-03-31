@@ -21,7 +21,9 @@ export default function DetailViewer({ data }: Props) {
           <div className={styles.info}>
             <Typhography type="sub-sub-title">{data?.entity.name}</Typhography>
             <Typhography type="sub-sub-title">
-              {data?.startDate} - {data?.endDate}
+              {data?.startDate}
+              {data?.startDate && data?.endDate && ' - '}
+              {data?.endDate}
             </Typhography>
           </div>
           <Typhography type="title" color="special" strong>
