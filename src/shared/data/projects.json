@@ -51,7 +51,7 @@
         "startDate": "Sep 2021",
         "stack": [
             "Mautic",
-            ".NET 5"
+            ".NET 5.0"
         ],
         "sectionDescription": [
             {
@@ -92,36 +92,52 @@
         },
         "endDate": "Sep 2021",
         "stack": [
-            ".NET 3.1",
+            ".NET 5.0",
             "HangFire"
         ],
         "sectionDescription": [
             {
                 "title": null,
                 "description": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in cursus turpis, vitae semper lorem. Cras ligula nibh, congue vel dolor quis, interdum blandit diam. Quisque nunc risus, euismod ac ex sollicitudin, pulvinar bibendum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae felis id massa ultrices dictum. Aliquam gravida pretium tristique. Maecenas dictum, lacus ut fringilla consequat, odio turpis tempus dui, eu luctus lorem diam mollis arcu. Cras nec vestibulum ex, eu hendrerit dui. Curabitur sed lorem arcu.",
-                    "Nulla eu arcu ut felis congue pellentesque. Suspendisse massa nibh, ultricies sit amet mi sed, interdum semper metus. Nulla dictum risus sodales arcu semper sollicitudin. Ut eleifend orci eget metus posuere rutrum. Integer rutrum viverra massa et sagittis. Suspendisse congue imperdiet diam, ac luctus orci pulvinar elementum. Nullam interdum imperdiet dignissim. Nunc vitae vulputate odio."
+                    "Sometimes, working in the .NET environment, you might feel that .NET could offer a job agent by default, like SQL Job Agent, but this is not the case. To suppress this lack, other developers created Hangfire which runs background jobs and workers in .NET and .NET Core like SQL Job Agent does in SQL Server.",
+                    "Hangfire was used initially in one or two projects, but over the time several projects were using it. The company's goal was to have all the background jobs concentrated in one place, even if they belong to different projects and teams. So, this Web API was created to achieve that goal and work as a Job Orchestrator with the ability to manage and monitor background jobs.",
+                    "Main features of this Job Orchestrator:",
+                    "- List all jobs created",
+                    "- Add or update a job",
+                    "- Remove a job, based on its ID",
+                    "- Authentication with rules",
+                    "Other benefits besides those mentioned above is that this Job Orchestrator WebAPI uses Hangfire and its resources to manage background Jobs, but with the possibility of keeping the application pool running while the management is done without shutting down the server."
                 ]
             },
             {
-                "title": "Section two",
+                "title": "Contribution",
                 "description": [
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in cursus turpis, vitae semper lorem. Cras ligula nibh, congue vel dolor quis, interdum blandit diam. Quisque nunc risus, euismod ac ex sollicitudin, pulvinar bibendum velit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vitae felis id massa ultrices dictum. Aliquam gravida pretium tristique. Maecenas dictum, lacus ut fringilla consequat, odio turpis tempus dui, eu luctus lorem diam mollis arcu. Cras nec vestibulum ex, eu hendrerit dui. Curabitur sed lorem arcu.",
-                    "Nulla eu arcu ut felis congue pellentesque. Suspendisse massa nibh, ultricies sit amet mi sed, interdum semper metus. Nulla dictum risus sodales arcu semper sollicitudin. Ut eleifend orci eget metus posuere rutrum. Integer rutrum viverra massa et sagittis. Suspendisse congue imperdiet diam, ac luctus orci pulvinar elementum. Nullam interdum imperdiet dignissim. Nunc vitae vulputate odio.",
-                    "Mauris non rhoncus ex. Praesent eu semper nunc. Quisque vel nunc sit amet enim vulputate sagittis sed a diam. In porta sem congue, efficitur nibh id, volutpat diam. Duis rutrum ante nulla, sollicitudin ultricies ipsum malesuada in. Praesent elementum gravida nulla id fringilla. Duis sed metus vitae enim aliquam consectetur. Maecenas a congue purus, non fringilla enim. Proin nisl ligula, feugiat at quam vel, gravida mattis felis. Sed quis magna vel risus egestas ultrices et eu justo. Duis egestas justo ut purus viverra sodales."
+                    "Responsible for creating the Web API from scratch, including its documentation, and providing presentation meetings with architects and team leaders so that they knew what was being developed and how they could use it in order to help them in the development of their teams."
+                ]
+            },
+            {
+                "title": "Technical Sheet",
+                "description": [
+                    "Technologies involved on this project:",
+                    "- .NET 5.0",
+                    "- Hangfire",
+                    "- Serilog",
+                    "- xUnit",
+                    "- FluentAssertions",
+                    "- Onion Architecture"
                 ]
             }
         ],
         "images": [
             {
-                "url": "/images/projects/hangfire.png",
-                "alt": "Hangfire image"
+                "url": "/images/projects/dotNetjobAgent/hangfire.png",
+                "alt": "Hangfire dashboard"
+            },
+            {
+                "url": "/images/projects/dotNetjobAgent/diagram.jpg",
+                "alt": "Nugget flow diagram"
             }
         ],
-        "visitButton": {
-            "text": "View source",
-            "url": "https://github.com/adilsonmsoares/portfolio"
-        },
         "categories": [
             "software"
         ]
@@ -149,10 +165,10 @@
                     "- Trace the requests flow in detail",
                     "- Centralize information in a single repository",
                     "- Direct logs to different profiles (System Admins, DEV, Support team, among others)",
-                    "- Ensuring compliance with security standards (Eg.: GDPR)",
+                    "- Ensuring compliance with security standards (e.g. GDPR)",
                     "- Differentiate Logs by levels (Debug, Warning, Information, Error, among others )",
                     "- Monitor the performance of applications and features",
-                    "This nugget package was concepted by Application Telemetry Team, to be used in .NET Framework 4.5+ and NET Core 2.0+ versions, but the idea  was to expand the logic applied here in others scope/languages (Eg.: Javascript, Python, among others)."
+                    "This nugget package was concepted by the Application Telemetry Team, to be used in .NET Framework 4.5+ and NET Core 2.0+ projects, but with the idea of expanding the logic applied to it in other scopes/languages (e.g. Javascript, Python)."
                 ]
             },
             {
@@ -188,13 +204,13 @@
     },
     {
         "id": "apiboilerplate",
-        "title": ".NET API Boilerplate",
+        "title": "API Boilerplate",
         "entity": {
             "name": "Own"
         },
         "endDate": "Oct 2021",
         "stack": [
-            ".NET 5",
+            ".NET 5.0",
             "FluentValidation",
             "xUnit"
         ],
@@ -214,14 +230,14 @@
             {
                 "title": "Contribution",
                 "description": [
-                    "Was responsible for designing and creating the boilerplate from scratch, choosing the architecture and packages needed for it, as well as basic features it needed to offer."
+                    "Responsible for designing and creating the boilerplate from scratch, choosing the architecture and packages needed for it, as well as basic features it needed to offer."
                 ]
             },
             {
                 "title": "Technical Sheet",
                 "description": [
                     "Technologies involved on this project:",
-                    "- .NET 5",
+                    "- .NET 5.0",
                     "- xUnit",
                     "- Onion Architecture",
                     "- Serilog",
