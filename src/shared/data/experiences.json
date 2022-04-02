@@ -12,27 +12,26 @@
             {
                 "title": null,
                 "description": [
-                    "As a Inspire IT maker, helped finalize the website and customer portal of Portugal propane gas trading company, Gascan, using ASP.NET Core 2.2, JQuery, Dapper and SQL as development technologies, implementing new features and fixing bugs.",
-                    "Migrated the project of one of the biggest education group of Peru, from database first to code first and from Entity Framework to Dapper ORM. Also was implemented Onion architecture in the project to contain new features and gradually move previous features made to the new structure."
+                    "As an Inspire IT maker, I helped finalize the website and customer portal of Portugal propane gas trading company, Gascan, using ASP.NET Core 2.2, JQuery, Dapper and SQL as development technologies, implementing new features and fixing bugs.",
+                    "I migrated the project of one of the biggest education group in Peru, from database first to code first and from Entity Framework to Dapper ORM. I also implemented Onion architecture in the project to contain new features and gradually move previous features made to the new structure."
                 ]
             },
             {
                 "title": "Cofidis Portugal",
                 "description": [
-                    "Helped Cofidis Portugal, as an outsourcing collaborator, in the creation and digital transformation of its products, contributing to the team to which belongs to plan, create and migrate applications, supporting them in the choices of the architecture to implement as well as participating in the developments.",
-                    "While was involved in the team's projects, participated in the Application Telemetry Team and Test-driven development (TDD) team, defining nugget packages, naming conventions and development standards to be used by company's teams. Helped both teams to analyse company's needs, define objectives to be achieved and document all the work carried out.",
-                    "Created REST APIs and Micro Services from scratch, according to new developments and roadmap defined for the digital transformation.",
-                    "Created a log nugget package during the participation in Application Telemetry team, to be used by all teams and facilitate their developments giving them a solution to this sensitive theme with main purpose of eliminate simple information dump, facility their process of analyzing an information flow,  direct logs to different profiles (System Admins, DEV, Support, among others), ensure compliance with security standards (e.g. GDPR), and monitor the performance of applications and features.",
-                    "Configured build and release pipelines, in Azure DevOps, for new APIs developed.",
-                    "Implemented Mautic Marketing Automation in the Cofidis ecosystem to be used by Marketing department in their campaigns, leaving them with all the configurations completed and providing them knowledge sessions to understand how the platform works.",
+                    "I helped Cofidis Portugal, as an outsourcing collaborator, in the creation and digital transformation of its products, contributing to the team to which I belong to plan, create and migrate applications, supporting them in the choices of the architecture to implement as well as participating in the developments.",
+                    "While I was involved in my team's projects, I participated in the Application Telemetry Team and Test-driven development (TDD) team parallelly, defining nuggets packages, naming conventions and development standards to be used by company's teams. I helped both teams to analyse company's needs, define objectives to be achieved and document all the work carried out.",
+                    "I created REST APIs and Micro Services from scratch, according to new developments and roadmap defined for the digital transformation area.",
+                    "I created a log nugget package while participating in the Application Telemetry team, to be used by all teams to facilitate their developments, giving them a solution to this sensitive theme with the main purpose of eliminate simple information dump, facilitate their process of analyzing an information flow,  direct logs to different profiles (System Admins, DEV, Support, among others), ensure compliance with security standards (e.g. GDPR), and monitor the performance of applications and features.",
+                    "I configured build and release pipelines, in Azure DevOps, for new APIs developed.",
+                    "I implemented Mautic Marketing Automation in the Cofidis ecosystem to be used by Marketing department in their campaigns, leaving them with all the configurations completed and providing them knowledge sessions to understand how the platform works.",
                     "Main technologies used: .NET Core, .NET 5.0, .NET Framework 4.5+, SQL, SSIS, PostgreSQL, Hangfire, Dapper, Entity Framework, Onion Architecture, RabbitMQ, Mautic."
                 ]
             },
             {
                 "title": "Pestana Hotel Group",
                 "description": [
-                    "Helped Pestana Hotel Group, as an outsourcing collaborator, to implement new features and fix bugs that appear in booking flows.",
-                    "Interacted with Internet Information Services (IIS) and Azure DevOps to deploy REST and SOAP APIs used in booking system."
+                    "I helped Pestana Hotel Group, as an outsourcing collaborator, to implement new features and fix bugs that appeared in booking flows, and I also interacted with Internet Information Services (IIS) and Azure DevOps to deploy REST and SOAP APIs used in booking system."
                 ]
             }
         ],
@@ -54,10 +53,9 @@
             {
                 "title": null,
                 "description": [
-                    "Started Software Engineer career as an intern at Inspire IT Portugal, located in Almada, participating in two projects that allowed to learn more about continuous delivery (CD), API architectures, design patterns and SOLID principles.",
-                    "Both projects had a combination of React with Redux for frontend and .NET Core 2.1 API, Onion Architecture, SQL and Dapper ORM for backend.",
-                    "The first project worked on was the company's internal portal, which was created to computerize manual tasks performed daily or monthly by employees, but mainly by the human resources team.",
-                    "The second project worked on arose from a challenge made to the interns about who would deliver a base project for access control, routes and attendance of employees with a database, architecture and some features completed for the team that would continue it. Ended up to accept the challenge and delivering it as requested, with great satisfaction as the product is now in production and being used by companies."
+                    "My Software Engineer career started as an intern at Inspire IT Portugal, located in Almada, where I had the opportunity to participate in two projects that allowed me to learn more about continuous delivery (CD), API architectures, design patterns and SOLID principles. Both projects had a combination of React with Redux for frontend and .NET Core 2.1 API, Onion Architecture, SQL and Dapper ORM for backend.",
+                    "The first project was company's internal portal, which was created to computerize manual tasks performed daily or monthly by employees, but mainly by the human resources team.",
+                    "The second one arose from a challenge made to interns about who would deliver a base project for access control, routes and attendance of employees with a database, architecture and some features done for the team that would continue it. I ended up accepting the challenge and delivering it as requested, with great satisfaction as the product is now being used by companies."
                 ]
             }
         ],
